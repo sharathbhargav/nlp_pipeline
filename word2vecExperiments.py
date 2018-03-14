@@ -14,20 +14,8 @@ document2 = open("documents/news1NDTV", "r")
 document3 = open("documents/news2NDTV","r")
 
 def getDocumentSimilarityWithStopWords(d1,d2):
-    sentences1 = im.splitCorpusIntoSentances(d1)
-    sentences2 = im.splitCorpusIntoSentances(d2)
-    docWords1 = []
-    docWords2 = []
-    for s1 in sentences1:
-        words = im.tokanizeSingleSentance(s1)
-        docWords1.append(words)
-
-    for s2 in sentences2:
-        words = im.tokanizeSingleSentance(s2)
-        docWords2.append(words)
-
-    docVector1 = im.getDocVector(docWords1)
-    docVector2 = im.getDocVector(docWords2)
+    docVector1 = im.getDocVector(document1)
+    docVector2 = im.getDocVector(document2)
     docSimilarity = im.getDocSimilarity(docVector1, docVector2)
     return docSimilarity
 

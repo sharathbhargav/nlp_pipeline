@@ -5,6 +5,7 @@ from nltk.corpus import stopwords
 import pickle
 import numpy as np
 import math
+import matplotlib.pyplot as plt
 import re
 import nltk
 from gensim.models.keyedvectors import KeyedVectors
@@ -17,7 +18,7 @@ punctuations = ['.', ',', '/', '<', '>', '?', ';', '\'', ':', '"', '[', ']', '{'
 removableWords.update(punctuations)
 vectorSize = 300
 
-temp = open("harryPotterFullWord2VecModelSize300", "rb")
+temp = open("models/harryPotterFullWord2VecModelSize300", "rb")
 trainingModelGoogle = pickle.load(temp)
 modelUsed = trainingModelGoogle
 
@@ -27,8 +28,8 @@ def setModel(inputModel):
     modelUsed = inputModel
 
 
-def splitCorpusIntoSentances(file):
-    corpus = file.read()
+def splitCorpusIntoSentances(fileHandle):
+    corpus = fileHandle.read()
     sentances = sent_tokenize(corpus)
     return sentances
 
@@ -56,11 +57,17 @@ def getWordVector(inputWord):
     wordVector1 = np.array(modelUsed[inputWord])  # trainingModelGoogle
     return wordVector1
 
+def getWordVectorAbsoluteValue(wordVector):
+    sum =0
+    for i in wordVector:
+        sum = sum+ (i*i)
+    return math.sqrt(sum)
+
+
 
 def getSentanceVector(inputSentance):
     cleanedSentance = tokanizeAndRemoveStopWordsSingleSentance(inputSentance)
     sentanceVector = np.array([float(0.0) for x in range(vectorSize)])
-    print(cleanedSentance)
     for w in cleanedSentance:
         tempWord = getWordVector(w)
         sentanceVector += tempWord
@@ -69,9 +76,19 @@ def getSentanceVector(inputSentance):
     return sentanceVector
 
 
-def getDocVector(completeList):
+def getSentancesListFromDoc(documentHandle):
+    sentances = splitCorpusIntoSentances(documentHandle)
+    docWords= []
+    for sent in sentances:
+        words = tokanizeSingleSentance(sent)
+        docWords.append(words)
+    return docWords
+
+
+def getDocVector(documentHandle):
     totalDocVec = np.array([float(0.0) for x in range(vectorSize)])
     countOfWords = 0
+    completeList = getSentancesListFromDoc(documentHandle)
     for sentances in completeList:
         for word in sentances:
             try:
@@ -112,3 +129,19 @@ def getWordSimilarity(word1, word2):
 def getWord2VecWordSimilarity(word1, word2):
     similarity = modelUsed.similarity(word1, word2)
     return similarity
+
+
+def plotDocumentWords(documentHandle123):
+    sentances123 = getSentancesListFromDoc(documentHandle123)
+    wordVecValues=[]
+    for sentance in sentances123:
+        for word in sentance:
+            sum=0
+            try:
+                wordVector=getWordVector(word)
+                for i in wordVector:
+                    sum =sum+ (i*i)
+                wordVecValues.append((sum/math.sqrt(sum)))
+            except:
+                continue
+    return wordVecValues
