@@ -83,9 +83,9 @@ plot3=pickle.load(valueDumpFile1)
 valueDumpFile1 = open("datasets/bbc/entertainment.pickle","rb")
 plot4=pickle.load(valueDumpFile1)
 
+print(plot1)
 fig = plt.figure()
-ax = plt.subplot(121)
-aq = plt.subplot(224)
+ax = plt.subplot(111)
 """
 clf= KMeans(n_clusters=4)
 clf.fit(plot1)
@@ -95,13 +95,13 @@ labels = clf.labels_
 plt.scatter(clusters[:,0],clusters[:,1],marker='X',size=5)
 
 """
-aq.scatter(plot1[:,0],plot1[:,1],s=50,linewidths=5)
-line1=ax.plot(plot1[:,0],plot1[:,1],"bo",label="Politics")
-line2=ax.plot(plot2[:,0],plot2[:,1],"ro",label='Business')
-line3=ax.plot(plot3[:,0],plot3[:,1],"go",label="Tech")
-line4=plt.plot(plot4[:,0],plot4[:,1],"yo",label="Entertainment")
+ax.scatter(plot1[:,0],plot1[:,1],s=5,linewidths=5)
+#line1=ax.plot(plot1[:,0],plot1[:,1],"bo",label="Politics")
+#line2=ax.plot(plot2[:,0],plot2[:,1],"ro",label='Business')
+#line3=ax.plot(plot3[:,0],plot3[:,1],"go",label="Tech")
+#line4=plt.plot(plot4[:,0],plot4[:,1],"yo",label="Entertainment")
 ax.legend()
 fig.add_subplot(ax)
-fig.add_subplot(aq)
+#fig.add_subplot(aq)
 plt.show()
 

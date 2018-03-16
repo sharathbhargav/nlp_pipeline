@@ -18,7 +18,7 @@ punctuations = ['.', ',', '/', '<', '>', '?', ';', '\'', ':', '"', '[', ']', '{'
 removableWords.update(punctuations)
 vectorSize = 300
 
-temp = open("models/harryPotterFullWord2VecModelSize300", "rb")
+temp = open("/home/sharathbhragav/PycharmProjects/nlp_pipeline/models/harryPotterFullWord2VecModelSize300", "rb")
 trainingModelGoogle = pickle.load(temp)
 modelUsed = trainingModelGoogle
 
@@ -36,7 +36,7 @@ def splitCorpusIntoSentances(fileHandle):
 
 def tokanizeAndRemoveStopWordsSingleSentance(inputSentance):
     temp1 = word_tokenize(inputSentance)
-    cleaned = [word for word in temp1 if word not in removableWords]
+    cleaned = [word for word in temp1 if word not in removableWords and len(word)>0]
     return cleaned
 
 
@@ -76,19 +76,23 @@ def getSentanceVector(inputSentance):
     return sentanceVector
 
 
-def getSentancesListFromDoc(documentHandle):
+def getSentancesListFromDoc(documentHandle,stopWordsRequired):
     sentances = splitCorpusIntoSentances(documentHandle)
     docWords= []
     for sent in sentances:
-        words = tokanizeSingleSentance(sent)
-        docWords.append(words)
+        if stopWordsRequired:
+            words = tokanizeSingleSentance(sent)
+        else:
+            words= tokanizeAndRemoveStopWordsSingleSentance(sent)
+        if len(words)>0:
+            docWords.append(words)
     return docWords
 
 
-def getDocVector(documentHandle):
+def getDocVector(documentHandle,stopWordsRequired=False):
     totalDocVec = np.array([float(0.0) for x in range(vectorSize)])
     countOfWords = 0
-    completeList = getSentancesListFromDoc(documentHandle)
+    completeList = getSentancesListFromDoc(documentHandle,stopWordsRequired)
     for sentances in completeList:
         for word in sentances:
             try:
