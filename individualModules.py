@@ -6,6 +6,8 @@ import pickle
 import numpy as np
 import math
 import matplotlib.pyplot as plt
+from matplotlib import style
+style.use("ggplot")
 import re
 import nltk
 from gensim.models.keyedvectors import KeyedVectors
@@ -18,7 +20,7 @@ punctuations = ['.', ',', '/', '<', '>', '?', ';', '\'', ':', '"', '[', ']', '{'
 removableWords.update(punctuations)
 vectorSize = 300
 
-temp = open("models/harryPotterFullWord2VecModelSize300", "rb")
+temp = open("/home/sharathbhragav/PycharmProjects/nlp_pipeline/models/harryPotterFullWord2VecModelSize300", "rb")
 trainingModelGoogle = pickle.load(temp)
 modelUsed = trainingModelGoogle
 
@@ -36,7 +38,7 @@ def splitCorpusIntoSentances(fileHandle):
 
 def tokanizeAndRemoveStopWordsSingleSentance(inputSentance):
     temp1 = word_tokenize(inputSentance)
-    cleaned = [word for word in temp1 if word not in removableWords]
+    cleaned = [word for word in temp1 if word not in removableWords and len(word)>0]
     return cleaned
 
 
@@ -76,19 +78,23 @@ def getSentanceVector(inputSentance):
     return sentanceVector
 
 
-def getSentancesListFromDoc(documentHandle):
+def getSentancesListFromDoc(documentHandle,stopWordsRequired):
     sentances = splitCorpusIntoSentances(documentHandle)
     docWords= []
     for sent in sentances:
-        words = tokanizeSingleSentance(sent)
-        docWords.append(words)
+        if stopWordsRequired:
+            words = tokanizeSingleSentance(sent)
+        else:
+            words= tokanizeAndRemoveStopWordsSingleSentance(sent)
+        if len(words)>0:
+            docWords.append(words)
     return docWords
 
 
-def getDocVector(documentHandle):
+def getDocVector(documentHandle,stopWordsRequired=False):
     totalDocVec = np.array([float(0.0) for x in range(vectorSize)])
     countOfWords = 0
-    completeList = getSentancesListFromDoc(documentHandle)
+    completeList = getSentancesListFromDoc(documentHandle,stopWordsRequired)
     for sentances in completeList:
         for word in sentances:
             try:
@@ -131,17 +137,19 @@ def getWord2VecWordSimilarity(word1, word2):
     return similarity
 
 
-def plotDocumentWords(documentHandle123):
-    sentances123 = getSentancesListFromDoc(documentHandle123)
-    wordVecValues=[]
-    for sentance in sentances123:
-        for word in sentance:
-            sum=0
+def plotDocumentWords(documentHandle123,stopWordsRequired=False):
+    totalDocVec = []
+    correspondingWord = []
+    countOfWords = 0
+    completeList = getSentancesListFromDoc(documentHandle123, stopWordsRequired)
+    for sentances in completeList:
+        for word in sentances:
             try:
-                wordVector=getWordVector(word)
-                for i in wordVector:
-                    sum =sum+ (i*i)
-                wordVecValues.append((sum/math.sqrt(sum)))
+                wordVec = getWordVector(word)
+                plotValue = [wordVec[0],wordVec[1]]
+                totalDocVec.append(plotValue)
+                correspondingWord.append(word)
             except:
                 continue
-    return wordVecValues
+    return (totalDocVec,correspondingWord)
+
