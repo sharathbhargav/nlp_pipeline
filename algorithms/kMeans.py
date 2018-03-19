@@ -425,12 +425,25 @@ testData= np.array([[ 0.02005346 , 0.04187598],
  [ 0.00105284 ,0.07298446],
  [ 0.02756311 ,0.02115813]])
 
+
+
+
+testData2 = np.array([
+    [0.02005346, 0.04187598],
+    [0.0269297, 0.03662949],
+    [0.0530976, 0.03613571],
+    [0.0225159, 0.04469353],
+    [0.02389053, 0.03895409],
+    [0.02834501, 0.02974286],
+    [0.01130847, 0.04768526],
+    [0.00978073, 0.02735387]
+])
 colors= 10*["r","g","b","c","k"]
 #plot.scatter(testData[:,0],testData[:,1],s=15)
 #plot.show()
 
 class K_Means:
-    def __init__(self, k=3, tolerance=0.001, max_iterations=300):
+    def __init__(self, k=3, tolerance=0.01, max_iterations=300):
         self.k=k
         self.tolerance = tolerance
         self.max_iter = max_iterations
@@ -441,25 +454,27 @@ class K_Means:
 
     def fit(self, data):
         self.centroids={}
+
         for i in range(self.k):
             self.centroids[i] = data[i]
-
+        print(self.centroids)
         for i in range(self.max_iter):
-            self.classifications={}
+            print("i=====",i)
+            self.classifications = {}
 
             for j in range(self.k):
                 self.classifications[j] = []
 
             for featureset in data:
                 distances = [self.getDistance(featureset,self.centroids[centroid]) for centroid in self.centroids]
+
                 classification = distances.index(min(distances))
                 self.classifications[classification].append(featureset)
 
             prevCentroids = dict(self.centroids)
-
             for classification in self.classifications:
                 if len(self.classifications[classification])>0:
-                    self.classifications[classification] = np.average(self.classifications[classification],axis=0)
+                    self.centroids[classification] = np.average(self.classifications[classification],axis=0)
 
             optimized=True
 
@@ -467,6 +482,7 @@ class K_Means:
                 originalCentroids= prevCentroids[c]
                 currentCentroid = self.centroids[c]
                 if np.sum((originalCentroids-currentCentroid)/originalCentroids*100.0) > self.tolerance:
+                    print(np.sum(((originalCentroids-currentCentroid)/originalCentroids)*100.0))
                     optimized=False
 
             if optimized:
@@ -477,16 +493,20 @@ class K_Means:
         classification = distances.index(min(distances))
         return classification
 
-clf=K_Means()
-clf.fit(testData)
+clf=K_Means(k=3)
+clf.fit(testData2)
+
+plot.scatter(testData2[:,0],testData2[:,1],marker="x",s=15)
 
 for centroid in clf.centroids:
-    plot.scatter(clf.centroids[centroid][0],clf.centroids[centroid][1],marker="o",color="k",s=100,linewidths=5)
+    plot.scatter(clf.centroids[centroid][0],clf.centroids[centroid][1],marker="o",color="g",s=100,linewidths=5)
 
+
+print(clf.classifications)
 for classification in clf.classifications:
     color= colors[classification]
     if len(clf.classifications[classification])>0:
         for featureSet in clf.classifications[classification]:
             plot.scatter(featureSet[0],featureSet[1],marker="x",color=color,s=100,linewidths=5)
-
+            print(featureSet)
 plot.show()

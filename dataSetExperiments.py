@@ -71,6 +71,7 @@ plot3=np.array(plotReadyFunc(path3))
 plot4 = np.array(plotReadyFunc(path4))
 """
 
+
 valueDumpFile1 = open("datasets/bbc/politics.pickle","rb")
 plot1=pickle.load(valueDumpFile1)
 
@@ -96,12 +97,25 @@ plt.scatter(clusters[:,0],clusters[:,1],marker='X',size=5)
 
 """
 ax.scatter(plot1[:,0],plot1[:,1],s=5,linewidths=5)
-#line1=ax.plot(plot1[:,0],plot1[:,1],"bo",label="Politics")
-#line2=ax.plot(plot2[:,0],plot2[:,1],"ro",label='Business')
-#line3=ax.plot(plot3[:,0],plot3[:,1],"go",label="Tech")
-#line4=plt.plot(plot4[:,0],plot4[:,1],"yo",label="Entertainment")
+line1=ax.plot(plot1[:,0],plot1[:,1],"bo",label="Politics")
+line2=ax.plot(plot2[:,0],plot2[:,1],"ro",label='Business')
+line3=ax.plot(plot3[:,0],plot3[:,1],"go",label="Tech")
+line4=plt.plot(plot4[:,0],plot4[:,1],"yo",label="Entertainment")
 ax.legend()
 fig.add_subplot(ax)
 #fig.add_subplot(aq)
 plt.show()
 
+temp=open("datasets/bbc/002.txt","r")
+plotValue,correspondingWord=im.plotDocumentWords(temp)
+plotValue= np.array(plotValue)
+x=[]
+y=[]
+for k in plotValue:
+    x.append(k[0])
+    y.append(k[1])
+plt.scatter(x,y,linewidths=2,s=5)
+for i in range(len(correspondingWord)):
+    xy=(x[i],y[i])
+    plt.annotate(correspondingWord[i],xy)
+plt.show()

@@ -6,6 +6,8 @@ import pickle
 import numpy as np
 import math
 import matplotlib.pyplot as plt
+from matplotlib import style
+style.use("ggplot")
 import re
 import nltk
 from gensim.models.keyedvectors import KeyedVectors
@@ -135,17 +137,19 @@ def getWord2VecWordSimilarity(word1, word2):
     return similarity
 
 
-def plotDocumentWords(documentHandle123):
-    sentances123 = getSentancesListFromDoc(documentHandle123)
-    wordVecValues=[]
-    for sentance in sentances123:
-        for word in sentance:
-            sum=0
+def plotDocumentWords(documentHandle123,stopWordsRequired=False):
+    totalDocVec = []
+    correspondingWord = []
+    countOfWords = 0
+    completeList = getSentancesListFromDoc(documentHandle123, stopWordsRequired)
+    for sentances in completeList:
+        for word in sentances:
             try:
-                wordVector=getWordVector(word)
-                for i in wordVector:
-                    sum =sum+ (i*i)
-                wordVecValues.append((sum/math.sqrt(sum)))
+                wordVec = getWordVector(word)
+                plotValue = [wordVec[0],wordVec[1]]
+                totalDocVec.append(plotValue)
+                correspondingWord.append(word)
             except:
                 continue
-    return wordVecValues
+    return (totalDocVec,correspondingWord)
+
