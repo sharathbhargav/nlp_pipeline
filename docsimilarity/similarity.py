@@ -14,3 +14,11 @@ def jaccard_similarity(fh_one, fh_two):
     if '' in set_doc_two: set_doc_two.remove('')
     js = len(set_doc_one.intersection(set_doc_two)) / len(set_doc_one.union(set_doc_two))
     return js
+
+ff1 = "/home/ullas/nltk_trial/corpora/op/Agriculture.txt"
+ff2 = "/home/ullas/nltk_trial/corpora/op/Farm.txt"
+
+f1 = open(ff1, 'r')
+f2 = open(ff2, 'r')
+
+print(jaccard_similarity(f1, f2))
