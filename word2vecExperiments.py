@@ -30,10 +30,10 @@ def getDocumentSimilarityWithoutStopWords(d1,d2):
     return docSimilarity
 
 
-print("Without stop words",getDocumentSimilarityWithoutStopWords(document4,document1))
+print("Without stop words",getDocumentSimilarityWithoutStopWords(document4,document5))
 document1.seek(0)
 document2.seek(0)
 document3.seek(0)
 document4.seek(0)
 document5.seek(0)
-print("With stop words",getDocumentSimilarityWithStopWords(document4,document1))
+print("With stop words",getDocumentSimilarityWithStopWords(document4,document5))

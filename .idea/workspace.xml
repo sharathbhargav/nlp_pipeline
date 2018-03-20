@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55e0dcca-08ee-4eea-8a97-e33d90a8d217" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/word2vecExperiments.py" afterPath="$PROJECT_DIR$/word2vecExperiments.py" />
     </list>
@@ -15,7 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="32905" />
+    <option name="totalTimeSeconds" value="32271" />
     <option name="gitIntegration" value="true" />
     <option name="naggedAbout" value="1" />
   </component>
@@ -24,8 +25,8 @@
       <file leaf-file-name="word2vecExperiments.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/word2vecExperiments.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="42" lean-forward="true" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
+            <state relative-caret-position="525">
+              <caret line="35" column="17" lean-forward="false" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -36,9 +37,10 @@
       <file leaf-file-name="kMeans.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/algorithms/kMeans.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="19" />
+            <state relative-caret-position="482">
+              <caret line="491" column="97" lean-forward="true" selection-start-line="491" selection-start-column="97" selection-end-line="491" selection-end-column="97" />
               <folding>
+                <element signature="e#0#18#0" expanded="true" />
                 <element signature="e#413#12089#0" expanded="false" />
               </folding>
             </state>
@@ -48,7 +50,7 @@
       <file leaf-file-name="individualModules.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/individualModules.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2295">
+            <state relative-caret-position="2175">
               <caret line="153" column="41" lean-forward="false" selection-start-line="153" selection-start-column="41" selection-end-line="153" selection-end-column="41" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
@@ -60,7 +62,7 @@
       <file leaf-file-name="dataSetExperiments.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dataSetExperiments.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
+            <state relative-caret-position="360">
               <caret line="34" column="22" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
@@ -118,14 +120,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/a.txt" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/algos/kMeans.py" />
         <option value="$PROJECT_DIR$/algorithms/kMeans.py" />
         <option value="$PROJECT_DIR$/individualModules.py" />
+        <option value="$PROJECT_DIR$/datasets/bbc/002.txt" />
+        <option value="$PROJECT_DIR$/dataSetExperiments.py" />
         <option value="$PROJECT_DIR$/scrapers/wikipedia.py" />
         <option value="$PROJECT_DIR$/word2vecExperiments.py" />
-        <option value="$PROJECT_DIR$/dataSetExperiments.py" />
-        <option value="$PROJECT_DIR$/datasets/bbc/002.txt" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -169,8 +171,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -183,30 +183,16 @@
               <item name="nlp_pipeline" type="462c0819:PsiDirectoryNode" />
               <item name="algorithms" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="nlp_pipeline" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nlp_pipeline" type="462c0819:PsiDirectoryNode" />
-              <item name="datasets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nlp_pipeline" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nlp_pipeline" type="462c0819:PsiDirectoryNode" />
-              <item name="datasets" type="462c0819:PsiDirectoryNode" />
-              <item name="bbc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nlp_pipeline" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nlp_pipeline" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea" />
   </component>
   <component name="RecentsManager">
@@ -311,7 +297,7 @@
         <item index="1" class="java.lang.String" itemvalue="Python.kMeans" />
         <item index="2" class="java.lang.String" itemvalue="Python.word2vecExperiments" />
         <item index="3" class="java.lang.String" itemvalue="Python.dataSetExperiments" />
-        <item index="4" class="java.lang.String" itemvalue="Python.dataSetExperiments" />
+        <item index="4" class="java.lang.String" itemvalue="Python.word2vecExperiments" />
       </list>
     </recent_temporary>
   </component>
@@ -357,7 +343,7 @@
     <frame x="96" y="106" width="1920" height="1046" extended-state="6" />
     <layout>
       <window_info id="Key Promoter X" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2683706" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12619808" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5021299" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897604" sideWeight="0.4978701" order="2" side_tool="false" content_ui="tabs" />
@@ -470,6 +456,7 @@
         <state relative-caret-position="6420">
           <caret line="428" column="47" lean-forward="true" selection-start-line="428" selection-start-column="47" selection-end-line="428" selection-end-column="47" />
           <folding>
+            <element signature="e#0#18#0" expanded="true" />
             <element signature="e#413#12089#0" expanded="false" />
           </folding>
         </state>
@@ -709,15 +696,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/algos/kMeans.py" />
+    <entry file="file://$PROJECT_DIR$/Farm.txt" />
+    <entry file="file://$PROJECT_DIR$/Agriculture.txt" />
+    <entry file="file://$PROJECT_DIR$/datasets/bbc/002.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/algos/kMeans.py" />
-    <entry file="file://$PROJECT_DIR$/Farm.txt" />
     <entry file="file://$PROJECT_DIR$/datasets/bbc/politics/002.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -725,50 +713,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scraperutil.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Agriculture.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="0" column="24231" lean-forward="true" selection-start-line="0" selection-start-column="24231" selection-end-line="0" selection-end-column="24231" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrapers/wikipedia.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="60" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datasets/bbc/002.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="29" lean-forward="false" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/word2vecExperiments.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="42" lean-forward="true" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/scraperutil.py" />
+    <entry file="file://$PROJECT_DIR$/scrapers/wikipedia.py" />
     <entry file="file://$PROJECT_DIR$/individualModules.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2295">
+        <state relative-caret-position="2175">
           <caret line="153" column="41" lean-forward="false" selection-start-line="153" selection-start-column="41" selection-end-line="153" selection-end-column="41" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
@@ -778,7 +727,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dataSetExperiments.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
+        <state relative-caret-position="360">
           <caret line="34" column="22" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
@@ -794,11 +743,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/word2vecExperiments.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="17" lean-forward="false" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/algorithms/kMeans.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="19" />
+        <state relative-caret-position="482">
+          <caret line="491" column="97" lean-forward="true" selection-start-line="491" selection-start-column="97" selection-end-line="491" selection-end-column="97" />
           <folding>
+            <element signature="e#0#18#0" expanded="true" />
             <element signature="e#413#12089#0" expanded="false" />
           </folding>
         </state>
