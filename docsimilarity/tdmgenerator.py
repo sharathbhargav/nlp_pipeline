@@ -3,6 +3,8 @@ from numpy import zeros
 from docsimilarity.util import gf
 from math import log
 from scipy.linalg import svd
+from numpy.matlib import transpose
+from numpy import matmul
 
 
 class TDMatrix:
@@ -29,6 +31,7 @@ class TDMatrix:
         self.bag_of_words = baggify(self.doc_words)
         # tdmatrix : Term Document matrix for the set of documents.
         self.tdmatrix = zeros(shape=(len(self.bag_of_words), len(self.ldocs)))
+        self.generate()
 
     def generate(self):
         g = dict()
@@ -48,23 +51,20 @@ class TDMatrix:
             for jdoc, doc in enumerate(self.ldocs):
                 if word in self.doc_words[jdoc]:
                     self.tdmatrix[iword][jdoc] = g[word] * log(self.doc_words[jdoc].count(word) + 1)
-        print('A: ' + str(len(self.tdmatrix)) + ' x ' + str(len(self.tdmatrix[0])))
+        self._decompose()
 
-    def decompose(self):
+    def _decompose(self):
         self.u, self.sigma, self.vt = svd(self.tdmatrix)
-        print('U: ' + str(len(self.u)) + ' x ' + str(len(self.u[0])))
-        print(self.sigma)
-        print('Vt: ' + str(len(self.vt)) + ' x ' + str(len(self.vt[0])))
 
+    def _get_doc_column(self, index):
+        col_matrix = []
+        for row in self.tdmatrix:
+            col_matrix.append(row[index])
+        return col_matrix
 
-
-
-
-f1 = "/home/ullas/nltk_trial/corpora/hp/ff_ootp.txt"
-f2 = "/home/ullas/nltk_trial/corpora/eragon/eldest.txt"
-f3 = "/home/ullas/nltk_trial/corpora/eragon/brisingr.txt"
-f4 = "/home/ullas/nltk_trial/corpora/eragon/eragon.txt"
-
-a = TDMatrix([f1, f2, f3, f4])
-a.generate()
-a.decompose()
+    def get_doc_vector(self, doc_index):
+        td_column = self._get_doc_column(doc_index)
+        sigma_inverse = 1 / self.sigma[doc_index]
+        ut = transpose(self.u)
+        doc_vector = sigma_inverse * matmul(ut, td_column)
+        return doc_vector
