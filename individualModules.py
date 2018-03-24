@@ -38,7 +38,7 @@ def splitCorpusIntoSentances(fileHandle):
 
 def tokanizeAndRemoveStopWordsSingleSentance(inputSentance):
     temp1 = word_tokenize(inputSentance)
-    cleaned = [word for word in temp1 if word not in removableWords and len(word)>0]
+    cleaned = [word.lower() for word in temp1 if word not in removableWords and len(word)>0]
     return cleaned
 
 

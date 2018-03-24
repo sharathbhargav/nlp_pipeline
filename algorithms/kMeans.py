@@ -438,51 +438,55 @@ testData2 = np.array([
     [0.01130847, 0.04768526],
     [0.00978073, 0.02735387]
 ])
+
+
 colors= 10*["r","g","b","c","k"]
 #plot.scatter(testData[:,0],testData[:,1],s=15)
 #plot.show()
 
 class K_Means:
-    def __init__(self, k=3, tolerance=0.01, max_iterations=300):
+    def __init__(self, k=3, tolerance=0.1, max_iterations=300):
         self.k=k
         self.tolerance = tolerance
         self.max_iter = max_iterations
 
-    def getDistance(self,vec1,vec2):
-        return im.getDocSimilarity(vec1,vec2)
+    def getDistance(self,vec1,vec2,spherical=False):
+        if spherical:
+            return 1-im.getDocSimilarity(vec1,vec2)
+        else:
+            return im.getDocSimilarity(vec1,vec2)
 
-
-    def fit(self, data):
+    def fit(self, data,spherical=False):
         self.centroids={}
 
         for i in range(self.k):
             self.centroids[i] = data[i]
-        print(self.centroids)
         for i in range(self.max_iter):
-            print("i=====",i)
             self.classifications = {}
 
             for j in range(self.k):
                 self.classifications[j] = []
 
             for featureset in data:
-                distances = [self.getDistance(featureset,self.centroids[centroid]) for centroid in self.centroids]
-
+                distances = [self.getDistance(featureset,self.centroids[centroid],spherical) for centroid in self.centroids]
+                #distances = [np.linalg.norm(featureset-self.centroids[centroid]) for centroid in self.centroids]
                 classification = distances.index(min(distances))
                 self.classifications[classification].append(featureset)
 
             prevCentroids = dict(self.centroids)
             for classification in self.classifications:
-                if len(self.classifications[classification])>0:
-                    self.centroids[classification] = np.average(self.classifications[classification],axis=0)
 
-            optimized=True
+                if(len(self.classifications[classification])>1):
+                    self.centroids[classification] = np.average(self.classifications[classification],axis=0)
+                elif(len(self.classifications[classification])==1):
+                    self.centroids[classification] = self.classifications[classification]
+
+                optimized=True
 
             for c in self.centroids:
                 originalCentroids= prevCentroids[c]
                 currentCentroid = self.centroids[c]
-                if np.sum((originalCentroids-currentCentroid)/originalCentroids*100.0) > self.tolerance:
-                    print(np.sum(((originalCentroids-currentCentroid)/originalCentroids)*100.0))
+                if np.sum((currentCentroid-originalCentroids)/originalCentroids*100.0) > self.tolerance:
                     optimized=False
 
             if optimized:
@@ -493,20 +497,39 @@ class K_Means:
         classification = distances.index(min(distances))
         return classification
 
-clf=K_Means(k=3)
-clf.fit(testData2)
-
-plot.scatter(testData2[:,0],testData2[:,1],marker="x",s=15)
-
-for centroid in clf.centroids:
-    plot.scatter(clf.centroids[centroid][0],clf.centroids[centroid][1],marker="o",color="g",s=100,linewidths=5)
 
 
-print(clf.classifications)
-for classification in clf.classifications:
-    color= colors[classification]
-    if len(clf.classifications[classification])>0:
-        for featureSet in clf.classifications[classification]:
-            plot.scatter(featureSet[0],featureSet[1],marker="x",color=color,s=100,linewidths=5)
-            print(featureSet)
-plot.show()
+
+
+
+def execute_kmeans(data,k=3,sphericalDistance=False,showPlot=False,tolerance=0.1, max_iterations=300,plotRef=plot):
+    clf = K_Means(k,tolerance=tolerance,max_iterations=max_iterations)
+    clf.fit(data, sphericalDistance)
+    if showPlot:
+
+
+        count = 0
+        for centroid in clf.centroids:
+            plotRef.scatter(clf.centroids[centroid][0], clf.centroids[centroid][1], marker="o", color=colors[count], s=100,
+                         linewidths=5)
+            count = count + 1
+
+        for classification in clf.classifications:
+            color = colors[classification]
+            if len(clf.classifications[classification]) > 0:
+                for featureSet in clf.classifications[classification]:
+                    plotRef.scatter(featureSet[0], featureSet[1], marker="x", color=color, s=100, linewidths=5)
+
+        #plotRef.show()
+
+    return (clf.classifications,clf.centroids)
+
+
+
+
+
+
+
+
+
+
