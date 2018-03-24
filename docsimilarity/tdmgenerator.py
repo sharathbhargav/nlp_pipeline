@@ -18,6 +18,7 @@ class TDMatrix:
         self.load_from = load_from
         self.store_to = store_to
         if directory is None and ldocs is not None:
+            print('1')
             self.ldocs = ldocs
             self.n = len(self.ldocs)
             d = ldocs[0].split('/')
@@ -26,10 +27,12 @@ class TDMatrix:
                 dd = dd + dname + '/'
             self.directories = [dd]
         elif directory is not None and ldocs is not None:
+            print('2')
             self.ldocs = [directory + '/' + doc for doc in ldocs]
             self.directories = [directory]
             self.n = len(self.ldocs)
         elif directory is not None and ldocs is None:
+            print('3')
             self.directories = list()
             self.ldocs = list()
             files = listdir(directory)
@@ -171,7 +174,7 @@ class TDMatrix:
         return doc_vector
 
     def plot(self):
-        colors = ['b', 'r', 'g', 'y', 'o']
+        colors = ['b', 'g', 'r', 'c', 'm']
         self.plot_axes = 2
         if self.load_from is None and self.store_to is not None:
             print('Plot to CSV')
@@ -251,11 +254,11 @@ f3 = "/home/ullas/nltk_trial/corpora/eragon/brisingr.txt"
 f4 = "/home/ullas/nltk_trial/corpora/eragon/eragon.txt"
 
 from os import listdir
-d = "/home/ullas/PycharmProjects/nlp_pipeline/datasets/bbc/"
+d = "/home/suhas/PycharmProjects/nlp_pipeline/datasets/bbc/"
 #files = [d + '/' +f for f in listdir("/home/ullas/PycharmProjects/nlp_pipeline/datasets/bbc/business")]
 import time
 st_time = time.time()
-lsa = TDMatrix(d)
+lsa = TDMatrix(directory=d, store_to='bbc')
 en_time = time.time()
 t = en_time - st_time
 t /= 60

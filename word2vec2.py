@@ -8,13 +8,14 @@ import individualModules as im
 import nltk
 from gensim.models.keyedvectors import KeyedVectors
 
-temp = open("googleTrainedData", "rb")
-trainingModelGoogle = pickle.load(temp)
-
-news1File=open("news1Hindu","r")
-news2File=open("news1NDTV","r")
-
+trainingModelGoogle = KeyedVectors.load_word2vec_format("models/GoogleNews-vectors-negative300.bin",binary=True,limit=100000)
 im.setModel(trainingModelGoogle)
+
+
+news1File=open("documents/news1Hindu","r")
+news2File=open("documents/news1NDTV","r")
+
+#im.setModel(trainingModelGoogle)
 
 
 sentences1 = im.splitCorpusIntoSentances(news1File)
