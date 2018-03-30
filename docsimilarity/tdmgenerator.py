@@ -11,6 +11,7 @@ from os import listdir
 from os.path import isdir, isabs, abspath
 from os import PathLike
 import csv
+from numpy import float64
 
 
 class TDMatrix:
@@ -18,6 +19,7 @@ class TDMatrix:
         self.load_from = load_from
         self.store_to = store_to
         if directory is None and ldocs is not None:
+            print('1')
             self.ldocs = ldocs
             self.n = len(self.ldocs)
             d = ldocs[0].split('/')
@@ -26,10 +28,12 @@ class TDMatrix:
                 dd = dd + dname + '/'
             self.directories = [dd]
         elif directory is not None and ldocs is not None:
+            print('2')
             self.ldocs = [directory + '/' + doc for doc in ldocs]
             self.directories = [directory]
             self.n = len(self.ldocs)
         elif directory is not None and ldocs is None:
+            print('3')
             self.directories = list()
             self.ldocs = list()
             files = listdir(directory)
@@ -89,7 +93,7 @@ class TDMatrix:
             reader = csv.reader(csv_file)
             for irow, row in enumerate(reader):
                 for icol, val in enumerate(row):
-                    self.tdmatrix[irow][icol] = val
+                    self.tdmatrix[irow][icol] = float(val)
             csv_file.close()
         self._decompose()
 
@@ -130,17 +134,18 @@ class TDMatrix:
             for irow, row in enumerate(reader_u):
                 self.u.append(list())
                 for icol, val in enumerate(row):
-                    self.u[irow].append(val)
+                    self.u[irow].append(float(val))
             self.sigma = list()
 
-            for val in reader_sigma:
-                self.sigma.append(val)
+            for irow, row in enumerate(reader_sigma):
+                for icol, val in enumerate(row):
+                    self.sigma.append(float(val))
 
             self.vt = list()
             for irow, row in enumerate(reader_vt):
                 self.vt.append(list())
                 for icol, val in enumerate(row):
-                    self.vt[irow].append(val)
+                    self.vt[irow].append(float(val))
             csv_u.close()
             csv_sigma.close()
             csv_vt.close()
@@ -171,7 +176,7 @@ class TDMatrix:
         return doc_vector
 
     def plot(self):
-        colors = ['b', 'r', 'g', 'y', 'o']
+        colors = ['b', 'g', 'r', 'c', 'm']
         self.plot_axes = 2
         if self.load_from is None and self.store_to is not None:
             print('Plot to CSV')
@@ -205,18 +210,20 @@ class TDMatrix:
             for irow, row in enumerate(reader_u):
                 self.plot_u.append(list())
                 for icol, val in enumerate(row):
-                    self.plot_u[irow].append(val)
+                    self.plot_u[irow].append(float(val))
 
             self.plot_sigma = list()
-            for val in reader_sigma:
-                self.plot_sigma.append(val)
+            for irow, row in enumerate(reader_sigma):
+                for icol, val in enumerate(row):
+                    self.plot_sigma.append(float(val))
 
             self.plot_vt = list()
             for irow, row in enumerate(reader_vt):
                 self.plot_vt.append(list())
                 for icol, val in enumerate(row):
-                    self.plot_vt[irow].append(val)
+                    self.plot_vt[irow].append(float(val))
             csv_u.close()
+            csv_sigma.close()
             csv_sigma.close()
             csv_vt.close()
 
@@ -255,10 +262,10 @@ d = "/home/ullas/PycharmProjects/nlp_pipeline/datasets/bbc/"
 #files = [d + '/' +f for f in listdir("/home/ullas/PycharmProjects/nlp_pipeline/datasets/bbc/business")]
 import time
 st_time = time.time()
-lsa = TDMatrix(d)
+lsa = TDMatrix(directory=d, load_from='bbc')
 en_time = time.time()
 t = en_time - st_time
-t /= 60
+#t /= 60
 print("Time taken = " + str(t) + " minutes")
 lsa.plot()
 

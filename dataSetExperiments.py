@@ -71,16 +71,16 @@ plot3=np.array(plotReadyFunc(path3))
 plot4 = np.array(plotReadyFunc(path4))
 """
 
-valueDumpFile1 = open("datasets/bbc/politics.pickle","rb")
+valueDumpFile1 = open("models/politics.pickle","rb")
 plot1=pickle.load(valueDumpFile1)
 
-valueDumpFile1 = open("datasets/bbc/business.pickle","rb")
+valueDumpFile1 = open("models/business.pickle","rb")
 plot2=pickle.load(valueDumpFile1)
 
-valueDumpFile1 = open("datasets/bbc/tech.pickle","rb")
+valueDumpFile1 = open("models/tech.pickle","rb")
 plot3=pickle.load(valueDumpFile1)
 
-valueDumpFile1 = open("datasets/bbc/entertainment.pickle","rb")
+valueDumpFile1 = open("models/entertainment.pickle","rb")
 plot4=pickle.load(valueDumpFile1)
 
 fig = plt.figure()
