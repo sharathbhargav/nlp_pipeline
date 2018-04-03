@@ -1,5 +1,5 @@
-/models
-/datasets
-/.idea
+models/
+datasets/
+.idea/
 __pycache__/
-
+/documents

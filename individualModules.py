@@ -25,6 +25,9 @@ trainingModelGoogle = pickle.load(temp)
 modelUsed = trainingModelGoogle
 
 
+def printStopWords():
+    print(removableWords)
+
 def setModel(inputModel):
     global modelUsed
     modelUsed = inputModel
@@ -95,12 +98,17 @@ def getDocVector(documentHandle,stopWordsRequired=False):
     totalDocVec = np.array([float(0.0) for x in range(vectorSize)])
     countOfWords = 0
     completeList = getSentancesListFromDoc(documentHandle,stopWordsRequired)
+    #print(completeList)
     for sentances in completeList:
+        #print(sentances)
         for word in sentances:
             try:
                 wordVec = getWordVector(word)
+                #print("wordvec>>>>>>>>>>>>>>>",wordVec)
                 countOfWords = countOfWords + 1
+                #print("count>>>>>>>>>>>>>>>>>>>>>",countOfWords)
                 totalDocVec += wordVec
+                #print(word, ">>>>>>>>", totalDocVec)
             except:
                 continue
     totalDocVec /= countOfWords
@@ -146,10 +154,30 @@ def plotDocumentWords(documentHandle123,stopWordsRequired=False):
         for word in sentances:
             try:
                 wordVec = getWordVector(word)
-                plotValue = [wordVec[0],wordVec[1]]
-                totalDocVec.append(plotValue)
+
+                totalDocVec.append(wordVec)
                 correspondingWord.append(word)
             except:
                 continue
     return (totalDocVec,correspondingWord)
 
+def getCommonWordsBetweenDocs(documentHandle1,documentHandle2):
+    set1=[]
+    set2=[]
+    completeList = getSentancesListFromDoc(documentHandle1,False)
+    # print(completeList)
+    for sentances in completeList:
+        # print(sentances)
+        for word in sentances:
+            set1.append(word)
+
+    completeList = getSentancesListFromDoc(documentHandle2, False)
+    # print(completeList)
+    for sentances in completeList:
+        # print(sentances)
+        for word in sentances:
+            set2.append(word)
+
+    s1=set(set1)
+    s2=set(set2)
+    print(s1.intersection(s2))
