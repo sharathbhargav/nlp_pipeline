@@ -8,8 +8,10 @@ from matplotlib import style
 from sklearn.decomposition import PCA
 
 
-trainingModelGoogle = KeyedVectors.load_word2vec_format("models/GoogleNews-vectors-negative300.bin",binary=True,limit=100000)
-im.setModel(trainingModelGoogle)
+#trainingModelGoogle = KeyedVectors.load_word2vec_format("models/GoogleNews-vectors-negative300.bin",binary=True,limit=100000)
+newsModel= Word2Vec.load("models/newsGroupModel")
+medicalModel = Word2Vec.load("models/medicalModel")
+im.setModel(medicalModel)
 
 document1 = open("documents/news1Hindu","r")
 document2 = open("documents/news1NDTV", "r")
@@ -33,10 +35,13 @@ def getDocumentSimilarityWithoutStopWords(d1,d2):
 
 
 def printSimilarity(documentHandle1,documentHandle2):
-    print("Without stop words",getDocumentSimilarityWithoutStopWords(document2,document3))
+    print("Without stop words",getDocumentSimilarityWithoutStopWords(documentHandle1,documentHandle2))
     documentHandle1.seek(0)
     documentHandle2.seek(0)
-    print("With stop words",getDocumentSimilarityWithStopWords(document2,document3))
+    ignored=open('documents/ignoredWords','r')
+    print("\n","percent ignored",im.getIgnoreWordsPercentage())
+    print("With stop words",getDocumentSimilarityWithStopWords(documentHandle1,documentHandle2))
+    print("\n","Percent ignored",im.getIgnoreWordsPercentage())
     documentHandle1.seek(0)
     documentHandle2.seek(0)
 
@@ -48,9 +53,8 @@ def compressWordVecToPlot(wordVecList):
     pcaOut = pca.fit_transform(numArray)
     return pcaOut
 
-
 def plotDocument(documentHandle,StopWordsRequired=False):
-    (wordVecList,wordList) = im.plotDocumentWords(document1,True)
+    (wordVecList,wordList) = im.plotDocumentWords(documentHandle,StopWordsRequired)
     plotData = compressWordVecToPlot(wordVecList)
     x=[]
     y=[]
@@ -63,5 +67,45 @@ def plotDocument(documentHandle,StopWordsRequired=False):
         plt.annotate(wordList[i],xy)
     plt.show()
 
-plotDocument(document2)
-im.getCommonWordsBetweenDocs(document2,document3)
+
+def plotTwoDocs(documentHandle1,documentHandle2):
+    (wordVecList1,wordList1)=im.plotDocumentWords(documentHandle1,False)
+    (wordVecList2,wordList2)=im.plotDocumentWords(documentHandle2,False)
+    plotData1=compressWordVecToPlot(wordVecList1)
+    plotData2 = compressWordVecToPlot(wordVecList2)
+    x1=[]
+    y1=[]
+    x2=[]
+    y2=[]
+    for k in plotData1:
+        x1.append(k[0])
+        y1.append(k[1])
+    for k in plotData2:
+        x2.append(k[0])
+        y2.append(k[1])
+    plt.scatter(x1,y1,s=10,c="r")
+    for i in range(len(wordList1)):
+        xy = (x1[i], y1[i])
+        plt.annotate(wordList1[i], xy)
+    plt.scatter(x2,y2,s=10,c="b")
+    for i in range(len(wordList2)):
+        xy = (x2[i], y2[i])
+        plt.annotate(wordList2[i], xy)
+    plt.show()
+
+docTest1 = open("datasets/custom/source1/hyderabadibiryani.txt","r")
+docTest2 = open("datasets/custom/source2/hyderabadibiryani.txt","r")
+docTest3 = open("datasets/custom/source2/iPhoneX.txt","r")
+testDocument = open("documents/testDocument")
+printSimilarity(document1,document3)
+commonWords=im.getCommonWordsBetweenDocs(document1,document2)
+
+
+print(commonWords)
+print(len(commonWords))
+docTest1.seek(0)
+docTest2.seek(0)
+docTest3.seek(0)
+testDocument.seek(0)
+#plotDocument(docTest1)
+#plotTwoDocs(docTest1,docTest2)

@@ -8,14 +8,15 @@ import math
 import pickle
 from sklearn.decomposition import PCA
 from algorithms import kMeans as kmeans
-
+from gensim.models import Word2Vec
 from sklearn.cluster import KMeans
 from gensim.models.keyedvectors import KeyedVectors
 
 style.use('ggplot')
 
-trainingModelGoogle = KeyedVectors.load_word2vec_format("models/GoogleNews-vectors-negative300.bin",binary=True,limit=100000)
-im.setModel(trainingModelGoogle)
+#trainingModelGoogle = KeyedVectors.load_word2vec_format("models/GoogleNews-vectors-negative300.bin",binary=True,limit=100000)
+medicalModel = Word2Vec.load("models/medicalModel")
+im.setModel(medicalModel)
 #im.printStopWords()
 def getDocumentsValues(listOfHandles):
     vectors=[]
@@ -85,6 +86,7 @@ path1 = "datasets/bbc/p"
 path2 = "datasets/bbc/b"
 path3 = "datasets/bbc/t"
 path4 = "datasets/bbc/e"
+
 path5 = "datasets/bbc/s"
 """
 plot1=np.array(plotReadyFunc(path1))
@@ -143,7 +145,9 @@ def testing():
     ax.legend()
     fig.add_subplot(ax)
     #fig.add_subplot(aq)
+    print(total)
     plt.show()
+
 
     """
     temp=open("datasets/bbc/002.txt","r")
@@ -178,4 +182,4 @@ def testing():
         """
     plt.show()
 
-#testing()
+testing()

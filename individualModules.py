@@ -6,6 +6,7 @@ import pickle
 import numpy as np
 import math
 import matplotlib.pyplot as plt
+from sklearn.decomposition import PCA
 from matplotlib import style
 style.use("ggplot")
 import re
@@ -97,7 +98,9 @@ def getSentancesListFromDoc(documentHandle,stopWordsRequired):
 def getDocVector(documentHandle,stopWordsRequired=False):
     totalDocVec = np.array([float(0.0) for x in range(vectorSize)])
     countOfWords = 0
+    countOfIgnore=0
     completeList = getSentancesListFromDoc(documentHandle,stopWordsRequired)
+    ignoredWords=open('documents/ignoredWords','w')
     #print(completeList)
     for sentances in completeList:
         #print(sentances)
@@ -110,10 +113,23 @@ def getDocVector(documentHandle,stopWordsRequired=False):
                 totalDocVec += wordVec
                 #print(word, ">>>>>>>>", totalDocVec)
             except:
+                countOfIgnore+=1
+
                 continue
     totalDocVec /= countOfWords
+    ignoredWords.write("Ignored count="+str(countOfIgnore)+"\n")
+    ignoredWords.write("counted="+str(countOfWords))
+    ignoredWords.close()
     return totalDocVec
 
+def getIgnoreWordsPercentage():
+    ignored=open('documents/ignoredWords','r')
+    readWords1=ignored.readline()
+    readWord2=ignored.readline()
+    ignoredCount=(int)(readWords1[15:])
+    counted=(int)(readWord2[8:])
+    percent=ignoredCount/(ignoredCount+counted)
+    return percent
 
 def getSentanceSimilarity(sentance1, sentance2):
     sentenceVector1 = getSentanceVector(sentance1)
@@ -180,4 +196,39 @@ def getCommonWordsBetweenDocs(documentHandle1,documentHandle2):
 
     s1=set(set1)
     s2=set(set2)
-    print(s1.intersection(s2))
+    return s1.intersection(s2)
+
+
+def getPlotValuesOfDocuments(documentHandles):
+    vectors = []
+    for handle in documentHandles:
+        vec=getDocVector(handle)
+        if(len(vec)>0):
+            vectors.append(vec)
+
+    docArray=np.asarray(vectors,dtype=np.float32)
+    pca = PCA(n_components=2)
+    pcaOut = pca.fit_transform(docArray)
+    return pcaOut
+
+
+def compressWordVecToPlot(wordVecList):
+    numArray = np.asarray(wordVecList,dtype=np.float32)
+    pca = PCA(n_components=2)
+    pcaOut = pca.fit_transform(numArray)
+    return pcaOut
+
+
+def plotDocument(documentHandle,StopWordsRequired=False):
+    (wordVecList,wordList) = im.plotDocumentWords(documentHandle,StopWordsRequired)
+    plotData = compressWordVecToPlot(wordVecList)
+    x=[]
+    y=[]
+    for k in plotData:
+        x.append(k[0])
+        y.append(k[1])
+    plt.scatter(x,y,linewidths=2,s=5)
+    for i in range(len(wordList)):
+        xy=(x[i],y[i])
+        plt.annotate(wordList[i],xy)
+    plt.show()
