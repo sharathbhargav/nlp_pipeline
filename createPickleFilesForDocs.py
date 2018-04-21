@@ -58,3 +58,26 @@ pickle.dump(total1,custom2Pickle)
 custom2Names=open("datasets/custom2/plotNamesofDocs","wb")
 pickle.dump(fileNames,custom2Names)
 """
+
+
+
+fileNames=[]
+fileCount=0
+path2="/media/sharathbhragav/New Volume/redditPosts/hot"
+fileHandles1=[]
+
+for fname in os.listdir(path2):
+    file = open(os.path.join(path2, fname))
+    fileHandles1.append(file)
+    fileNames.append(fname)
+    fileCount+=1
+
+plotData = im.getPlotValuesOfDocuments(fileHandles1)
+
+total1=np.array(plotData)
+
+custom2Pickle=open("/media/sharathbhragav/New Volume/redditPosts/hot/plotValuesOfDocs","wb")
+
+pickle.dump(total1,custom2Pickle)
+custom2Names=open("/media/sharathbhragav/New Volume/redditPosts/hot/plotNamesofDocs","wb")
+pickle.dump(fileNames,custom2Names)
