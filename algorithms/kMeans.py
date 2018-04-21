@@ -48,9 +48,9 @@ class K_Means:
         else:
             return im.getDocSimilarity(vec1, vec2)
 
-    def fit(self, data, spherical=False, rotationArray=0):
+    def fit(self, data, spherical=False, rotationArray=[]):
         self.centroids = {}
-        print(np.asarray([5.01, 6.01], dtype=float))
+        #print(np.asarray([5.01, 6.01], dtype=float))
         """
         randomData=[]
         for r in range(self.k):
@@ -63,7 +63,7 @@ class K_Means:
 
         for i in range(self.k):
             self.centroids[i] = rotationArray[i]
-        print(self.centroids)
+        #print(self.centroids)
         for i in range(self.max_iter):
             self.classifications = {}
 
@@ -72,7 +72,7 @@ class K_Means:
             # print("i>>>>>>>>>>>>>>>", i)
             # print("Centroids",self.centroids)
             for featureset in data:
-                # print(featureset)
+                #print(featureset)
                 distances = []
                 for centroid in self.centroids:
                     # print(">>>>>>>>>>>individual",centroid,featureset)
@@ -81,23 +81,23 @@ class K_Means:
                 # distances = [np.linalg.norm(featureset-self.centroids[centroid]) for centroid in self.centroids]
                 # print(distances)
                 classification = distances.index(min(distances))
-                print("classi>>>>>>", classification)
+                #print("classi>>>>>>", classification)
                 self.classifications[classification].append(featureset)
 
-            # print("classificatin>>>>>>>>>>>",self.classifications)
+            #print("classificatin>>>>>>>>>>>",self.classifications)
             prevCentroids = dict(self.centroids)
             for classification in self.classifications:
-                """
+
                 if(len(self.classifications[classification])>1):
                     avg=np.average(self.classifications[classification],axis=0)
                     self.centroids[classification] = avg
                 elif(len(self.classifications[classification])==1):
                     self.centroids[classification] = self.classifications[classification]
-                """
-                # print("Avg>>>>>>>>",self.classifications[classification])
-                self.centroids[classification] = np.average(self.classifications[classification], axis=0)
 
-            print(">>>>>>>>>>>", self.centroids)
+                # print("Avg>>>>>>>>",self.classifications[classification])
+                #self.centroids[classification] = np.average(self.classifications[classification], axis=0)
+
+            #print(">>>>>>>>>>>", self.centroids)
             optimized = True
 
             for c in self.centroids:
@@ -109,44 +109,70 @@ class K_Means:
             if optimized:
                 break
 
+    def getLabels(self,data):
+        labels=[]
+        #print(self.classifications)
+        for entity in range(len(data)):
+
+            for each in range(len(self.classifications)):
+                for classification in self.classifications[each]:
+                    if all(data[entity] ==classification):
+                        labels.append(each)
+        return labels
+
+
+
+
     def predict(self, data):
         distances = [self.getDistance(data, self.centroids[centroid]) for centroid in self.centroids]
         classification = distances.index(min(distances))
         return classification
 
 
+
+
 def execute_kmeans(data, k=3, sphericalDistance=False, showPlot=False, tolerance=0.0001, max_iterations=300,
-                   plotRef=plot):
-    clf = K_Means(k, tolerance=tolerance, max_iterations=max_iterations)
-    # print("predict", clf.predict(data))
+                   plotRef=plot,rotationArray=[]):
 
-    rotationArray = []
-    rStart = 3
-    for r in range(k):
-        rotationArray.append(data[rStart])
-        rStart += 1
-    clf.fit(data, sphericalDistance, rotationArray)
+        clf = K_Means(k, tolerance=tolerance, max_iterations=max_iterations)
+        # print("predict", clf.predict(data))
 
-    if showPlot:
+        try:
 
-        count = 0
-        for centroid in clf.centroids:
-            plotRef.scatter(clf.centroids[centroid][0], clf.centroids[centroid][1], marker="o", color=colors[count],
-                            s=100,
-                            linewidths=5)
-            count = count + 1
+            clf.fit(data, sphericalDistance, rotationArray)
 
-        for classification in clf.classifications:
-            color = colors[classification]
-            if len(clf.classifications[classification]) > 0:
-                for featureSet in clf.classifications[classification]:
-                    plotRef.scatter(featureSet[0], featureSet[1], marker="x", color=color, s=100, linewidths=5)
+        except:
 
-        # plotRef.show()
+            raise Exception("Mean exception")
 
-    return (clf.classifications, clf.centroids)
+        print(clf.getLabels(data))
+        for iteration in range(len(clf.centroids)):
+            if abs(np.mean(clf.centroids[iteration]))>0:
+                continue
+            else:
+                raise Exception("Stupid cluster")
+        if showPlot:
 
-# (c1,c2)=execute_kmeans(testData3,k=3,sphericalDistance=True)
+            count = 0
+            for centroid in clf.centroids:
+                plotRef.scatter(clf.centroids[centroid][0], clf.centroids[centroid][1], marker="o", color=colors[count],
+                                s=100,
+                                linewidths=5)
+                count = count + 1
+
+            for classification in clf.classifications:
+                color = colors[classification]
+                if len(clf.classifications[classification]) > 0:
+                    for featureSet in clf.classifications[classification]:
+                        plotRef.scatter(featureSet[0], featureSet[1], marker="x", color=color, s=100, linewidths=5)
+
+            # plotRef.show()
+        return (clf.classifications, clf.centroids)
+
+
+
+
+#(c1,c2)=execute_kmeans(testData3,k=3,sphericalDistance=True,rotationArray=[testData3[0],testData3[1],testData3[2]])
 
 # print(c1)
 # print(c2)

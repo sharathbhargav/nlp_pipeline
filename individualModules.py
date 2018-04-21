@@ -212,6 +212,7 @@ def getPlotValuesOfDocuments(documentHandles):
     return pcaOut
 
 
+
 def compressWordVecToPlot(wordVecList):
     numArray = np.asarray(wordVecList,dtype=np.float32)
     pca = PCA(n_components=2)

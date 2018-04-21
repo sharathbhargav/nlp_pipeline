@@ -1,0 +1,42 @@
+choosing optimal cluster
+elbow
+silhoutte
+
+
+
+generative
+discriminative classifier model
+
+
+
+evaluating clusters
+f score cluster evaluation  -- need to be tagged i.e u shd know the actual number of clusters in data -- 500 odd docs
+
+Presentation-----suppose different news in business and some other tech where two parties go and sign agreement to buy something-  word2vec sees context as saame and clusters them both into single cluster although they are of different industries
+
+
+
+
+
+
+
+intro:
+tfidf,jaccard lsa eucl etc full math
+word2vec full math
+
+high level cluster ,classifier
+choosing optimal,sillhoutt score , elbow method
+
+
+Cluster evaluation -- fscore
+
+application:
+
+limitations-soft clustering vs hard clustering , kmeans drawbacks complexity(doesnt work for large data) -convergence won't happen, very slow on
+next steps -
+
+
+documentation: clustering
+
+
+flask for rest api  or check in django
