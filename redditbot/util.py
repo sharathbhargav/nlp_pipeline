@@ -5,4 +5,4 @@ def get_file_name(title):
     return name[:-1]
 
 
-file_location = "/home/ullas/PycharmProjects/nlp_pipeline/datasets/reddit/"
+file_location = "/media/sharathbhragav/New Volume/redditPosts/"
