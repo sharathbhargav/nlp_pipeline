@@ -45,15 +45,9 @@ class TFIDFVectorizer:
         return tfidfresult
 
     # Calculates the Euclidean distance between the two files in the given indices
-    def distance(self, fi1, fi2):
-        if fi1 > len(self.files):
-            print("Error. Index 1 out of range")
-            return None
-        elif fi2 > len(self.files):
-            print("Error. Index 2 out of range")
-            return None
-        print("File 1 : " + self.files[fi1])
-        print("File 2 : " + self.files[fi2])
+    def distance(self, f1, f2):
+        fi1 = self.files.index(f1)
+        fi2 = self.files.index(f2)
         bag_1 = self.bag_of_words[fi1]
         bag_2 = self.bag_of_words[fi2]
         term_set = set(bag_1).intersection(set(bag_2))
