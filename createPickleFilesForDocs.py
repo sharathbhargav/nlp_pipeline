@@ -59,8 +59,7 @@ custom2Names=open("datasets/custom2/plotNamesofDocs","wb")
 pickle.dump(fileNames,custom2Names)
 """
 
-
-
+"""
 fileNames=[]
 fileCount=0
 path2="/media/sharathbhragav/New Volume/redditPosts/hot"
@@ -76,8 +75,10 @@ plotData = im.getPlotValuesOfDocuments(fileHandles1)
 
 total1=np.array(plotData)
 
-custom2Pickle=open("/media/sharathbhragav/New Volume/redditPosts/hot/plotValuesOfDocs","wb")
+custom2Pickle=open("/media/sharathbhragav/New Volume/redditPosts/pickles/plotValuesOfDocs","wb")
 
 pickle.dump(total1,custom2Pickle)
-custom2Names=open("/media/sharathbhragav/New Volume/redditPosts/hot/plotNamesofDocs","wb")
+custom2Names=open("/media/sharathbhragav/New Volume/redditPosts/pickles/plotNamesOfDocs","wb")
 pickle.dump(fileNames,custom2Names)
+
+"""

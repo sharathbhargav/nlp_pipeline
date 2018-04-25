@@ -202,9 +202,12 @@ def getCommonWordsBetweenDocs(documentHandle1,documentHandle2):
 def getPlotValuesOfDocuments(documentHandles):
     vectors = []
     for handle in documentHandles:
-        vec=getDocVector(handle)
-        if(len(vec)>0):
-            vectors.append(vec)
+        try:
+            vec=getDocVector(handle)
+            if(len(vec)>0):
+                vectors.append(vec)
+        except:
+            print(handle," failed to read")
 
     docArray=np.asarray(vectors,dtype=np.float32)
     pca = PCA(n_components=2)
