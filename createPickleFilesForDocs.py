@@ -3,9 +3,11 @@ import os
 import individualModules as im
 from gensim.models import Word2Vec
 import numpy as np
+from gensim.models.keyedvectors import KeyedVectors
 
-medicalModel = Word2Vec.load("models/medicalModel")
-im.setModel(medicalModel)
+
+trainingModelGoogle = KeyedVectors.load_word2vec_format("models/GoogleNews-vectors-negative300.bin",binary=True,limit=100000)
+im.setModel(trainingModelGoogle)
 
 """
 pathSuffix=["b","e","p","s","t"]
@@ -45,22 +47,21 @@ for i in range(4):
 
         file = open(os.path.join(path2, fname))
         fileHandles1.append(file)
-        fileNames.append(pathSuffix[i]+"-"+fname)
+        fileNames.append(pathSuffix[i]+"/"+fname)
         fileCount+=1
 
 plotData = im.getPlotValuesOfDocuments(fileHandles1)
 
 total1=np.array(plotData)
 
-custom2Pickle=open("datasets/custom2/plotValuesofDocs","wb")
+custom2Pickle=open("datasets/custom2/plotValuesOfDocs","wb")
 
 pickle.dump(total1,custom2Pickle)
-custom2Names=open("datasets/custom2/plotNamesofDocs","wb")
+custom2Names=open("datasets/custom2/plotNamesOfDocs","wb")
 pickle.dump(fileNames,custom2Names)
+
 """
-
-
-
+"""
 fileNames=[]
 fileCount=0
 path2="/media/sharathbhragav/New Volume/redditPosts/hot"
@@ -76,8 +77,10 @@ plotData = im.getPlotValuesOfDocuments(fileHandles1)
 
 total1=np.array(plotData)
 
-custom2Pickle=open("/media/sharathbhragav/New Volume/redditPosts/hot/plotValuesOfDocs","wb")
+custom2Pickle=open("/media/sharathbhragav/New Volume/redditPosts/pickles/plotValuesOfDocs","wb")
 
 pickle.dump(total1,custom2Pickle)
-custom2Names=open("/media/sharathbhragav/New Volume/redditPosts/hot/plotNamesofDocs","wb")
+custom2Names=open("/media/sharathbhragav/New Volume/redditPosts/pickles/plotNamesOfDocs","wb")
 pickle.dump(fileNames,custom2Names)
+
+"""

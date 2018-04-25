@@ -15,45 +15,74 @@ from matplotlib import style
 trainingModelGoogle = KeyedVectors.load_word2vec_format("models/GoogleNews-vectors-negative300.bin",binary=True,limit=100000)
 im.setModel(trainingModelGoogle)
 nlp = spacy.load('/home/sharathbhragav/anaconda3/lib/python3.6/site-packages/en_core_web_sm/en_core_web_sm-2.0.0')
-pathToData="/media/sharathbhragav/New Volume/redditPosts/hot/"
-pathToPickles="/media/sharathbhragav/New Volume/redditPosts/pickles/"
+#pathToData="/media/sharathbhragav/New Volume/redditPosts/hot/"
+#pathToPickles="/media/sharathbhragav/New Volume/redditPosts/pickles/"
 
-colors = 100 * ["r", "g", "b", "c", "k"]
+pathToData="datasets/custom2/"
+pathToPickles = "datasets/custom2/"
+
+
 removableWords = set(stopwords.words('english'))
 
 extraWords = ['.', ',', '/', '<', '>', '?', ';', '\'', ':', '"', '[', ']', '{', '}', '!', '@', '#', '$', '%', '^',
-                '&', '*', '(', ')', '-', '_', '=', '+', '—', ' ','Reddit','reddit','Lol','Nah']
+                '&', '*', '(', ')', '-', '_', '=', '+', '—', ' ','Reddit','reddit','Lol','Nah','I']
 
 removableWords.update(extraWords)
 def getNamedEntties(path,fileDictionary,numberOfEntities=5):
     organizations = {}
     persons = {}
     places = {}
+    locations={}
+    nouns={}
+    completeSummery={}
     for i in range(len(fileDictionary)):
         clusterOrganization = []
         clusterPerson = []
         clusterPlace = []
-
+        clusterLocation = []
+        clusterNouns = []
+        clusterSummery=[]
         for docName in fileDictionary[i]:
             docTemp = open(path + docName, "r")
             docTempRead=docTemp.read().replace("\n",' ')
             doc = nlp(docTempRead)
+            for eachNoun in doc.noun_chunks:
+                if str(eachNoun).lower() not in removableWords:
+                    clusterNouns.append(str(eachNoun))
+
             for ent in doc.ents:
                 if ent.text not in removableWords:
                     # print(ent.text, ent.start_char, ent.end_char, ent.label_)
                     if ent.label_ == "ORG":
                         clusterOrganization.append(ent.text)
+                        clusterSummery.append(ent.text)
                     if ent.label_ == 'PERSON':
                         clusterPerson.append(ent.text)
+                        clusterSummery.append(ent.text)
+
                     if ent.label_ == "GPE":
                         clusterPlace.append(ent.text)
+                        clusterSummery.append(ent.text)
+                    if ent.label_ == "LOC":
+                        clusterLocation.append(ent.text)
+                        clusterSummery.append(ent.text)
+            #summer_freq = Counter(clusterSummery)
+            #clusterSummery=summer_freq.most_common(10)
+            clusterSummery.append("\n")
             docTemp.close()
+        #clusterNouns = list(set(clusterNouns))
         organizations[i] = clusterOrganization
         persons[i] = clusterPerson
         places[i] = clusterPlace
+        locations[i]=clusterLocation
+        nouns[i]=clusterNouns
+        completeSummery[i]=clusterSummery
         organizations_freq = Counter(clusterOrganization)
         persons_freq = Counter(clusterPerson)
         places_freq = Counter(clusterPlace)
+        locations_freq=Counter(clusterLocation)
+        noun_freq = Counter(clusterNouns)
+        completeSummery_freq = Counter(clusterSummery)
         print("Cluster:", i)
         print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
         print("Organizations")
@@ -62,29 +91,20 @@ def getNamedEntties(path,fileDictionary,numberOfEntities=5):
         print(persons_freq.most_common(numberOfEntities))
         print("Places")
         print(places_freq.most_common(numberOfEntities))
+        print("Locations")
+        print(locations_freq.most_common(numberOfEntities))
+        print("Noun list")
+        print(noun_freq.most_common(20))
+
+        print("Complete summery"," $ ".join(set(clusterSummery)))
+
         print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
 
 
 
 
 
-def plotClusters(eachPointList, eachFileNameList, labels, centroids, anotate=False):
-    count = 0
-    for centroid in centroids:
-        plt.scatter(centroids[centroid][0], centroids[centroid][1], marker="o", color=colors[count], s=75,
-                    linewidths=5)
-        if anotate:
-            xy=(centroids[centroid][0],centroids[centroid][1])
-            plt.annotate("Cluster "+str(count), xy)
-        count = count + 1
-    point = 0
-    for label in labels:
-        plt.scatter(eachPointList[point][0], eachPointList[point][1],marker='x', s=30, color=colors[label],linewidths=5)
-        point+=1
 
-    print("point==",point)
-    print("Count=",count)
-    plt.show()
 
 
 
@@ -96,7 +116,7 @@ total1=pickle.load(custom2Pickle)
 print(fileNames)
 
 normalized=normalize(total1)
-colors = 100 * ["r", "g", "b", "c", "k","y","m","#DD2C00","#795548","#1B5E20","#0091EA","#6200EA","#311B92","#880E4F"]
+
 
 (clusterCount,clf)=exp2.customKMeansComplete(normalized,fileNames)
 
@@ -106,6 +126,6 @@ fileNameDictionary=exp2.getDocClustersNames(clusterCount,labels,fileNames)
 
 print(fileNameDictionary)
 
-#getNamedEntties(pathToData,fileNameDictionary,10)
+getNamedEntties(pathToData,fileNameDictionary,10)
 
-plotClusters(normalized,fileNames,labels,clf.centroids,True)
+im.plotClusters(normalized,fileNames,labels,clf.centroids,True)

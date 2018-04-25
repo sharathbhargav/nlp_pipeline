@@ -24,7 +24,7 @@ from operator import itemgetter
 from algorithms import kMeans as kmeans
 from random import randint
 
-
+"""
 medicalModel = Word2Vec.load("models/medicalModel")
 im.setModel(medicalModel)
 
@@ -40,6 +40,8 @@ custom2Pickle=open("datasets/custom2/plotValuesofDocs","rb")
 total1=pickle.load(custom2Pickle)
 custom2Names=open("datasets/custom2/plotNamesofDocs","rb")
 fileNames=pickle.load(custom2Names)
+
+"""
 """
 
 pathSuffix=["b","e","p","s","t"]
@@ -57,44 +59,70 @@ for each in pathSuffix:
 
 #print(normalized)
 """
+"""
 normalized=normalize(total1)
 colors = 100 * ["r", "g", "b", "c", "k"]
+"""
 
-print(fileNames)
-def skLearnKMeansComplete():
-    errorTable2={}
-    silhoutteScores={}
-    for clusterKmeansNumber in range(2,20):
 
-        clf=KMeans(n_clusters=clusterKmeansNumber)
-        labels=clf.fit_predict(normalized)
-        errorTable2[clusterKmeansNumber]=clf.inertia_
-        centroidsKmeans=clf.cluster_centers_
-        labelsKmeans=clf.labels_
-        silhouette_avg = silhouette_score(normalized,labels)
-        silhoutteScores[clusterKmeansNumber]=silhouette_avg
+colors = 100 * ["r", "g", "b", "c", "k"]
 
 
 
-    sortedSil=sorted(silhoutteScores.items(), key=itemgetter(1))
-    selectedClusterNumber= sortedSil[-1][0]
-    print("selected number of clusters=",selectedClusterNumber)
+
+def getOptimalClustersSilhoutte(data,custom=False):
+    silhoutteScores = {}
+    rotationStored = {}
+    if custom :
+        for clusterKmeansNumber in range(2, 20):
+            try:
+                clf = kmeans.K_Means(clusterKmeansNumber, tolerance=0.00001, max_iterations=800)
+                rotation = randamozieSeed(data, clusterKmeansNumber)
+                clf.fit(data, spherical=True, rotationArray=rotation)
+                labels = clf.getLabels(data)
+                silhouette_avg = silhouette_score(data, labels)
+                silhoutteScores[clusterKmeansNumber] = silhouette_avg
+                rotationStored[clusterKmeansNumber] = rotation
+                #print(clusterKmeansNumber,">>>>>>>",rotation)
+            except:
+                continue
+                #print(clusterKmeansNumber," chucked")
+    else:
+        for clusterKmeansNumber in range(2, 20):
+            clf = KMeans(n_clusters=clusterKmeansNumber)
+            labels = clf.fit_predict(data)
+            silhouette_avg = silhouette_score(data, labels)
+            silhoutteScores[clusterKmeansNumber] = silhouette_avg
+
+    sortedSil = sorted(silhoutteScores.items(), key=itemgetter(1))
+    selectedClusterNumber = sortedSil[-1][0]
+    print("selected number of clusters=", selectedClusterNumber)
+    if custom:
+        return (selectedClusterNumber,rotationStored[selectedClusterNumber])
+    else:
+        return selectedClusterNumber
+
+
+
+def skLearnKMeansComplete(data,fileNames,plot=False):
+    selectedClusterNumber=getOptimalClustersSilhoutte(data,False)
     clf=KMeans(n_clusters=selectedClusterNumber)
-    clf.fit(normalized)
+    clf.fit(data)
     centroidsKmeans=clf.cluster_centers_
     labelsKmeans=clf.labels_
 
+    if plot:
+        i=0
+        for k in data:
+            xy=(k[0],k[1])
+            plt.scatter(k[0],k[1],color=colors[labelsKmeans[i]],marker="o",s=25,linewidths=5)
+            plt.annotate(fileNames[i],xy)
+            i+=1
+        plt.scatter(centroidsKmeans[:,0],centroidsKmeans[:,1],marker='x',s=150,linewidths=5)
+        plt.show()
 
-    i=0
-    for k in normalized:
-        xy=(k[0],k[1])
-        plt.scatter(k[0],k[1],color=colors[labelsKmeans[i]],marker="o",s=25,linewidths=5)
-        plt.annotate(fileNames[i],xy)
-        i+=1
-    plt.scatter(centroidsKmeans[:,0],centroidsKmeans[:,1],marker='x',s=150,linewidths=5)
-    plt.show()
+    return (selectedClusterNumber,clf)
 
-#skLearnKMeansComplete()
 
 
 def randamozieSeed(data,k):
@@ -105,74 +133,60 @@ def randamozieSeed(data,k):
     return outputSeed
 
 
+def customKMeansComplete(data,fileNames,plot=False):
+    (selectedClusterNumber,rotation) = getOptimalClustersSilhoutte(data,True)
 
 
-def customKMeansComplete():
-    silhoutteScores = {}
-    rotationStored={}
-    for clusterKmeansNumber in range(2,20):
-        try:
-            clf = kmeans.K_Means(clusterKmeansNumber, tolerance=0.00001, max_iterations=800)
-            rotation=randamozieSeed(normalized,clusterKmeansNumber)
-            clf.fit(normalized, spherical=True,rotationArray=rotation)
-            labels=clf.getLabels(normalized)
-            silhouette_avg = silhouette_score(normalized, labels)
-            silhoutteScores[clusterKmeansNumber] = silhouette_avg
-            rotationStored[clusterKmeansNumber]=rotation
-            #print(clusterKmeansNumber,">>>>>>>",rotation)
-        except:
-            continue
-            #print(clusterKmeansNumber," chucked")
-
-    sortedSil = sorted(silhoutteScores.items(), key=itemgetter(1))
-    selectedClusterNumber = sortedSil[-1][0]
-    print("selected number of clusters=", selectedClusterNumber, "with sil value ",sortedSil[-1][1])
     clf = kmeans.K_Means(selectedClusterNumber, tolerance=0.00001, max_iterations=800)
     #print(">>>>>>>>>>>>>>>>>final rot",rotationStored[selectedClusterNumber])
-    clf.fit(normalized, spherical=True, rotationArray=rotationStored[selectedClusterNumber])
+    clf.fit(data, spherical=True, rotationArray=rotation)
     classifications=clf.classifications
     centroids=clf.centroids
-    count=0
 
-    for centroid in centroids:
-        plt.scatter(centroids[centroid][0], centroids[centroid][1], marker="o", color=colors[count], s=100,
-                    linewidths=5)
-        count = count + 1
+    if plot:
+        count=0
+        for centroid in centroids:
+            plt.scatter(centroids[centroid][0], centroids[centroid][1], marker="o", color=colors[count], s=100,
+                        linewidths=5)
+            count = count + 1
 
-    for classification in classifications:
-        color = colors[classification]
-        if len(classifications[classification]) > 0:
-            for featureSet in classifications[classification]:
-                plt.scatter(featureSet[0], featureSet[1], marker="x", color=color, s=100, linewidths=5)
+        for classification in classifications:
+            color = colors[classification]
+            if len(classifications[classification]) > 0:
+                for featureSet in classifications[classification]:
+                    plt.scatter(featureSet[0], featureSet[1], marker="x", color=color, s=100, linewidths=5)
 
-    i = 0
-    #print(len(fileNames))
-    #print(len(clf.getLabels(normalized)))
+        i = 0
+        #print(len(fileNames))
+        #print(len(clf.getLabels(normalized)))
+        #print(fileNamesClusters)
 
-    #print(fileNamesClusters)
+        for k in data:
+            xy = (k[0], k[1])
 
+            plt.annotate(fileNames[i], xy)
+            i += 1
 
-
-    for k in normalized:
-        xy = (k[0], k[1])
-
-        plt.annotate(fileNames[i], xy)
-        i += 1
-
-    #plt.show()
-    return (selectedClusterNumber,clf.getLabels(normalized))
+        plt.show()
 
 
-def getDocClustersNames(clusterCount,labels):
+    return (selectedClusterNumber,clf)
+
+
+def getDocClustersNames(clusterCount,labels,fileNames):
     fileNamesClusters = {}
     labelsOfDocs = labels
     for clusterNumber in range(clusterCount):
         singleClusterDocs = []
-        for getDocData in range(len(fileNames)):
+        for getDocData in range(len(labels)):
             if labelsOfDocs[getDocData] == clusterNumber:
                 singleClusterDocs.append(fileNames[getDocData])
         fileNamesClusters[clusterNumber] = singleClusterDocs
 
     return fileNamesClusters
 
-customKMeansComplete()
+
+
+#skLearnKMeansComplete()
+
+#customKMeansComplete()

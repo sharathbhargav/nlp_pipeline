@@ -202,9 +202,12 @@ def getCommonWordsBetweenDocs(documentHandle1,documentHandle2):
 def getPlotValuesOfDocuments(documentHandles):
     vectors = []
     for handle in documentHandles:
-        vec=getDocVector(handle)
-        if(len(vec)>0):
-            vectors.append(vec)
+        try:
+            vec=getDocVector(handle)
+            if(len(vec)>0):
+                vectors.append(vec)
+        except:
+            print(handle," failed to read")
 
     docArray=np.asarray(vectors,dtype=np.float32)
     pca = PCA(n_components=2)
@@ -221,7 +224,7 @@ def compressWordVecToPlot(wordVecList):
 
 
 def plotDocument(documentHandle,StopWordsRequired=False):
-    (wordVecList,wordList) = im.plotDocumentWords(documentHandle,StopWordsRequired)
+    (wordVecList,wordList) = plotDocumentWords(documentHandle,StopWordsRequired)
     plotData = compressWordVecToPlot(wordVecList)
     x=[]
     y=[]
@@ -232,4 +235,27 @@ def plotDocument(documentHandle,StopWordsRequired=False):
     for i in range(len(wordList)):
         xy=(x[i],y[i])
         plt.annotate(wordList[i],xy)
+    plt.show()
+
+
+
+def plotClusters(eachPointList, eachFileNameList, labels, centroids, anotate=False):
+    colors = 100 * ["r", "g", "b", "c", "k", "y", "m", "#DD2C00", "#795548", "#1B5E20", "#0091EA", "#6200EA", "#311B92",
+                    "#880E4F"]
+
+    count = 0
+    for centroid in centroids:
+        plt.scatter(centroid[0], centroid[1], marker="o", color=colors[count], s=75,
+                    linewidths=5)
+        if anotate:
+            xy=(centroids[centroid][0],centroids[centroid][1])
+            plt.annotate("Cluster "+str(count), xy)
+        count = count + 1
+    point = 0
+    for label in labels:
+        plt.scatter(eachPointList[point][0], eachPointList[point][1],marker='x', s=30, color=colors[label],linewidths=5)
+        point+=1
+
+    print("point==",point)
+    print("Count=",count)
     plt.show()
