@@ -7,10 +7,12 @@ import datetime
 def get_hot_posts(num_posts=100):
     reddit = get_reddit_instance()
     directory = file_location + 'hot/'
+    i=0
     for post in reddit.front.hot(limit=num_posts):
-        fname = directory + datetime.datetime.now().strftime("%y-%m-%d") + '_' + get_file_name(post.title)
+        fname = directory + datetime.datetime.now().strftime("%y-%m-%d") + '_' + str(i)#get_file_name(post.title)
         print(fname)
-        f = open(fname, 'w+')
+        i=i+1
+        f = open(fname, 'w')
         f.write(post.title + '\n')
         f.write(post.selftext + '\n')
         process_comments(post.comments.list(), f)
@@ -88,4 +90,4 @@ def get_top_posts(num_posts=100):
     return directory
 
 
-get_controversial_posts(5)
+get_hot_posts(150)
