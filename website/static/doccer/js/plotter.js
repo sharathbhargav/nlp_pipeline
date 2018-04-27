@@ -19,7 +19,7 @@ function load(data) {
 
     var layout = {
         hovermode : 'closest',
-        title : 'Trial Clustering'
+        title : 'A Cluster of Documents'
     };
 
     var plot = document.getElementById('plot');
@@ -49,5 +49,16 @@ function load(data) {
     plot.on('plotly_unhover', function(data){
         var infoText = '';
         entities.innerHTML = infoText;
+    });
+
+    plot.on('plotly_click', function(data){
+        var pn = '';
+        for(var i=0; i < data.points.length; i++){
+            pn = data.points[i].pointNumber;
+        };
+        var file = filenames[pn];
+        var url = 'http://127.0.0.1:8000/doccer/displaydoc/' + file.replace(new RegExp('/', 'g'), '+');
+        var win = window.open(url, '_blank');
+        win.focus();
     });
 }

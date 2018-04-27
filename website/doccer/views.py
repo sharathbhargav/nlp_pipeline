@@ -26,3 +26,15 @@ def fetch_documents(request):
         pm.get_gilded_posts(n_docs)
     json_data = json.load(open("/home/ullas/PycharmProjects/nlp_pipeline/website/static/doccer/js/plot.json"))
     return render_to_response('doccer/plot.html', {'data' : mark_safe(json_data)})
+
+
+def display_file(request, file_loc):
+    file_loc = file_loc.replace('+', '/')
+    f = open(file_loc, 'r')
+    file_data = str()
+    next = f.readline()
+    while next != "":
+        file_data += next + '<br />'
+        next = f.readline()
+    f.close()
+    return HttpResponse(file_data)
