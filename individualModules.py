@@ -21,9 +21,9 @@ punctuations = ['.', ',', '/', '<', '>', '?', ';', '\'', ':', '"', '[', ']', '{'
 removableWords.update(punctuations)
 vectorSize = 300
 
-temp = open("/home/sharathbhragav/PycharmProjects/nlp_pipeline/models/harryPotterFullWord2VecModelSize300", "rb")
-trainingModelGoogle = pickle.load(temp)
-modelUsed = trainingModelGoogle
+#temp = open("/home/sharathbhragav/PycharmProjects/nlp_pipeline/models/harryPotterFullWord2VecModelSize300", "rb")
+#trainingModelGoogle = pickle.load(temp)
+modelUsed = None
 
 
 def printStopWords():

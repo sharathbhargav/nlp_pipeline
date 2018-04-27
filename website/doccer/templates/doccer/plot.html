@@ -1,0 +1,20 @@
+<head>
+    <title>Plot</title>
+    {% load static %}
+    <script type="text/javascript" src="{% static 'doccer/js/plotly-latest.min.js' %}"> </script>
+    <!--script type="text/javascript" src="{% static 'doccer/js/plot.json' %}"></script-->
+    <script type="text/javascript" src="{% static 'doccer/js/plotter.js' %}"></script>
+    <!--link rel="stylesheet" href="{% static 'doccer/css/plotstyle.css' %}"-->
+</head>
+<body>
+    <div id="plot" style="width: 800px; height: 500px;">
+
+    </div>
+    <div id="named_entities" style="width: 500px; height: 300px;">
+
+    </div>
+</body>
+<script type="text/javascript">
+        data_from_django = {{ data }};
+        load(data_from_django);
+</script>
