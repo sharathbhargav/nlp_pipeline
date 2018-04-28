@@ -11,12 +11,14 @@ import spacy
 from spacy.lang.en.stop_words import STOP_WORDS
 import matplotlib.pyplot as plt
 from matplotlib import style
+from plotting.plotdata import PlottingData
 
-trainingModelGoogle = KeyedVectors.load_word2vec_format("models/GoogleNews-vectors-negative300.bin",binary=True,limit=100000)
+
+trainingModelGoogle = KeyedVectors.load_word2vec_format("models/GoogleNews-vectors-negative300.bin",binary=True,limit=10000)
 im.setModel(trainingModelGoogle)
-nlp = spacy.load('/home/sharathbhragav/anaconda3/lib/python3.6/site-packages/en_core_web_sm/en_core_web_sm-2.0.0')
-pathToData="/media/sharathbhragav/New Volume/redditPosts/hot/"
-pathToPickles="/media/sharathbhragav/New Volume/redditPosts/pickles/"
+nlp = spacy.load('/home/ullas/anaconda3/lib/python3.6/site-packages/en_core_web_sm/en_core_web_sm-2.0.0')
+pathToData="/home/ullas/PycharmProjects/nlp_pipeline/datasets/reddit/hot/"
+pathToPickles="/home/ullas/PycharmProjects/nlp_pipeline/datasets/reddit/pickles/"
 
 colors = 100 * ["r", "g", "b", "c", "k"]
 removableWords = set(stopwords.words('english'))
@@ -51,6 +53,9 @@ def getNamedEntties(path,fileDictionary,numberOfEntities=5):
         organizations[i] = clusterOrganization
         persons[i] = clusterPerson
         places[i] = clusterPlace
+
+
+    '''
         organizations_freq = Counter(clusterOrganization)
         persons_freq = Counter(clusterPerson)
         places_freq = Counter(clusterPlace)
@@ -63,8 +68,7 @@ def getNamedEntties(path,fileDictionary,numberOfEntities=5):
         print("Places")
         print(places_freq.most_common(numberOfEntities))
         print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
-
-
+    '''
 
 
 
@@ -87,25 +91,37 @@ def plotClusters(eachPointList, eachFileNameList, labels, centroids, anotate=Fal
     plt.show()
 
 
-
+pd = PlottingData()
 
 custom2Names=open(pathToPickles+"plotNamesOfDocs","rb")
 fileNames=pickle.load(custom2Names)
 custom2Pickle=open(pathToPickles+"plotValuesOfDocs","rb")
 total1=pickle.load(custom2Pickle)
-print(fileNames)
+#print(fileNames)
+
+pd.set_filenames(fileNames)
 
 normalized=normalize(total1)
+print(normalized)
+#print("n = " + str(len(normalized)))
+pd.set_points(normalized)
 colors = 100 * ["r", "g", "b", "c", "k","y","m","#DD2C00","#795548","#1B5E20","#0091EA","#6200EA","#311B92","#880E4F"]
 
 (clusterCount,clf)=exp2.customKMeansComplete(normalized,fileNames)
 
-labels=clf.getLabels(normalized)
 
+
+labels=clf.getLabels(normalized)
+# labels : which cluster it belongs to
+pd.set_colors(labels)
 fileNameDictionary=exp2.getDocClustersNames(clusterCount,labels,fileNames)
 
-print(fileNameDictionary)
+pd.set_clusters(clusterCount, fileNameDictionary)
+
+#print(fileNameDictionary)
 
 #getNamedEntties(pathToData,fileNameDictionary,10)
 
-plotClusters(normalized,fileNames,labels,clf.centroids,True)
+#plotClusters(normalized,fileNames,labels,clf.centroids,True)
+
+#pd.status()

@@ -9,7 +9,6 @@ from docsimilarity.similarity import euclidean_similarity
 import matplotlib.pyplot as plt
 from os import listdir
 from os.path import isdir, isabs, abspath
-from os import PathLike
 import csv
 
 
@@ -17,8 +16,9 @@ class TDMatrix:
     def __init__(self, ldocs=None, directory=None, load_from = None, store_to=None):
         self.load_from = load_from
         self.store_to = store_to
+        self.path = "/home/ullas/PycharmProjects/nlp_pipeline/"
         if directory is None and ldocs is not None:
-            print('1')
+            #print('1')
             self.ldocs = ldocs
             self.n = len(self.ldocs)
             d = ldocs[0].split('/')
@@ -27,12 +27,12 @@ class TDMatrix:
                 dd = dd + dname + '/'
             self.directories = [dd]
         elif directory is not None and ldocs is not None:
-            print('2')
+            #print('2')
             self.ldocs = [directory + '/' + doc for doc in ldocs]
             self.directories = [directory]
             self.n = len(self.ldocs)
         elif directory is not None and ldocs is None:
-            print('3')
+            #print('3')
             self.directories = list()
             self.ldocs = list()
             files = listdir(directory)
@@ -60,7 +60,7 @@ class TDMatrix:
 
     def _generate(self):
         if self.load_from is None and self.store_to is not None:
-            print('TDM to CSV')
+            #print('TDM to CSV')
             g = dict()
             # Calculating global weights for each word
             for iword, word in enumerate(self.bag_of_words):
@@ -78,21 +78,21 @@ class TDMatrix:
                 for jdoc, doc in enumerate(self.ldocs):
                     if word in self.doc_words[jdoc]:
                         self.tdmatrix[iword][jdoc] = g[word] * log(self.doc_words[jdoc].count(word) + 1)
-            print("TDM Done")
-            csv_filename = "../models/" + self.store_to
+            #print("TDM Done")
+            csv_filename = self.path + "models/" + self.store_to
             csv_file = open(csv_filename + '_tdmatrix.csv', 'w+')
             writer = csv.writer(csv_file, delimiter=',')
             for row in self.tdmatrix:
                 writer.writerow(row)
             csv_file.close()
         elif self.load_from is not None and self.store_to is None:
-            print('TDM from CSV')
-            csv_filename = "../models/" + self.load_from
+            #print('TDM from CSV')
+            csv_filename = self.path + "models/" + self.load_from
             csv_file = open(csv_filename + '_tdmatrix.csv', 'r')
             reader = csv.reader(csv_file)
             for irow, row in enumerate(reader):
                 for icol, val in enumerate(row):
-                    self.tdmatrix[irow][icol] = val
+                    self.tdmatrix[irow][icol] = float(val)
             csv_file.close()
         self._decompose()
 
@@ -102,9 +102,9 @@ class TDMatrix:
         else:
             self.dimension = 300
         if self.load_from is None and self.store_to is not None:
-            print('SVD to CSV')
+            #print('SVD to CSV')
             self.u, self.sigma, self.vt = randomized_svd(self.tdmatrix, n_components = self.dimension)
-            csv_filename = "../models/" + self.store_to
+            csv_filename = self.path + "models/" + self.store_to
             csv_u = open(csv_filename + '_u.csv', 'w+')
             csv_sigma = open(csv_filename + '_sigma.csv', 'w+')
             csv_vt = open(csv_filename + '_vt.csv', 'w+')
@@ -121,8 +121,8 @@ class TDMatrix:
             csv_sigma.close()
             csv_vt.close()
         elif self.load_from is not None and self.store_to is None:
-            print('SVD from CSV')
-            csv_filename = "../models/" + self.load_from
+            #print('SVD from CSV')
+            csv_filename = self.path + "models/" + self.load_from
             csv_u = open(csv_filename + '_u.csv', 'r')
             csv_sigma = open(csv_filename + '_sigma.csv', 'r')
             csv_vt = open(csv_filename + '_vt.csv', 'r')
@@ -133,25 +133,26 @@ class TDMatrix:
             for irow, row in enumerate(reader_u):
                 self.u.append(list())
                 for icol, val in enumerate(row):
-                    self.u[irow].append(val)
+                    self.u[irow].append(float(val))
             self.sigma = list()
 
-            for val in reader_sigma:
-                self.sigma.append(val)
+            for irow, row in enumerate(reader_sigma):
+                for icol, val in enumerate(row):
+                    self.sigma.append(float(val))
 
             self.vt = list()
             for irow, row in enumerate(reader_vt):
                 self.vt.append(list())
                 for icol, val in enumerate(row):
-                    self.vt[irow].append(val)
+                    self.vt[irow].append(float(val))
             csv_u.close()
             csv_sigma.close()
             csv_vt.close()
-        print("SVD Done")
-        print("X : " + str(len(self.tdmatrix)) + " x " + str(len(self.tdmatrix[0])))
-        print("U : " + str(len(self.u)) + " x " + str(len(self.u[0])))
-        print("Sigma : " + str(len(self.sigma)))
-        print("Vt : " + str(len(self.vt)) + " x " + str(len(self.vt[0])))
+        #print("SVD Done")
+        #print("X : " + str(len(self.tdmatrix)) + " x " + str(len(self.tdmatrix[0])))
+        #print("U : " + str(len(self.u)) + " x " + str(len(self.u[0])))
+        #print("Sigma : " + str(len(self.sigma)))
+        #print("Vt : " + str(len(self.vt)) + " x " + str(len(self.vt[0])))
 
     def _get_doc_column(self, index):
         col_matrix = []
@@ -159,11 +160,14 @@ class TDMatrix:
             col_matrix.append(row[index])
         return col_matrix
 
-    def get_doc_vector(self, doc_index, n_dim=None):
+    def get_doc_vector(self, doc_index=None, doc_name=None, n_dim=None):
         if n_dim is None:
             n_dim = self.dimension
-        td_column = self._get_doc_column(doc_index)
-        if n_dim is None:
+        if doc_name is None:
+            td_column = self._get_doc_column(doc_index)
+        elif doc_index is None:
+            td_column = self._get_doc_column(self.ldocs.index(doc_name))
+        if n_dim == self.dimension:
             sigma_inverse = [1 / s for s in self.sigma]
             ut = transpose(self.u)
         else:
@@ -177,9 +181,9 @@ class TDMatrix:
         colors = ['b', 'g', 'r', 'c', 'm']
         self.plot_axes = 2
         if self.load_from is None and self.store_to is not None:
-            print('Plot to CSV')
+            #print('Plot to CSV')
             self.plot_u, self.plot_sigma, self.plot_vt = randomized_svd(self.tdmatrix, n_components=self.plot_axes)
-            csv_filename = "../models/" + self.store_to
+            csv_filename = self.path + "models/" + self.store_to
             csv_u = open(csv_filename + '_plot_u.csv', 'w+')
             csv_sigma = open(csv_filename + '_plot_sigma.csv', 'w+')
             csv_vt = open(csv_filename + '_plot_vt.csv', 'w+')
@@ -196,8 +200,8 @@ class TDMatrix:
             csv_sigma.close()
             csv_vt.close()
         elif self.load_from is not None and self.store_to is None:
-            print('Plot from CSV')
-            csv_filename = "../models/" + self.load_from
+            #print('Plot from CSV')
+            csv_filename = self.path + "models/" + self.load_from
             csv_u = open(csv_filename + '_plot_u.csv', 'r')
             csv_sigma = open(csv_filename + '_plot_sigma.csv', 'r')
             csv_vt = open(csv_filename + '_plot_vt.csv', 'r')
@@ -208,31 +212,33 @@ class TDMatrix:
             for irow, row in enumerate(reader_u):
                 self.plot_u.append(list())
                 for icol, val in enumerate(row):
-                    self.plot_u[irow].append(val)
+                    self.plot_u[irow].append(float(val))
 
             self.plot_sigma = list()
-            for val in reader_sigma:
-                self.plot_sigma.append(val)
+            for irow, row in enumerate(reader_sigma):
+                for icol, val in enumerate(row):
+                    self.plot_sigma.append(float(val))
 
             self.plot_vt = list()
             for irow, row in enumerate(reader_vt):
                 self.plot_vt.append(list())
                 for icol, val in enumerate(row):
-                    self.plot_vt[irow].append(val)
+                    self.plot_vt[irow].append(float(val))
             csv_u.close()
+            csv_sigma.close()
             csv_sigma.close()
             csv_vt.close()
 
-        print("Plot SVD Done")
-        print("U : " + str(len(self.plot_u)) + " x " + str(len(self.plot_u[0])))
-        print("Sigma : " + str(len(self.plot_sigma)))
-        print("Vt : " + str(len(self.plot_vt)) + " x " + str(len(self.plot_vt[0])))
+        #print("Plot SVD Done")
+        #print("U : " + str(len(self.plot_u)) + " x " + str(len(self.plot_u[0])))
+        #print("Sigma : " + str(len(self.plot_sigma)))
+        #print("Vt : " + str(len(self.plot_vt)) + " x " + str(len(self.plot_vt[0])))
         vectors = list()
         for idir, dirname in enumerate(self.directories):
             vectors.append(list())
             for file in listdir(dirname):
                 index = self.ldocs.index(dirname + file)
-                vectors[idir].append(self.get_doc_vector(index, self.plot_axes))
+                vectors[idir].append(self.get_doc_vector(doc_index=index, n_dim=self.plot_axes))
         X = list()
         Y = list()
         for i in range(len(vectors)):
@@ -246,40 +252,23 @@ class TDMatrix:
             plt.scatter(X[i], Y[i], c=colors[i])
         plt.show()
 
+'''
+d = "/home/ullas/PycharmProjects/nlp_pipeline/datasets/bbc/"
 
-
-f1 = "/home/ullas/nltk_trial/corpora/hp/ff_ootp.txt"
-f2 = "/home/ullas/nltk_trial/corpora/eragon/eldest.txt"
-f3 = "/home/ullas/nltk_trial/corpora/eragon/brisingr.txt"
-f4 = "/home/ullas/nltk_trial/corpora/eragon/eragon.txt"
-
-from os import listdir
-d = "/home/suhas/PycharmProjects/nlp_pipeline/datasets/bbc/"
-#files = [d + '/' +f for f in listdir("/home/ullas/PycharmProjects/nlp_pipeline/datasets/bbc/business")]
 import time
+
 st_time = time.time()
-lsa = TDMatrix(directory=d, store_to='bbc')
+lsa = TDMatrix(directory=d, load_from='bbc')
 en_time = time.time()
 t = en_time - st_time
 t /= 60
-print("Time taken = " + str(t) + " minutes")
-lsa.plot()
+print("Time taken for model construction = " + str(t) + " minutes")
 
+#st_time = time.time()
 #lsa.plot()
-#vectors = [lsa.get_doc_vector(i) for i in range(len(files))]
-#print("Vectors Calculated")
-
-'''
-fn = "/home/ullas/dists.txt"
-f = open(fn, 'w+')
-for i in range(len(files)):
-    for j in range(len(files)):
-        if i != j:
-            f.write(str(euclidean_similarity(vectors[i], vectors[j])) + '\n')
-
-print("Distances Calculated")
-
-f.close()
+#en_time = time.time()
+#t = en_time - st_time
+#print("Time taken for plotting = " + str(t) + " seconds")
 '''
 
 

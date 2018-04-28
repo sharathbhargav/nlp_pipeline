@@ -23,7 +23,7 @@ vectorSize = 300
 
 #temp = open("/home/sharathbhragav/PycharmProjects/nlp_pipeline/models/harryPotterFullWord2VecModelSize300", "rb")
 #trainingModelGoogle = pickle.load(temp)
-modelUsed = True
+modelUsed = None
 
 
 def printStopWords():
