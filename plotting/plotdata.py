@@ -1,6 +1,6 @@
 import json
 
-json_loc = "/home/ullas/PycharmProjects/nlp_pipeline/website/doccer/static/doccer/js/"
+json_loc = "/home/suhas/PycharmProjects/nlp_pipeline/website/doccer/static/doccer/js/"
 
 class PlottingData:
     def __init__(self):
