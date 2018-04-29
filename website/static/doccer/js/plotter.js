@@ -23,7 +23,8 @@ function load(data) {
     };
 
     var plot = document.getElementById('plot');
-    var entities = document.getElementById('named_entities');
+    var entities = document.getElementById('named_entities_text');
+    var entities_fname = document.getElementById('named_entities_filename');
 
     //Dummy Stuff
     var dummy_named_entities = ['Apple', 'Google', 'Modi', 'Eggs', 'Sopranos'];
@@ -39,11 +40,11 @@ function load(data) {
 
         //Creating a dummy info out of dummy entities
         var infoText = '';
-        infoText = infoText + file + '<br>';
         for (var i=0 ; i<dummy_named_entities.length ; i++){
             infoText = infoText + dummy_named_entities[i] + ', ';
         };
-        entities.innerHTML = infoText;
+        entities_fname.innerHTML = file;
+        //entities.text(infoText);
     });
 
     plot.on('plotly_unhover', function(data){
