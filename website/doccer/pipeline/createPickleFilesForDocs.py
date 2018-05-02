@@ -3,12 +3,13 @@ import os
 from . import individualModules as im
 import numpy as np
 from gensim.models.keyedvectors import KeyedVectors
+from django.conf import settings
 
 
 def generate_pickle_files(fpath):
     print("Generating Pickle files.")
     trainingModelGoogle = KeyedVectors.load_word2vec_format(
-        "/home/ullas/PycharmProjects/nlp_pipeline/models/GoogleNews-vectors-negative300.bin",
+        os.path.join(settings.BASE_DIR, 'models/GoogleNews-vectors-negative300.bin'),
         binary=True,
         limit=10000)
     im.setModel(trainingModelGoogle)
@@ -24,10 +25,10 @@ def generate_pickle_files(fpath):
     for fh in file_handles:
         fh.close()
     total1 = np.array(plot_data)
-    custom2Pickle = open("/home/ullas/PycharmProjects/nlp_pipeline/website/reddit/pickles/plotValuesOfDocs", "wb")
+    custom2Pickle = open(os.path.join(settings.BASE_DIR, 'pickles/plotValuesOfDocs'), "wb")
     pickle.dump(total1, custom2Pickle)
     custom2Pickle.close()
-    custom2Names = open("/home/ullas/PycharmProjects/nlp_pipeline/website/reddit/pickles/plotNamesOfDocs", "wb")
+    custom2Names = open(os.path.join(settings.BASE_DIR, 'pickles/plotNamesOfDocs'), "wb")
     pickle.dump(file_names, custom2Names)
     custom2Names.close()
     print("Done generating pickle files.")
