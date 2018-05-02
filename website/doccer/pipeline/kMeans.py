@@ -1,9 +1,7 @@
 import numpy as np
-import individualModules as im
+from . import individualModules as im
 import matplotlib.pyplot as plot
-from gensim.models.keyedvectors import KeyedVectors
 from matplotlib import style
-from random import randint
 
 style.use("ggplot")
 
@@ -57,7 +55,6 @@ class K_Means:
             random=r+1
             random1=[random*0.0256,random*0.0885]
             randomData.append(random1)
-
         randomArray=np.array(randomData)
         """
 

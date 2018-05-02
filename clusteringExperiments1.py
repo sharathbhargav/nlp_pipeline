@@ -1,15 +1,9 @@
 from gensim.models import Word2Vec
-import individualModules as im
-from algorithms import kMeans as kmeans
+from website.doccer.pipeline import individualModules as im
 import matplotlib.pyplot as plt
 from matplotlib import style
 import numpy as np
-import math
 import pickle
-from sklearn.decomposition import PCA
-import os
-from sklearn.cluster import KMeans
-from sklearn.metrics import silhouette_samples, silhouette_score
 
 #trainingModelGoogle = KeyedVectors.load_word2vec_format("models/GoogleNews-vectors-negative300.bin",binary=True,limit=100000)
 #newsModel= Word2Vec.load("models/newsGroupModel")
@@ -118,7 +112,7 @@ for clusterNumber in range(2,20):
 
 
     try:
-        (classifications, centroids) = kmeans.execute_kmeans(total1, k=clusterNumber, showPlot=False, plotRef=plt,
+        (classifications, centroids) = kMeans.execute_kmeans(total1, k=clusterNumber, showPlot=False, plotRef=plt,
                                                              rotationArray=rotationArray)
 
         #print(centroids)

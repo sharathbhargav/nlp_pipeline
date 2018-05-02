@@ -1,14 +1,22 @@
 function load(data) {
     var filenames = data['fnames'];
     var X = [], Y = [], colors = [];
+    var org = [], person = [], place = [], loc = [], noun = [], summary = [];
     var i = 0;
     for (i=0 ; i<filenames.length ; i++){
-        //document.write("x = " + data[filenames[i]]['xy'][0] + " ; y = " + data[filenames[i]]['xy'][1] + '<br>');
         X[i] = data[filenames[i]]['xy'][0];
         Y[i] = data[filenames[i]]['xy'][1];
-        colors[i] = data[filenames[i]]['color']
-    }
+        colors[i] = data[filenames[i]]['color'];
+        org[i] = data[filenames[i]]['org_entities'];
+        person[i] = data[filenames[i]]['person_entities'];
+        place[i] = data[filenames[i]]['place_entities'];
+        loc[i] = data[filenames[i]]['loc_entities'];
+        noun[i] = data[filenames[i]]['noun_entities'];
+        summary[i] = data[filenames[i]]['summary'];
+    };
 
+    var file_entities = [org, person, place, loc, noun];
+    var file_entities_names = ['Organizations', 'Persons', 'Places', 'Locations', 'Nouns'];
     var plot_data = [{
         x : X,
         y : Y,
@@ -23,10 +31,8 @@ function load(data) {
     };
 
     var plot = document.getElementById('plot');
-    var entities = document.getElementById('named_entities');
-
-    //Dummy Stuff
-    var dummy_named_entities = ['Apple', 'Google', 'Modi', 'Eggs', 'Sopranos'];
+    var entities = document.getElementById('named_entities_text');
+    var entities_fname = document.getElementById('named_entities_filename');
 
     Plotly.newPlot(plot, plot_data, layout);
 
@@ -37,18 +43,25 @@ function load(data) {
         };
         var file = filenames[pn];
 
-        //Creating a dummy info out of dummy entities
         var infoText = '';
-        infoText = infoText + file + '<br>';
-        for (var i=0 ; i<dummy_named_entities.length ; i++){
-            infoText = infoText + dummy_named_entities[i] + ', ';
+        for (var i=0 ; i<file_entities.length ; i++){
+            infoText = infoText + '<b>' +file_entities_names[i] + '</b> : ';
+            for(var j=0 ; j<file_entities[i][pn].length ; j++){
+                infoText = infoText + file_entities[i][pn][j] + ', ';
+            };
+            infoText += '<hr />';
         };
+        infoText += '<b>Summary</b> : ';
+        for (var i=0 ; i<summary[pn].length ; i++){
+            infoText += summary[pn][i] + ' ';
+        };
+        entities_fname.innerHTML = file;
         entities.innerHTML = infoText;
     });
 
     plot.on('plotly_unhover', function(data){
-        var infoText = '';
-        entities.innerHTML = infoText;
+        //entities.innerHTML = '<filename>';
+        //entities_fname.innerHTML = '<entities>';
     });
 
     plot.on('plotly_click', function(data){

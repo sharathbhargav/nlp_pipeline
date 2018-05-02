@@ -1,19 +1,62 @@
 <!DOCTYPE html>
 <head>
-    <title>FATALITY!!!!!</title>
+    <title>Home</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'doccer/css/homepage.css' %}">
+    <link rel="stylesheet" href="{% static 'doccer/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'doccer/css/bootstrap-grid.css' %}">
+    <link rel="stylesheet" href="{% static 'doccer/css/bootstrap-reboot.css' %}">
+    <script type="text/javascript" src="{% static 'doccer/js/homepage.js' %}"></script>
 </head>
 <body>
-    <form action="http://127.0.0.1:8000/doccer/fetch">
-        <input type="number" name="n_docs">
-        <table>
-            <tr>
-                <td><input type="submit" name="reddit" value="hot"></td>
-                <td><input type="submit" name="reddit" value="new"></td>
-                <td><input type="submit" name="reddit" value="rising"></td>
-                <td><input type="submit" name="reddit" value="controversial"></td>
-                <td><input type="submit" name="reddit" value="top"></td>
-                <td><input type="submit" name="reddit" value="gilded"></td>
-            </tr>
-        </table>
+    <a href="http://127.0.0.1:8000/doccer">
+        <img src="{% static 'doccer/images/reddit_logo.png' %}" alt="Reddit Logo" width="600" height="200" id="r_logo">
+    </a>
+    <form class="form" action="http://127.0.0.1:8000/doccer/fetch" id="r_form" onsubmit="pleasewait()">
+        <div class="row" id="r_form_row_1">
+            <div class="col" align="center">
+                <input class="form-control form-control-lg col-md-6" type="number" name="n_docs" placeholder="Number of Docs (Optional)">
+            </div>
+        </div>
+        <div class="form-row" id="r_form_row_2">
+            <div class="col" align="center">
+                <input class="btn col-md-12 btn-danger btn-lg" type="submit" name="reddit" value="Hot">
+            </div>
+            <div class="col" align="center">
+                <input class="btn col-md-12 btn-success btn-lg" type="submit" name="reddit" value="New">
+            </div>
+            <div class="col" align="center">
+                <input class="btn col-md-12 btn-primary btn-lg" type="submit" name="reddit" value="Rising">
+            </div>
+            <div class="col" align="center">
+                <input class="btn col-md-12 btn-warning btn-lg" type="submit" name="reddit" value="Controversial">
+            </div>
+            <div class="col" align="center">
+                <input class="btn col-md-12 btn-info btn-lg" type="submit" name="reddit" value="Top">
+            </div>
+            <div class="col" align="center">
+                <input class="btn col-md-12 btn-dark btn-lg" type="submit" name="reddit" value="Gilded">
+            </div>
+        </div>
     </form>
+    
+    <form class="form" action="http://127.0.0.1:8000/doccer/offline">
+        <div class="row">
+            <div class="col" align="center">
+                <input class="form-control col-md-3" id="files_list" type="file" webkitdirectory directory multiple>
+                <input class="btn btn-primary" type="submit" name="reddit" value="Submit">
+            </div>
+        </div>
+    </form>
+
+    <div id="wait_modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Please Wait!!</h2>
+            </div>
+            <div class="modal-body">
+                <p>Fetching and Processing the documents...</p>
+            </div>
+        </div>
+    </div>
 </body>
