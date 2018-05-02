@@ -12,7 +12,7 @@
     <a href="http://127.0.0.1:8000/doccer">
         <img src="{% static 'doccer/images/reddit_logo.png' %}" alt="Reddit Logo" width="600" height="200" id="r_logo">
     </a>
-    <form class="form" action="http://127.0.0.1:8000/doccer/fetch" id="r_form" onsubmit="pleasewait()">
+    <form class="form" action="http://127.0.0.1:8000/doccer/fetch" id="r_form" onsubmit="pleasewait()" method="GET">
         <div class="row" id="r_form_row_1">
             <div class="col" align="center">
                 <input class="form-control form-control-lg col-md-6" type="number" name="n_docs" placeholder="Number of Docs (Optional)">
@@ -40,14 +40,16 @@
         </div>
     </form>
     
-    <form class="form" action="http://127.0.0.1:8000/doccer/offline">
+    <form class="form" id="offline_form">
         <div class="row">
             <div class="col" align="center">
-                <input class="form-control col-md-3" id="files_list" type="file" webkitdirectory directory multiple>
-                <input class="btn btn-primary" type="submit" name="reddit" value="Submit">
+                <input class="form-control col-md-3" id="files_list" type="file" webkitdirectory directory multiple oninput="filelist(event)">
+                <button type="button" class="btn btn-info" onclick="submitoffline()" id="offline_submit">Submit</button>
             </div>
         </div>
     </form>
+
+    <ul id="listing"></ul>
 
     <div id="wait_modal" class="modal">
         <div class="modal-content">
@@ -56,6 +58,17 @@
             </div>
             <div class="modal-body">
                 <p>Fetching and Processing the documents...</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="wait_offline_modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Please Wait!!</h2>
+            </div>
+            <div class="modal-body">
+                <p>Processing the documents...</p>
             </div>
         </div>
     </div>

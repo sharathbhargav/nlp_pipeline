@@ -25,6 +25,10 @@
     vertical-align: bottom;
 }
 
+#offline_submit {
+    margin-top: 10px;
+}
+
 .modal {
     display: block; /* Hidden by default */
     position: fixed; /* Stay in place */

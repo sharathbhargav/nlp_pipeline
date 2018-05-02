@@ -4,6 +4,7 @@ import pickle
 from sklearn.preprocessing import normalize
 from plotting.plotdata import PlottingData
 import os
+from django.conf import settings
 
 
 
@@ -19,12 +20,11 @@ import os
 def run(fpath):
     print("Beginning Clustering")
     pathToData = fpath
+    pathToPickles = os.path.join(settings.BASE_DIR, 'pickles/')
 
-    pathToPickles = "/home/ullas/PycharmProjects/nlp_pipeline/website/reddit/pickles/"
-
-    custom2Names=open(pathToPickles+"plotNamesOfDocs","rb")
+    custom2Names=open(os.path.join(pathToPickles, 'plotNamesOfDocs'), 'rb')
     fileNames=pickle.load(custom2Names)
-    custom2Pickle=open(pathToPickles+"plotValuesOfDocs","rb")
+    custom2Pickle=open(os.path.join(pathToPickles, 'plotValuesOfDocs'), 'rb')
     total1=pickle.load(custom2Pickle)
 
 
@@ -42,7 +42,9 @@ def run(fpath):
     for each in range(len(centroidsCustom)):
         centroid=centroidsCustom[each]
         centroids.append(list(centroid))
+    #print(centroids)
     centroids=np.asarray(centroids)
+    #print(centroids)
     fileNameDictionary=im.getDocClustersNames(clusterCount,labels,fileNames)
     for key, val in fileNameDictionary.items():
         fileNameDictionary[key] = [os.path.join(fpath, file) for file in fileNameDictionary[key]]

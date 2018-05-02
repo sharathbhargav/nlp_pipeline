@@ -19,6 +19,7 @@ from sklearn.cluster import Birch
 import spacy
 from . import kMeans
 from collections import Counter
+from django.conf import settings
 
 removableWords = set(stopwords.words('english'))
 
@@ -73,7 +74,7 @@ def getNormalizedVector(inputVector):
 
 def getWordVector(inputWord):
     trainingModelGoogle = KeyedVectors.load_word2vec_format(
-        "/home/ullas/PycharmProjects/nlp_pipeline/models/GoogleNews-vectors-negative300.bin", binary=True, limit=10000)
+        os.path.join(settings.BASE_DIR, 'models/GoogleNews-vectors-negative300.bin'), binary=True, limit=10000)
     modelUsed = trainingModelGoogle
     wordVector1 = np.array(modelUsed[inputWord])  # trainingModelGoogle
     return wordVector1
@@ -174,7 +175,7 @@ def getWordSimilarity(word1, word2):
 
 def getWord2VecWordSimilarity(word1, word2):
     trainingModelGoogle = KeyedVectors.load_word2vec_format(
-        "/home/ullas/PycharmProjects/nlp_pipeline/models/GoogleNews-vectors-negative300.bin", binary=True, limit=10000)
+        os.path.join(settings.BASE_DIR, 'models/GoogleNews-vectors-negative300.bin'), binary=True, limit=10000)
     modelUsed = trainingModelGoogle
     similarity = modelUsed.similarity(word1, word2)
     return similarity
@@ -222,10 +223,6 @@ def getCommonWordsBetweenDocs(documentHandle1, documentHandle2):
 def getPlotValuesOfDocuments(documentHandles):
     vectors = []
     for handle in documentHandles:
-        vec = getDocVector(handle)
-        if (len(vec) > 0):
-            vectors.append(vec)
-        '''
         try:
             vec = getDocVector(handle)
             if (len(vec) > 0):
@@ -235,7 +232,6 @@ def getPlotValuesOfDocuments(documentHandles):
             message = template.format(type(ex).__name__, ex.args)
             print(message)
             #print(handle, " failed to read")
-        '''
     docArray = np.asarray(vectors, dtype=np.float32)
     pca = PCA(n_components=2)
     pcaOut = pca.fit_transform(docArray)
