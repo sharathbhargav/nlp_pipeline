@@ -108,7 +108,7 @@ def getSentancesListFromDoc(documentHandle, stopWordsRequired):
             docWords.append(words)
     return docWords
 
-
+#@Todo countof words=0
 def getDocVector(documentHandle, stopWordsRequired=False):
     totalDocVec = np.array([float(0.0) for x in range(vectorSize)])
     countOfWords = 0
