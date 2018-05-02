@@ -11,6 +11,9 @@
     padding-top: 30px;
 }
 
+
 #navbar-text {
     color: white;
 }
+
+.jumbotron {  background-size: cover; }

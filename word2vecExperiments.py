@@ -1,7 +1,6 @@
-import pickle
-import individualModules as im
+from website.doccer.pipeline import individualModules as im
 from gensim.models import Word2Vec
-from gensim.models.keyedvectors import KeyedVectors
+
 """
 temp = open("googleTrainedData", "rb")
 trainingModelGoogle = pickle.load(temp)

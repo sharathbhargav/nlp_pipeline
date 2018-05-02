@@ -8,20 +8,10 @@ process: obtain document vectors -> use PCA to reduce dimensionality -> normaliz
     obtain silhouette avg values and get best cluster number -> generate clusters with any of the above methods
 """
 
-from gensim.models import Word2Vec
-import individualModules as im
 import matplotlib.pyplot as plt
-from matplotlib import style
-import numpy as np
-import math
-import pickle
-from sklearn.decomposition import PCA
-import os
 from sklearn.cluster import KMeans
-from sklearn.metrics import silhouette_samples, silhouette_score
-from sklearn.preprocessing import normalize
+from sklearn.metrics import silhouette_score
 from operator import itemgetter
-from algorithms import kMeans as kmeans
 from random import randint
 
 """
@@ -76,7 +66,7 @@ def getOptimalClustersSilhoutte(data,custom=False):
     if custom :
         for clusterKmeansNumber in range(2, 20):
             try:
-                clf = kmeans.K_Means(clusterKmeansNumber, tolerance=0.00001, max_iterations=800)
+                clf = kMeans.K_Means(clusterKmeansNumber, tolerance=0.00001, max_iterations=800)
                 rotation = randamozieSeed(data, clusterKmeansNumber)
                 clf.fit(data, spherical=True, rotationArray=rotation)
                 labels = clf.getLabels(data)
@@ -137,7 +127,7 @@ def customKMeansComplete(data,fileNames,plot=False):
     (selectedClusterNumber,rotation) = getOptimalClustersSilhoutte(data,True)
 
 
-    clf = kmeans.K_Means(selectedClusterNumber, tolerance=0.00001, max_iterations=800)
+    clf = kMeans.K_Means(selectedClusterNumber, tolerance=0.00001, max_iterations=800)
     #print(">>>>>>>>>>>>>>>>>final rot",rotationStored[selectedClusterNumber])
     clf.fit(data, spherical=True, rotationArray=rotation)
     classifications=clf.classifications

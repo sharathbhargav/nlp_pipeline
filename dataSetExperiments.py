@@ -1,16 +1,12 @@
 import os
 import glob
-import individualModules as im
+from website.doccer.pipeline import individualModules as im
 import matplotlib.pyplot as plt
 from matplotlib import style
 import numpy as np
-import math
 import pickle
 from sklearn.decomposition import PCA
-from algorithms import kMeans as kmeans
 from gensim.models import Word2Vec
-from sklearn.cluster import KMeans
-from gensim.models.keyedvectors import KeyedVectors
 
 style.use('ggplot')
 
@@ -155,7 +151,7 @@ def testing():
     plotValue= np.array(plotValue)
     """
     colors = 100*["r","g","b","c","k","l","p"]
-    (classifications,centroids)=kmeans.execute_kmeans(total,k=5,showPlot=True,plotRef=plt)
+    (classifications,centroids)= kMeans.execute_kmeans(total, k=5, showPlot=True, plotRef=plt)
     x=[]
     y=[]
     """

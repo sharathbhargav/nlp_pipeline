@@ -15,7 +15,7 @@
     <form class="form" action="http://127.0.0.1:8000/doccer/fetch" id="r_form" onsubmit="pleasewait()">
         <div class="row" id="r_form_row_1">
             <div class="col" align="center">
-                <input class="form-control col-md-6" type="number" name="n_docs" placeholder="Number of Docs (Optional)">
+                <input class="form-control form-control-lg col-md-6" type="number" name="n_docs" placeholder="Number of Docs (Optional)">
             </div>
         </div>
         <div class="form-row" id="r_form_row_2">
@@ -39,6 +39,16 @@
             </div>
         </div>
     </form>
+    
+    <form class="form" action="http://127.0.0.1:8000/doccer/offline">
+        <div class="row">
+            <div class="col" align="center">
+                <input class="form-control col-md-3" id="files_list" type="file" webkitdirectory directory multiple>
+                <input class="btn btn-primary" type="submit" name="reddit" value="Submit">
+            </div>
+        </div>
+    </form>
+
     <div id="wait_modal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -47,11 +57,6 @@
             <div class="modal-body">
                 <p>Fetching and Processing the documents...</p>
             </div>
-            <!--div class="modal-footer">
-                <a href="http://127.0.0.1:8000/doccer">
-                    <button type="button" class="btn btn-danger">Cancel</button>
-                </a>
-            </div-->
         </div>
     </div>
 </body>

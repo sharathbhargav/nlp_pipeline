@@ -18,6 +18,11 @@
 
 #r_form_row_2 {
     margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#offline_form {
+    vertical-align: bottom;
 }
 
 .modal {
