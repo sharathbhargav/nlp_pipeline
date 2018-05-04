@@ -2,10 +2,9 @@ from . import individualModules as im
 import numpy as np
 import pickle
 from sklearn.preprocessing import normalize
-from plotting.plotdata import PlottingData
+from .plotdata import PlottingData
 import os
 from django.conf import settings
-
 
 
 
@@ -17,10 +16,10 @@ from django.conf import settings
 
 
 
-def run(fpath):
+def run(fpath, pdir):
     print("Beginning Clustering")
     pathToData = fpath
-    pathToPickles = os.path.join(settings.BASE_DIR, 'pickles/')
+    pathToPickles = os.path.join(settings.BASE_DIR, pdir)
 
     custom2Names=open(os.path.join(pathToPickles, 'plotNamesOfDocs'), 'rb')
     fileNames=pickle.load(custom2Names)

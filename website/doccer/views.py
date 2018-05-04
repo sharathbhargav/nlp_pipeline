@@ -51,18 +51,20 @@ def fetch_documents(request):
         delete_older_posts(doc_dir)
         pm.get_gilded_posts(n_docs)
     print("Done fetching posts.")
-    generate_pickle_files(doc_dir)
-    run(doc_dir)
+    generate_pickle_files(doc_dir, 'pickles/')
+    run(doc_dir, 'pickles/')
     json_data = json.load(open(os.path.join(settings.BASE_DIR, 'static/doccer/js/plot.json')))
     return render_to_response('doccer/plot.html', {'data': mark_safe(json_data)})
 
 
 def fetch_offline_documents(request, filedir):
     rel_dir = 'offlinefiles/' + filedir + '/'
+    picle_dir = 'offlinefiles/pickles/' + filedir + '/'
     doc_dir = os.path.join(settings.BASE_DIR, rel_dir)
     print("Processing offline docs.")
-    generate_pickle_files(doc_dir)
-    run(doc_dir)
+    if len(os.listdir(os.path.join(settings.BASE_DIR, picle_dir))) == 0:
+        generate_pickle_files(doc_dir, picle_dir)
+    run(doc_dir, picle_dir)
     json_data = json.load(open(os.path.join(settings.BASE_DIR, 'static/doccer/js/plot.json')))
     return render_to_response('doccer/plot.html', {'data': mark_safe(json_data)})
 
