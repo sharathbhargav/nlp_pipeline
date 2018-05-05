@@ -1,17 +1,17 @@
 {
     "fnames": [
-        "/home/ullas/PycharmProjects/nlp_pipeline/website/offlinefiles/new/18-05-02_2",
-        "/home/ullas/PycharmProjects/nlp_pipeline/website/offlinefiles/new/18-05-02_8",
-        "/home/ullas/PycharmProjects/nlp_pipeline/website/offlinefiles/new/18-05-02_7",
-        "/home/ullas/PycharmProjects/nlp_pipeline/website/offlinefiles/new/18-05-02_9",
-        "/home/ullas/PycharmProjects/nlp_pipeline/website/offlinefiles/new/18-05-02_6",
-        "/home/ullas/PycharmProjects/nlp_pipeline/website/offlinefiles/new/18-05-02_4",
-        "/home/ullas/PycharmProjects/nlp_pipeline/website/offlinefiles/new/18-05-02_3",
-        "/home/ullas/PycharmProjects/nlp_pipeline/website/offlinefiles/new/18-05-02_5",
-        "/home/ullas/PycharmProjects/nlp_pipeline/website/offlinefiles/new/18-05-02_1",
-        "/home/ullas/PycharmProjects/nlp_pipeline/website/offlinefiles/new/18-05-02_0"
+        "/home/ullas/PycharmProjects/nlp_pipeline/website/offlinefiles/hot/18-05-02_2",
+        "/home/ullas/PycharmProjects/nlp_pipeline/website/offlinefiles/hot/18-05-02_8",
+        "/home/ullas/PycharmProjects/nlp_pipeline/website/offlinefiles/hot/18-05-02_7",
+        "/home/ullas/PycharmProjects/nlp_pipeline/website/offlinefiles/hot/18-05-02_9",
+        "/home/ullas/PycharmProjects/nlp_pipeline/website/offlinefiles/hot/18-05-02_6",
+        "/home/ullas/PycharmProjects/nlp_pipeline/website/offlinefiles/hot/18-05-02_4",
+        "/home/ullas/PycharmProjects/nlp_pipeline/website/offlinefiles/hot/18-05-02_3",
+        "/home/ullas/PycharmProjects/nlp_pipeline/website/offlinefiles/hot/18-05-02_5",
+        "/home/ullas/PycharmProjects/nlp_pipeline/website/offlinefiles/hot/18-05-02_1",
+        "/home/ullas/PycharmProjects/nlp_pipeline/website/offlinefiles/hot/18-05-02_0"
     ],
-    "/home/ullas/PycharmProjects/nlp_pipeline/website/offlinefiles/new/18-05-02_2": {
+    "/home/ullas/PycharmProjects/nlp_pipeline/website/offlinefiles/hot/18-05-02_2": {
         "xy": [
             -0.9372004270553589,
             -0.34879136085510254
@@ -48,13 +48,13 @@
             "Gaza Bleeds"
         ]
     },
-    "/home/ullas/PycharmProjects/nlp_pipeline/website/offlinefiles/new/18-05-02_8": {
+    "/home/ullas/PycharmProjects/nlp_pipeline/website/offlinefiles/hot/18-05-02_8": {
         "xy": [
             0.8536571264266968,
             -0.5208353996276855
         ],
-        "color": "#3AFF00",
-        "cluster": 1,
+        "color": "#0092FF",
+        "cluster": 2,
         "org_entities": [
             "Financial Results",
             "SodaStream Reports",
@@ -91,7 +91,7 @@
             "Debt Refinancing"
         ]
     },
-    "/home/ullas/PycharmProjects/nlp_pipeline/website/offlinefiles/new/18-05-02_7": {
+    "/home/ullas/PycharmProjects/nlp_pipeline/website/offlinefiles/hot/18-05-02_7": {
         "xy": [
             -0.7408487796783447,
             -0.6716718673706055
@@ -128,13 +128,13 @@
             "Gaza Bleeds"
         ]
     },
-    "/home/ullas/PycharmProjects/nlp_pipeline/website/offlinefiles/new/18-05-02_9": {
+    "/home/ullas/PycharmProjects/nlp_pipeline/website/offlinefiles/hot/18-05-02_9": {
         "xy": [
             0.9115539193153381,
             -0.4111804962158203
         ],
-        "color": "#3AFF00",
-        "cluster": 1,
+        "color": "#0092FF",
+        "cluster": 2,
         "org_entities": [
             "Financial Results",
             "SodaStream Reports",
@@ -171,13 +171,13 @@
             "Debt Refinancing"
         ]
     },
-    "/home/ullas/PycharmProjects/nlp_pipeline/website/offlinefiles/new/18-05-02_6": {
+    "/home/ullas/PycharmProjects/nlp_pipeline/website/offlinefiles/hot/18-05-02_6": {
         "xy": [
             0.9423519968986511,
             0.33462321758270264
         ],
-        "color": "#3AFF00",
-        "cluster": 1,
+        "color": "#0092FF",
+        "cluster": 2,
         "org_entities": [
             "Financial Results",
             "SodaStream Reports",
@@ -214,7 +214,7 @@
             "Debt Refinancing"
         ]
     },
-    "/home/ullas/PycharmProjects/nlp_pipeline/website/offlinefiles/new/18-05-02_4": {
+    "/home/ullas/PycharmProjects/nlp_pipeline/website/offlinefiles/hot/18-05-02_4": {
         "xy": [
             -0.831038773059845,
             0.5562145709991455
@@ -251,13 +251,13 @@
             "Gaza Bleeds"
         ]
     },
-    "/home/ullas/PycharmProjects/nlp_pipeline/website/offlinefiles/new/18-05-02_3": {
+    "/home/ullas/PycharmProjects/nlp_pipeline/website/offlinefiles/hot/18-05-02_3": {
         "xy": [
             0.15348249673843384,
             0.9881513118743896
         ],
-        "color": "#0092FF",
-        "cluster": 2,
+        "color": "#3AFF00",
+        "cluster": 1,
         "org_entities": [],
         "person_entities": [
             "Alert  "
@@ -276,7 +276,7 @@
             "Alert  "
         ]
     },
-    "/home/ullas/PycharmProjects/nlp_pipeline/website/offlinefiles/new/18-05-02_5": {
+    "/home/ullas/PycharmProjects/nlp_pipeline/website/offlinefiles/hot/18-05-02_5": {
         "xy": [
             -0.7086909413337708,
             -0.7055190801620483
@@ -313,13 +313,13 @@
             "Gaza Bleeds"
         ]
     },
-    "/home/ullas/PycharmProjects/nlp_pipeline/website/offlinefiles/new/18-05-02_1": {
+    "/home/ullas/PycharmProjects/nlp_pipeline/website/offlinefiles/hot/18-05-02_1": {
         "xy": [
             0.19484055042266846,
             0.9808349609375
         ],
-        "color": "#0092FF",
-        "cluster": 2,
+        "color": "#3AFF00",
+        "cluster": 1,
         "org_entities": [],
         "person_entities": [
             "Alert  "
@@ -338,7 +338,7 @@
             "Alert  "
         ]
     },
-    "/home/ullas/PycharmProjects/nlp_pipeline/website/offlinefiles/new/18-05-02_0": {
+    "/home/ullas/PycharmProjects/nlp_pipeline/website/offlinefiles/hot/18-05-02_0": {
         "xy": [
             -0.9997285008430481,
             -0.02330203913152218
@@ -414,10 +414,34 @@
     },
     "1": {
         "xy": [
+            0.17416152358055115,
+            0.9844931364059448
+        ],
+        "color": "#3AFF00",
+        "org_entities": [],
+        "person_entities": [
+            "Alert  "
+        ],
+        "place_entities": [],
+        "loc_entities": [],
+        "noun_entities": [
+            "Marathon Petroleum-Andeavor Merger",
+            "Refining Projects",
+            "an Industrial Info News Alert",
+            "Endo",
+            "the UBS Global Healthcare Conference"
+        ],
+        "summary": [
+            "\n",
+            "Alert  "
+        ]
+    },
+    "2": {
+        "xy": [
             0.9025210738182068,
             -0.19913089275360107
         ],
-        "color": "#3AFF00",
+        "color": "#0092FF",
         "org_entities": [
             "Financial Results",
             "SodaStream Reports",
@@ -452,30 +476,6 @@
             "Announces Acquisition",
             "Asco Industries",
             "Debt Refinancing"
-        ]
-    },
-    "2": {
-        "xy": [
-            0.17416152358055115,
-            0.9844931364059448
-        ],
-        "color": "#0092FF",
-        "org_entities": [],
-        "person_entities": [
-            "Alert  "
-        ],
-        "place_entities": [],
-        "loc_entities": [],
-        "noun_entities": [
-            "Marathon Petroleum-Andeavor Merger",
-            "Refining Projects",
-            "an Industrial Info News Alert",
-            "Endo",
-            "the UBS Global Healthcare Conference"
-        ],
-        "summary": [
-            "\n",
-            "Alert  "
         ]
     }
 }

@@ -6,7 +6,7 @@ from gensim.models.keyedvectors import KeyedVectors
 from django.conf import settings
 
 
-def generate_pickle_files(fpath):
+def generate_pickle_files(fpath, pdir):
     print("Generating Pickle files.")
     trainingModelGoogle = KeyedVectors.load_word2vec_format(
         os.path.join(settings.BASE_DIR, 'models/GoogleNews-vectors-negative300.bin'),
@@ -25,10 +25,11 @@ def generate_pickle_files(fpath):
     for fh in file_handles:
         fh.close()
     total1 = np.array(plot_data)
-    custom2Pickle = open(os.path.join(settings.BASE_DIR, 'pickles/plotValuesOfDocs'), "wb")
+    print(pdir)
+    custom2Pickle = open(os.path.join(settings.BASE_DIR, pdir + 'plotValuesOfDocs'), "wb")
     pickle.dump(total1, custom2Pickle)
     custom2Pickle.close()
-    custom2Names = open(os.path.join(settings.BASE_DIR, 'pickles/plotNamesOfDocs'), "wb")
+    custom2Names = open(os.path.join(settings.BASE_DIR, pdir + 'plotNamesOfDocs'), "wb")
     pickle.dump(file_names, custom2Names)
     custom2Names.close()
     print("Done generating pickle files.")

@@ -1,3 +1,7 @@
+from django.conf import settings
+import os
+
+
 def get_file_name(title):
     name = str()
     for word in title.split(' '):
@@ -5,4 +9,4 @@ def get_file_name(title):
     return name.replace('/', '|')[:-1]
 
 
-file_location = "/home/ullas/PycharmProjects/nlp_pipeline/website/reddit/"
+file_location = os.path.join(settings.BASE_DIR, 'reddit/')
