@@ -28,7 +28,7 @@ from collections import Counter
 removableWords = set(stopwords.words('english'))
 
 extraWords = ['.', ',', '/', '<', '>', '?', ';', '\'', ':', '"', '[', ']', '{', '}', '!', '@', '#', '$', '%', '^',
-              '&', '*', '(', ')', '-', '_', '=', '+', '—', ' ', 'Reddit', 'reddit', 'Lol', 'Nah', 'I']
+              '&', '*', '(', ')', '-', '_', '=', '+', '—', ' ', 'Reddit', 'reddit', 'Lol', 'Nah', 'I','\n']
 
 removableWords.update(extraWords)
 vectorSize = 300

@@ -32,10 +32,10 @@ for i in range(len(pathSuffix)):
     pickle.dump(total,pickleFile)
     pickle.dump(fileNames,pickleFile2)
 """
-"""
+
 fileHandles1=[]
 pathSuffix=["Kathua","Sci","Sports","Tech"]
-path1 = "datasets/custom2/Kathua"
+
 pathPrefix="datasets/custom2/"
 fileNames=[]
 fileCount=0
@@ -60,7 +60,6 @@ pickle.dump(total1,custom2Pickle)
 custom2Names=open("datasets/custom2/plotNamesOfDocs","wb")
 pickle.dump(fileNames,custom2Names)
 
-"""
 """
 fileNames=[]
 fileCount=0
