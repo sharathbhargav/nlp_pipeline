@@ -33,8 +33,8 @@ extraWords = ['.', ',', '/', '<', '>', '?', ';', '\'', ':', '"', '[', ']', '{', 
 removableWords.update(extraWords)
 vectorSize = 300
 
-temp = open("/home/sharathbhragav/PycharmProjects/nlp_pipeline/models/harryPotterFullWord2VecModelSize300", "rb")
-trainingModelGoogle = pickle.load(temp)
+trainingModelGoogle = KeyedVectors.load_word2vec_format("models/GoogleNews-vectors-negative300.bin",binary=True,limit=100000)
+
 modelUsed = trainingModelGoogle
 nlp = spacy.load('/home/sharathbhragav/anaconda3/lib/python3.6/site-packages/en_core_web_sm/en_core_web_sm-2.0.0')
 

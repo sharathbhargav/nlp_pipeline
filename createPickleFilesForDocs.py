@@ -6,8 +6,8 @@ import numpy as np
 from gensim.models.keyedvectors import KeyedVectors
 
 
-trainingModelGoogle = KeyedVectors.load_word2vec_format("models/GoogleNews-vectors-negative300.bin",binary=True,limit=100000)
-im.setModel(trainingModelGoogle)
+#trainingModelGoogle = KeyedVectors.load_word2vec_format("models/GoogleNews-vectors-negative300.bin",binary=True,limit=100000)
+#im.setModel(trainingModelGoogle)
 
 """
 pathSuffix=["b","e","p","s","t"]
