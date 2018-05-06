@@ -17,7 +17,7 @@ from random import randint
 from enum import Enum
 from sklearn.cluster import Birch
 import spacy
-from . import kMeans
+from .algorithms import kMeans
 from collections import Counter
 from django.conf import settings
 
@@ -29,10 +29,13 @@ extraWords = ['.', ',', '/', '<', '>', '?', ';', '\'', ':', '"', '[', ']', '{', 
 removableWords.update(extraWords)
 vectorSize = 300
 
-trainingModelGoogle = KeyedVectors.load_word2vec_format(os.path.join(settings.BASE_DIR, 'models/GoogleNews-vectors-negative300.bin'), binary=True, limit=10000)
+print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+print(settings.PROJECT_ROOT)
+print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.")
+trainingModelGoogle = KeyedVectors.load_word2vec_format(os.path.join(settings.BASE_DIR, 'nlpPipeline1/backend/models/GoogleNews-vectors-negative300.bin'), binary=True, limit=10000)
 nlp = spacy.load('/home/sharathbhragav/anaconda3/lib/python3.6/site-packages/en_core_web_sm/en_core_web_sm-2.0.0')
 
-
+modelUsed=trainingModelGoogle
 
 
 def printStopWords():
@@ -70,8 +73,7 @@ def getNormalizedVector(inputVector):
 
 
 def getWordVector(inputWord):
-    trainingModelGoogle = KeyedVectors.load_word2vec_format(
-        os.path.join(settings.BASE_DIR, 'models/GoogleNews-vectors-negative300.bin'), binary=True, limit=10000)
+
     modelUsed = trainingModelGoogle
     wordVector1 = np.array(modelUsed[inputWord])  # trainingModelGoogle
     return wordVector1
@@ -400,6 +402,11 @@ def getNamedEntties(path, fileDictionary, numberOfEntities=5, summaryLimitWords=
     places = {}
     locations = {}
     nouns = {}
+    fileOrgs={}
+    filePersons={}
+    filePlaces={}
+    fileLocations={}
+    fileNouns={}
     completeSummery = {}
     for i in range(len(fileDictionary)):
         clusterOrganization = []
@@ -408,32 +415,64 @@ def getNamedEntties(path, fileDictionary, numberOfEntities=5, summaryLimitWords=
         clusterLocation = []
         clusterNouns = []
         clusterSummery = []
+
         for docName in fileDictionary[i]:
+            eachOrg=[]
+            eachPerson=[]
+            eachPlace=[]
+            eachLocation=[]
+            eachNoun=[]
+            eachSummery=[]
             docTemp = open(os.path.join(path, docName), "r")
             docTempRead = docTemp.read().replace("\n", ' ')
             doc = nlp(docTempRead)
-            for eachNoun in doc.noun_chunks:
-                if str(eachNoun).lower() not in removableWords:
-                    clusterNouns.append(str(eachNoun))
+            for eachNoun1 in doc.noun_chunks:
+                if str(eachNoun1).lower() not in removableWords:
+                    clusterNouns.append(str(eachNoun1))
+                    eachNoun.append(str(eachNoun1))
 
             for ent in doc.ents:
                 if ent.text not in removableWords:
                     # print(ent.text, ent.start_char, ent.end_char, ent.label_)
                     if ent.label_ == "ORG":
                         clusterOrganization.append(ent.text)
+                        eachOrg.append(ent.text)
                         clusterSummery.append(ent.text)
                     if ent.label_ == 'PERSON':
+                        eachPerson.append(ent.text)
                         clusterPerson.append(ent.text)
                         clusterSummery.append(ent.text)
 
                     if ent.label_ == "GPE":
+                        eachPlace.append(ent.text)
                         clusterPlace.append(ent.text)
                         clusterSummery.append(ent.text)
                     if ent.label_ == "LOC":
+                        eachLocation.append(ent.text)
                         clusterLocation.append(ent.text)
                         clusterSummery.append(ent.text)
             # summer_freq = Counter(clusterSummery)
             # clusterSummery=summer_freq.most_common(10)
+            organizations_freq = Counter(eachOrg)
+            persons_freq = Counter(eachPerson)
+            places_freq = Counter(eachPlace)
+            locations_freq = Counter(eachLocation)
+            noun_freq = Counter(eachNoun)
+            orgCount=10#int(0.20*(len(eachOrg)))
+            personCount=10#int(0.20*(len(eachPerson)))
+            placesCount=10#int(0.20*(len(eachPlace)))
+            locCount=10#int(0.20*(len(eachLocation)))
+            nounCount=25#int(0.20*(len(eachNoun)))
+
+            fileOrgs[docName]=organizations_freq.most_common(orgCount)
+            filePersons[docName]=persons_freq.most_common(personCount)
+            filePlaces[docName]=places_freq.most_common(placesCount)
+            fileLocations[docName]=locations_freq.most_common(locCount)
+            fileNouns[docName]=noun_freq.most_common(nounCount)
+            print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+            print(nounCount)
+            print(fileNouns)
+            print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
             clusterSummery.append("\n")
             docTemp.close()
         # clusterNouns = list(set(clusterNouns))
@@ -444,11 +483,7 @@ def getNamedEntties(path, fileDictionary, numberOfEntities=5, summaryLimitWords=
         nouns[i] = clusterNouns
         completeSummery[i] = clusterSummery
 
-        organizations_freq = Counter(clusterOrganization)
-        persons_freq = Counter(clusterPerson)
-        places_freq = Counter(clusterPlace)
-        locations_freq = Counter(clusterLocation)
-        noun_freq = Counter(clusterNouns)
+
 
         '''
         print("Cluster:", i)
