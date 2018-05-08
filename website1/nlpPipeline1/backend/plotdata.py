@@ -52,22 +52,19 @@ class PlottingData:
                 if file in self._clusters[key]:
                     filedata['cluster'] = key
             filedata['org_entities'] = [
-                ent[0] for ent in Counter(dict(self._named_entities['org'])[filedata['cluster']]).most_common(10)
+                ent[0] for ent in dict(self._named_entities['file_org'])[file]
             ]
             filedata['person_entities'] = [
-                ent[0] for ent in Counter(dict(self._named_entities['persons'])[filedata['cluster']]).most_common(10)
+                ent[0] for ent in dict(self._named_entities['file_persons'])[file]
             ]
             filedata['place_entities'] = [
-                ent[0] for ent in Counter(dict(self._named_entities['places'])[filedata['cluster']]).most_common(10)
+                ent[0] for ent in dict(self._named_entities['file_places'])[file]
             ]
             filedata['loc_entities'] = [
-                ent[0] for ent in Counter(dict(self._named_entities['loc'])[filedata['cluster']]).most_common(10)
+                ent[0] for ent in dict(self._named_entities['file_loc'])[file]
             ]
             filedata['noun_entities'] = [
-                ent[0] for ent in Counter(dict(self._named_entities['nouns'])[filedata['cluster']]).most_common(10)
-            ]
-            filedata['summary'] = [
-                ent[0] for ent in Counter(dict(self._named_entities['summary'])[filedata['cluster']]).most_common(25)
+                ent[0] for ent in dict(self._named_entities['file_nouns'])[file]
             ]
             data[file] = filedata
         data['n_clusters'] = self._n_clusters

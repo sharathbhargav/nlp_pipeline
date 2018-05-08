@@ -469,10 +469,10 @@ def getNamedEntties(path, fileDictionary, numberOfEntities=5, summaryLimitWords=
             filePlaces[docName]=places_freq.most_common(placesCount)
             fileLocations[docName]=locations_freq.most_common(locCount)
             fileNouns[docName]=noun_freq.most_common(nounCount)
-            print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
-            print(nounCount)
-            print(fileNouns)
-            print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+            #print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+            #print(nounCount)
+            #print(fileNouns)
+            #print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
             clusterSummery.append("\n")
             docTemp.close()
         # clusterNouns = list(set(clusterNouns))
@@ -507,6 +507,8 @@ def getNamedEntties(path, fileDictionary, numberOfEntities=5, summaryLimitWords=
 
         print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
         '''
+    for key, val in organizations.items():
+        print(key, len(val))
     entities = dict()
     entities['org'] = organizations
     entities['persons'] = persons
@@ -514,4 +516,9 @@ def getNamedEntties(path, fileDictionary, numberOfEntities=5, summaryLimitWords=
     entities['loc'] = locations
     entities['nouns'] = nouns
     entities['summary'] = completeSummery
+    entities['file_org'] = fileOrgs
+    entities['file_persons'] = filePersons
+    entities['file_places'] = filePlaces
+    entities['file_loc'] = fileLocations
+    entities['file_nouns'] = fileNouns
     return entities

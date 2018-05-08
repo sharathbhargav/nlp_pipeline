@@ -4,7 +4,7 @@ from rest_framework.urlpatterns import format_suffix_patterns
 from . import views
 
 urlpatterns = [
-    path('index', views.index, name='index'),
+    path('index', views.index1, name='index'),
     path('dump',views.dataDump,name='dump'),
     url(r'api/demo',views.DemoAPI.as_view()),
     url(r'api/get',views.testAPI.as_view()),
@@ -12,6 +12,7 @@ urlpatterns = [
 
 
     path('', views.index, name='index'),
+    path('displaydoc/<str:file_loc>', views.display_file, name='file_display'),
 
 
     path('fetch/', views.fetch_documents, name='fetcher'),

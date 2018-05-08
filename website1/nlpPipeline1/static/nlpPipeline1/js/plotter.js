@@ -11,7 +11,7 @@ function load(data) {
         place[i] = data[filenames[i]]['place_entities'];
         loc[i] = data[filenames[i]]['loc_entities'];
         noun[i] = data[filenames[i]]['noun_entities'];
-        summary[i] = data[filenames[i]]['summary'];
+        //summary[i] = data[filenames[i]]['summary'];
     };
     var file_entities = [org, person, place, loc, noun];
     var entities_names = ['Organizations', 'Persons', 'Places', 'Locations', 'Nouns'];
@@ -30,7 +30,7 @@ function load(data) {
         c_noun[i] = data[i.toString()]['noun_entities'];
         c_summary[i] = data[i.toString()]['summary'];
     };
-    var cluster_entities = [c_org, c_person, c_place, c_loc, c_noun];
+    var cluster_entities = [c_org, c_person, c_place, c_loc, c_noun, c_summary];
 
     var plot_data = [{
         x : X,
@@ -71,25 +71,32 @@ function load(data) {
 
         var infoText = '';
         var entities_array;
+        var n_entities;
         if (cn == 0){
             entities_array = file_entities;
             entities_fname.innerHTML = file;
+            n_entities = entities_array.length;
         }
         else if (cn == 1){
             entities_array = cluster_entities;
             entities_fname.innerHTML = 'Cluster ' + pn;
+            n_entities = entities_array.length - 1;
         }
-        for (var i=0 ; i<entities_array.length ; i++){
+
+        for (var i=0 ; i<n_entities ; i++){
             infoText = infoText + '<b>' + entities_names[i] + '</b> : ';
             for(var j=0 ; j<entities_array[i][pn].length ; j++){
                 infoText = infoText + entities_array[i][pn][j] + ', ';
             };
             infoText += '<hr />';
         };
-        infoText += '<b>Summary</b> : ';
-        for (var i=0 ; i<summary[pn].length ; i++){
-            infoText += summary[pn][i] + ' ';
-        };
+
+        if (cn == 1){
+            infoText += '<b>Summary</b> : ';
+            for (var i=0 ; i<c_summary[pn].length ; i++){
+                infoText += c_summary[pn][i] + ' ';
+            };
+        }
         entities.innerHTML = infoText;
     });
 
@@ -107,7 +114,7 @@ function load(data) {
         };
         if (cn == 0){
             var file = filenames[pn];
-            var url = 'http://127.0.0.1:8000/doccer/displaydoc/' + file.replace(new RegExp('/', 'g'), '+');
+            var url = '/displaydoc/' + file.replace(new RegExp('/', 'g'), '+');
             var win = window.open(url, '_blank');
             win.focus();
         }

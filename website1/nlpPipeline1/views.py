@@ -4,6 +4,7 @@ import json
 from django.utils.safestring import mark_safe
 from django.conf import settings
 import os
+
 import nlpPipeline1.backend
 from nlpPipeline1.backend import completePipelineExperiment as complete
 from nlpPipeline1.backend import individualModules as im
@@ -38,10 +39,7 @@ def delete_older_posts(doc_dir):
     print('Done deleting older downloaded posts.')
 
 
-def fetch_documents(request):
-    n_docs = int(request.GET.get('n_docs')) if request.GET.get('n_docs') != '' else 1000
-    reddit = request.GET.get('reddit')
-    doc_dir = os.path.join(settings.BASE_DIR, 'reddit/')
+def downloadRedditDocs(doc_dir,n_docs,reddit):
     print("Fetching reddit posts")
     if reddit == 'Hot':
         doc_dir = os.path.join(doc_dir, 'hot/')
@@ -68,6 +66,19 @@ def fetch_documents(request):
         delete_older_posts(doc_dir)
         pm.get_gilded_posts(n_docs)
     print("Done fetching posts.")
+
+
+
+
+
+def fetch_documents(request):
+    n_docs = int(request.GET.get('n_docs')) if request.GET.get('n_docs') != '' else 1000
+    reddit = request.GET.get('reddit')
+    doc_dir = os.path.join(settings.BASE_DIR, 'reddit/')
+
+    downloadRedditDocs(doc_dir,n_docs,reddit)
+
+
     createPickles.generate_pickle_files(doc_dir, 'pickles/')
     complete.run(doc_dir, 'pickles/')
     json_data = json.load(open(os.path.join(settings.BASE_DIR, 'nlpPipeline1/static/nlpPipeline1/js/plot.json')))
