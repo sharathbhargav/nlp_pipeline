@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="55e0dcca-08ee-4eea-8a97-e33d90a8d217" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <ignored path=".idea/" />
+    <ignored mask=".idea" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DarkyenusTimeTracker">
+    <option name="totalTimeSeconds" value="29895" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="individualModules.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/individualModules.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3229">
+              <caret line="244" selection-start-line="244" selection-end-line="244" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="completePipelineExperiment.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/completePipelineExperiment.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="335">
+              <caret line="58" column="21" lean-forward="true" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#56#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="createPickleFilesForDocs.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/createPickleFilesForDocs.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="371">
+              <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plotdata.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/plotdata.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1152">
+              <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plot.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/plot.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="91" selection-start-line="8" selection-start-column="91" selection-end-line="8" selection-end-column="91" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plotter.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/plotter.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2088">
+              <caret line="116" column="45" selection-start-line="116" selection-start-column="45" selection-end-line="116" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plot.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/plot.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1422">
+              <caret line="79" column="25" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="individualModules.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/individualModules.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="137">
+              <caret line="220" column="4" selection-start-line="220" selection-start-column="4" selection-end-line="220" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#54#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>colors</find>
+      <find>Inter</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="ud" />
+      </map>
+    </option>
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/a.txt" />
+        <option value="$PROJECT_DIR$/word2vecExperiments.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/docprocessing/processing.py" />
+        <option value="$PROJECT_DIR$/scraperutil.py" />
+        <option value="$PROJECT_DIR$/scrapers/wikipedia.py" />
+        <option value="$PROJECT_DIR$/docprocessing/pdfextractor.py" />
+        <option value="$PROJECT_DIR$/docsimilarity/util.py" />
+        <option value="$PROJECT_DIR$/dataSetExperiments.py" />
+        <option value="$PROJECT_DIR$/docsimilarity/similarity.py" />
+        <option value="$PROJECT_DIR$/docsimilarity/tfidfcalculator.py" />
+        <option value="$PROJECT_DIR$/docprocessing/util.py" />
+        <option value="$PROJECT_DIR$/demo.py" />
+        <option value="$PROJECT_DIR$/docsimilarity/tdmgenerator.py" />
+        <option value="$PROJECT_DIR$/reddit/trial.py" />
+        <option value="$PROJECT_DIR$/reddit/reddit_auth.py" />
+        <option value="$PROJECT_DIR$/reddit/postman.py" />
+        <option value="$PROJECT_DIR$/redditbot/util.py" />
+        <option value="$PROJECT_DIR$/redditbot/postman.py" />
+        <option value="$PROJECT_DIR$/redditbot/commentator.py" />
+        <option value="$PROJECT_DIR$/createPickleFilesForDocs.py" />
+        <option value="$PROJECT_DIR$/algorithms/dbScan.py" />
+        <option value="$PROJECT_DIR$/individualModules.py" />
+        <option value="$PROJECT_DIR$/dbScanTest1.py" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/index.html" />
+        <option value="$PROJECT_DIR$/completePipelineExperiment1.py" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/backend/individualModules.py" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/backend/plotdata.py" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/plot.html" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/plotter.js" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/urls.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="498" />
+    <option name="y" value="123" />
+    <option name="width" value="1532" />
+    <option name="height" value="843" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="nlp_pipeline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nlp_pipeline" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nlp_pipeline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nlp_pipeline" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nlp_pipeline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nlp_pipeline" type="462c0819:PsiDirectoryNode" />
+              <item name="website1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nlp_pipeline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nlp_pipeline" type="462c0819:PsiDirectoryNode" />
+              <item name="website1" type="462c0819:PsiDirectoryNode" />
+              <item name="nlpPipeline1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nlp_pipeline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nlp_pipeline" type="462c0819:PsiDirectoryNode" />
+              <item name="website1" type="462c0819:PsiDirectoryNode" />
+              <item name="nlpPipeline1" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nlp_pipeline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nlp_pipeline" type="462c0819:PsiDirectoryNode" />
+              <item name="website1" type="462c0819:PsiDirectoryNode" />
+              <item name="nlpPipeline1" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nlp_pipeline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nlp_pipeline" type="462c0819:PsiDirectoryNode" />
+              <item name="website1" type="462c0819:PsiDirectoryNode" />
+              <item name="nlpPipeline1" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="nlpPipeline1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nlp_pipeline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nlp_pipeline" type="462c0819:PsiDirectoryNode" />
+              <item name="website1" type="462c0819:PsiDirectoryNode" />
+              <item name="nlpPipeline1" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="nlpPipeline1" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nlp_pipeline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nlp_pipeline" type="462c0819:PsiDirectoryNode" />
+              <item name="website1" type="462c0819:PsiDirectoryNode" />
+              <item name="website1" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="nlp_pipeline" type="cbb8eebc:String" user="nlp_pipeline" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../website1" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.completePipelineExperiment1">
+    <configuration name="completePipelineExperiment1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="nlp_pipeline" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/completePipelineExperiment1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="createPickleFilesForDocs" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="nlp_pipeline" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/createPickleFilesForDocs.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="dbScanTest1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="nlp_pipeline" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dbScanTest1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="postman" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="nlp_pipeline" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/redditbot" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/redditbot/postman.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="temp1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="nlp_pipeline" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/temp1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.createPickleFilesForDocs" />
+      <item itemvalue="Python.postman" />
+      <item itemvalue="Python.completePipelineExperiment1" />
+      <item itemvalue="Python.temp1" />
+      <item itemvalue="Python.dbScanTest1" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.completePipelineExperiment1" />
+        <item itemvalue="Python.dbScanTest1" />
+        <item itemvalue="Python.createPickleFilesForDocs" />
+        <item itemvalue="Python.temp1" />
+        <item itemvalue="Python.postman" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="55e0dcca-08ee-4eea-8a97-e33d90a8d217" name="Default" comment="" />
+      <created>1520352545464</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1520352545464</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Start">
+      <created>1520480853673</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1520480853673</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Done: tfidf, jaccard, lsa, doc processing&#10;ToDo : PDF document processing">
+      <created>1521254799373</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1521254799374</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Done: Rudimentary wiki scraper&#10;ToDo : Actual scraper">
+      <created>1521463491956</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1521463491956</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Done: LSA and Euclidean&#10;ToDo : lol">
+      <created>1521706718062</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1521706718062</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Done: LSA and Euclidean Plotting&#10;ToDo : lol">
+      <created>1521891147798</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1521891147798</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Done: Euclidean distance with tfidf&#10;ToDo : lol">
+      <created>1522394804134</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1522394804134</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Merge remote-tracking branch 'github/ud' into ud&#10;&#10;# Conflicts:&#10;#&#9;.gitignore&#10;#&#9;redditbot/postman.py">
+      <created>1524900147997</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1524900147997</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Done: almost&#10;ToDo : lol">
+      <created>1525605200263</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1525605200263</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="69" y="27" width="1851" height="1053" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14004377" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5042598" side_tool="true" weight="0.3278867" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Python Console" order="8" weight="0.31788793" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49574015" weight="0.3278867" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32937366" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Key Promoter X" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3297414" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12832801" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978701" visible="true" weight="0.32897604" />
+      <window_info anchor="bottom" id="Python Console" order="9" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5021299" side_tool="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="right" id="Key Promoter X" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+    </layout-to-restore>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Start" />
+    <MESSAGE value="Done: tfidf, jaccard, lsa, doc processing&#10;ToDo : PDF document processing" />
+    <MESSAGE value="Done: Rudimentary wiki scraper&#10;ToDo : Actual scraper" />
+    <MESSAGE value="Done: LSA and Euclidean&#10;ToDo : lol" />
+    <MESSAGE value="Done: LSA and Euclidean Plotting&#10;ToDo : lol" />
+    <MESSAGE value="Done: Euclidean distance with tfidf&#10;ToDo : lol" />
+    <MESSAGE value="Done: Reddit Data Scraper&#10;ToDo : lol" />
+    <MESSAGE value="Merge remote-tracking branch 'github/ud' into ud&#10;&#10;# Conflicts:&#10;#&#9;.gitignore&#10;#&#9;redditbot/postman.py" />
+    <MESSAGE value="Done: almost&#10;ToDo : lol" />
+    <option name="LAST_COMMIT_MESSAGE" value="Done: almost&#10;ToDo : lol" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="8" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/bbc_sigma.csv" />
+    <entry file="file://$PROJECT_DIR$/docprocessing/pdfextractor.py" />
+    <entry file="file://$PROJECT_DIR$/datasets/bbc/tech.pickle" />
+    <entry file="file://$PROJECT_DIR$/datasets/bbc/README.TXT" />
+    <entry file="file://$PROJECT_DIR$/word2vec2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docprocessing/processing.py" />
+    <entry file="file://$PROJECT_DIR$/docsimilarity/similarity.py" />
+    <entry file="file://$PROJECT_DIR$/docprocessing/util.py" />
+    <entry file="file://$PROJECT_DIR$/docsimilarity/tfidfcalculator.py" />
+    <entry file="file://$PROJECT_DIR$/docsimilarity/tdmgenerator.py" />
+    <entry file="file://$PROJECT_DIR$/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redditbot/reddit_auth.py" />
+    <entry file="file://$PROJECT_DIR$/redditbot/trial.py" />
+    <entry file="file://$PROJECT_DIR$/redditbot/util.py" />
+    <entry file="file://$PROJECT_DIR$/redditbot/commentator.py" />
+    <entry file="file://$PROJECT_DIR$/redditbot/postman.py" />
+    <entry file="file://$PROJECT_DIR$/word2vecExperiments.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataSetExperiments.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapers/wikipedia.py" />
+    <entry file="file://$PROJECT_DIR$/scraperutil.py" />
+    <entry file="file://$PROJECT_DIR$/website/doccer/redditbot/postman.py" />
+    <entry file="file://$PROJECT_DIR$/website/doccer/static/doccer/js/plot.json" />
+    <entry file="file://$PROJECT_DIR$/dummyplotdata.py" />
+    <entry file="file://$PROJECT_DIR$/plotting/plotdata.py" />
+    <entry file="file://$PROJECT_DIR$/website/doccer/templates/doccer/index.html" />
+    <entry file="file://$PROJECT_DIR$/website/doccer/urls.py" />
+    <entry file="file://$PROJECT_DIR$/website/doccer/views.py" />
+    <entry file="file://$PROJECT_DIR$/compareResults.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="12" column="125" selection-start-line="12" selection-end-line="12" selection-end-column="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clusteringExperiments1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithms/dbScan.py" />
+    <entry file="file://$PROJECT_DIR$/spacyExperiments1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="63" column="37" selection-start-line="53" selection-end-line="63" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithms/kMeans.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="47" column="13" lean-forward="true" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/createPickleFilesForDocs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="62" column="3" selection-start-line="62" selection-start-column="3" selection-end-line="62" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbScanTest1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clusteringExperiments2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="22" selection-start-line="22" selection-end-line="22" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="45" column="60" selection-start-line="45" selection-start-column="60" selection-end-line="45" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/completePipelineExperiment1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/plot.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="91" selection-start-line="8" selection-start-column="91" selection-end-line="8" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/plotdata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1152">
+          <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/plot.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1422">
+          <caret line="79" column="25" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/plotter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2088">
+          <caret line="116" column="45" selection-start-line="116" selection-start-column="45" selection-end-line="116" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/untitled/lib/python3.6/site-packages/sklearn/preprocessing/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1854">
+          <caret line="1350" column="4" selection-start-line="1350" selection-start-column="4" selection-end-line="1350" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/createPickleFilesForDocs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/individualModules.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="220" column="4" selection-start-line="220" selection-start-column="4" selection-end-line="220" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/completePipelineExperiment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="58" column="21" lean-forward="true" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/individualModules.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3229">
+          <caret line="244" selection-start-line="244" selection-end-line="244" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

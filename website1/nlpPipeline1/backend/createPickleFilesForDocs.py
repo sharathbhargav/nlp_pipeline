@@ -8,11 +8,13 @@ from django.conf import settings
 
 def generate_pickle_files(fpath, pdir):
     print("Generating Pickle files.")
+    """
     trainingModelGoogle = KeyedVectors.load_word2vec_format(
-        os.path.join(settings.BASE_DIR, 'models/GoogleNews-vectors-negative300.bin'),
+        os.path.join(settings.BASE_DIR, 'backend/models/GoogleNews-vectors-negative300.bin'),
         binary=True,
         limit=10000)
     im.setModel(trainingModelGoogle)
+    """
     file_names = []
     file_count = 0
     file_handles = []
