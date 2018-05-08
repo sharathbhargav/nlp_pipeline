@@ -3,15 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="55e0dcca-08ee-4eea-8a97-e33d90a8d217" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/backend/completePipelineExperiment.py" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/backend/completePipelineExperiment.py" />
-      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/backend/individualModules.py" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/backend/individualModules.py" />
-      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/backend/plotdata.py" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/backend/plotdata.py" />
-      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/plot.json" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/plot.json" />
-      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/plotter.js" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/plotter.js" />
-      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/index.html" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/index.html" />
-      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/plot.html" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/plot.html" />
-      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/urls.py" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/urls.py" />
-      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/views.py" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/views.py" />
     </list>
     <ignored path=".idea/" />
     <ignored mask=".idea" />
@@ -23,7 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="36044" />
+    <option name="totalTimeSeconds" value="36200" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -521,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1525598352703</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="+ssb added django">
+      <created>1525791026260</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1525791026262</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
