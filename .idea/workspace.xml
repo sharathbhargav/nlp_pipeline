@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55e0dcca-08ee-4eea-8a97-e33d90a8d217" name="Default" comment="Done: Reddit Data Scraper&#10;ToDo : lol">
-      <change beforePath="$PROJECT_DIR$/.idea/nlp_pipeline.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nlp_pipeline.iml" afterDir="false" />
+    <list default="true" id="55e0dcca-08ee-4eea-8a97-e33d90a8d217" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/completePipelineExperiment1.py" beforeDir="false" afterPath="$PROJECT_DIR$/completePipelineExperiment1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/backend/individualModules.py" beforeDir="false" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/backend/individualModules.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/backend/plotdata.py" beforeDir="false" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/backend/plotdata.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/plot.json" beforeDir="false" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/plot.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/plotter.js" beforeDir="false" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/plotter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/plot.html" beforeDir="false" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/plot.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/urls.py" afterDir="false" />
     </list>
     <ignored path=".idea/" />
     <ignored mask=".idea" />
@@ -27,10 +18,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="individualModules.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="individualModules.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/individualModules.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
+            <state relative-caret-position="-3229">
               <caret line="244" selection-start-line="244" selection-end-line="244" />
             </state>
           </provider>
@@ -39,10 +30,22 @@
       <file leaf-file-name="completePipelineExperiment.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/completePipelineExperiment.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="47" column="32" lean-forward="true" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+            <state relative-caret-position="335">
+              <caret line="58" column="21" lean-forward="true" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
               <folding>
                 <element signature="e#0#56#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="createPickleFilesForDocs.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/createPickleFilesForDocs.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="371">
+              <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -51,7 +54,7 @@
       <file leaf-file-name="plotdata.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/plotdata.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
+            <state relative-caret-position="1152">
               <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
@@ -72,7 +75,7 @@
       <file leaf-file-name="plotter.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/plotter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
+            <state relative-caret-position="2088">
               <caret line="116" column="45" selection-start-line="116" selection-start-column="45" selection-end-line="116" selection-end-column="45" />
             </state>
           </provider>
@@ -81,8 +84,8 @@
       <file leaf-file-name="plot.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/plot.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-13461">
-              <caret line="79" column="25" lean-forward="true" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
+            <state relative-caret-position="1422">
+              <caret line="79" column="25" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -90,8 +93,8 @@
       <file leaf-file-name="individualModules.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/individualModules.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="512" column="35" lean-forward="true" selection-start-line="512" selection-start-column="35" selection-end-line="512" selection-end-column="35" />
+            <state relative-caret-position="137">
+              <caret line="220" column="4" selection-start-line="220" selection-start-column="4" selection-end-line="220" selection-end-column="4" />
               <folding>
                 <element signature="e#0#54#0" expanded="true" />
               </folding>
@@ -99,10 +102,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
+            <state relative-caret-position="198">
               <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
@@ -204,17 +207,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="nlp_pipeline" type="cbb8eebc:String" user="nlp_pipeline" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -237,6 +229,13 @@
               <item name="nlp_pipeline" type="462c0819:PsiDirectoryNode" />
               <item name="website1" type="462c0819:PsiDirectoryNode" />
               <item name="nlpPipeline1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nlp_pipeline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nlp_pipeline" type="462c0819:PsiDirectoryNode" />
+              <item name="website1" type="462c0819:PsiDirectoryNode" />
+              <item name="nlpPipeline1" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="nlp_pipeline" type="b2602c69:ProjectViewProjectNode" />
@@ -267,6 +266,17 @@
               <item name="nlp_pipeline" type="462c0819:PsiDirectoryNode" />
               <item name="website1" type="462c0819:PsiDirectoryNode" />
               <item name="website1" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="nlp_pipeline" type="cbb8eebc:String" user="nlp_pipeline" />
             </path>
           </expand>
           <select />
@@ -463,51 +473,58 @@
       <option name="project" value="LOCAL" />
       <updated>1524900147997</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Done: almost&#10;ToDo : lol">
+      <created>1525605200263</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1525605200263</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="69" y="27" width="1851" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14004377" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14004377" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5042598" side_tool="true" weight="0.3278867" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49574015" weight="0.3278867" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.31788793" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49574015" weight="0.3278867" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32937366" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32937366" />
       <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Key Promoter X" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297414" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12832801" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978701" visible="true" weight="0.32897604" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
+      <window_info anchor="bottom" id="Python Console" order="9" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5021299" side_tool="true" weight="0.329718" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="right" id="Key Promoter X" order="3" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Python Console" order="9" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -522,7 +539,8 @@
     <MESSAGE value="Done: Euclidean distance with tfidf&#10;ToDo : lol" />
     <MESSAGE value="Done: Reddit Data Scraper&#10;ToDo : lol" />
     <MESSAGE value="Merge remote-tracking branch 'github/ud' into ud&#10;&#10;# Conflicts:&#10;#&#9;.gitignore&#10;#&#9;redditbot/postman.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'github/ud' into ud&#10;&#10;# Conflicts:&#10;#&#9;.gitignore&#10;#&#9;redditbot/postman.py" />
+    <MESSAGE value="Done: almost&#10;ToDo : lol" />
+    <option name="LAST_COMMIT_MESSAGE" value="Done: almost&#10;ToDo : lol" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -540,6 +558,13 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/models/bbc_sigma.csv" />
     <entry file="file://$PROJECT_DIR$/docprocessing/pdfextractor.py" />
     <entry file="file://$PROJECT_DIR$/datasets/bbc/tech.pickle" />
@@ -645,9 +670,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -657,19 +679,6 @@
           <caret line="22" selection-start-line="22" selection-end-line="22" selection-end-column="31" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/individualModules.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="244" selection-start-line="244" selection-end-line="244" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website1/website1/urls.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/index1.html">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/index.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -682,46 +691,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
           <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/completePipelineExperiment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="47" column="32" lean-forward="true" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/createPickleFilesForDocs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/individualModules.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="512" column="35" lean-forward="true" selection-start-line="512" selection-start-column="35" selection-end-line="512" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -734,7 +703,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/plotdata.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
+        <state relative-caret-position="1152">
           <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
@@ -744,25 +713,76 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/plot.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13461">
-          <caret line="79" column="25" lean-forward="true" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
+        <state relative-caret-position="1422">
+          <caret line="79" column="25" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/plotter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
+        <state relative-caret-position="2088">
           <caret line="116" column="45" selection-start-line="116" selection-start-column="45" selection-end-line="116" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
+        <state relative-caret-position="198">
           <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/untitled/lib/python3.6/site-packages/sklearn/preprocessing/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1854">
+          <caret line="1350" column="4" selection-start-line="1350" selection-start-column="4" selection-end-line="1350" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/createPickleFilesForDocs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/individualModules.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="220" column="4" selection-start-line="220" selection-start-column="4" selection-end-line="220" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/completePipelineExperiment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="58" column="21" lean-forward="true" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/individualModules.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3229">
+          <caret line="244" selection-start-line="244" selection-end-line="244" />
         </state>
       </provider>
     </entry>
