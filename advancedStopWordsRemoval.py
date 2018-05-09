@@ -1,4 +1,4 @@
-import individualModules as im
+from website.doccer.pipeline import individualModules as im
 import os
 import glob
 import pickle

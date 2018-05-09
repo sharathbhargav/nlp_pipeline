@@ -1,0 +1,43 @@
+<head>
+    <title>Plot</title>
+    {% load static %}
+    <script type="text/javascript" src="{% static 'doccer/js/plotly-latest.min.js' %}"> </script>
+    <script type="text/javascript" src="{% static 'doccer/js/plotter.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'doccer/css/plotstyle.css' %}">
+    <link rel="stylesheet" href="{% static 'doccer/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'doccer/css/bootstrap-grid.css' %}">
+    <link rel="stylesheet" href="{% static 'doccer/css/bootstrap-reboot.css' %}">
+
+</head>
+<body>
+    <nav class="navbar navbar-light bg-dark">
+        <a class="navbar-brand" id="navbar-text" href="#">P14B56</a>
+    </nav>
+
+    <!--button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button-->
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Home</a>
+        </div>
+    </div>
+
+    <div id="plot">
+
+    </div>
+    <div class="row" id="named_entities">
+        <div class="col" align="center">
+            <div class="col-md-10">
+                <div class="container">
+                    <h3 id="named_entities_filename">Named Entities</h3>
+                    <p id="named_entities_text" class="lead"> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+        data_from_django = {{ data }};
+        load(data_from_django);
+</script>

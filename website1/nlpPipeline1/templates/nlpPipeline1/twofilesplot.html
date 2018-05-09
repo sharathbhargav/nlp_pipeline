@@ -1,0 +1,29 @@
+<head>
+    <title>Plot</title>
+    {% load static %}
+    <script type="text/javascript" src="{% static 'nlpPipeline1/js/plotly-latest.min.js' %}"> </script>
+    <script type="text/javascript" src="{% static 'nlpPipeline1/js/twofilesplot.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'nlpPipeline1/css/twofilesplot.css' %}">
+    <link rel="stylesheet" href="{% static 'nlpPipeline1/css/bootstrap.css' %}">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-dark">
+        <a class="navbar-brand" id="navbar-text" href="#">P14B56</a>
+    </nav>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Home</a>
+        </div>
+    </div>
+
+    <div id="plot">
+
+    </div>
+
+
+</body>
+<script type="text/javascript">
+        data_from_django = {{ data }};
+        load(data_from_django);
+</script>

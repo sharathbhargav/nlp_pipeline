@@ -45,7 +45,7 @@ function load(data) {
         y : cY,
         type : 'scatter',
         mode : 'markers',
-        marker : {size : 22, color : cColors},
+        marker : {size : 22, color : cColors, line: {color: 'rgb(0, 0, 0)',width: 2}},
         name : 'Clusters'
     }];
 

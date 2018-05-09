@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <head>
+    <meta charset="utf-8"/>
     <title>Home</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'nlpPipeline1/css/homepage.css' %}">
     <link rel="stylesheet" href="{% static 'nlpPipeline1/css/bootstrap.css' %}">
-
+    <script type="text/javascript" src="{% static 'nlpPipeline1/js/jquery-3.3.1.js' %}"></script>
+    <script type="text/javascript" src="{% static 'nlpPipeline1/js/bootstrap.js' %}"></script>
     <script type="text/javascript" src="{% static 'nlpPipeline1/js/homepage.js' %}"></script>
 </head>
 <body>
@@ -38,17 +40,79 @@
             </div>
         </div>
     </form>
-    
-    <form class="form" id="offline_form">
-        <div class="row">
-            <div class="col" align="center">
-                <input class="form-control col-md-3" id="files_list" type="file" webkitdirectory directory multiple oninput="filelist(event)">
-                <button type="button" class="btn btn-primary" onclick="submitoffline()" id="offline_submit">Submit</button>
+
+    <div class="row" align="center">
+        <div class="col">
+            <div class="btn-group" role="group" aria-label="Documents Demo">
+                <button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#offlineForm" aria-expanded="false" aria-controls="offlineForm">
+                    Upload Files
+                </button>
+                <button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#twoFilesForm" aria-expanded="false" aria-controls="twoFilesForm">
+                    Compare Two Files
+                </button>
+                <button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#twoDirsForm" aria-expanded="false" aria-controls="twoDirsForm">
+                    Tabulate Different Methods
+                </button>
             </div>
         </div>
-    </form>
+    </div>
 
-    <ul id="listing"></ul>
+    <div class="row" align="center" id="doc_demo_forms">
+        <div class="col" align="center">
+            <!-- Offline documents form -->
+            <div class="collapse" id="offlineForm">
+                <form class="form-inline" id="offline_form">
+                    <label class="sr-only" for="files_list">List of Files</label>
+                    <input class="form-control mb-3 mr-sm-2" id="files_list" type="file" webkitdirectory directory multiple oninput="filelist(event)">
+                    <button type="button" class="btn btn-primary mb-3 mr-sm-2" onclick="submitoffline()" id="offline_submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="col" align="center">
+            <!-- Two files form -->
+            <div class="collapse" id="twoFilesForm">
+                <form class="form" action="/docdemo/" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">File_1</div>
+                        </div>
+                        <input type="file" class="form-control" name="file_1" placeholder="File_1">
+                    </div>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">File_2</div>
+                        </div>
+                        <input type="file" class="form-control" name="file_2" placeholder="File_2">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="col" align="center">
+            <!-- Offline documents form -->
+            <div class="collapse" id="twoDirsForm">
+                <form class="form" action="/tabulate/" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">Source_1</div>
+                        </div>
+                        <input class="form-control" id="files_source_1" name="source_1" type="file" webkitdirectory directory multiple>
+                    </div>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">Source_2</div>
+                        </div>
+                        <input class="form-control" id="files_source_2" name="source_2" type="file" webkitdirectory directory multiple>
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-3 mr-sm-2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <div id="wait_modal" class="modal">
         <div class="modal-content">

@@ -48,4 +48,4 @@ def run():
 
     im.plotClusters(normalized,fileNames,labels,centroids,True)
 
-run()
+#run()
