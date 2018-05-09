@@ -1,0 +1,90 @@
+OnePlus 5T Review 
+Jamshed Avari, 20 November 2017
+Share on Facebook Tweet Share Share Email Reddit 1 comment
+ OnePlus 5T Review
+HIGHLIGHTS
+The main highlight of the new OnePlus 5T is its 18:9 screen
+The secondary rear camera is optimised for low-light photography
+Battery life and general performance are great.
+If you've just released a pretty good product but come up with an improvement just a short while later, should you release it immediately, or wait for some time to pass? The advantage of going ahead is that you can keep up with competitors who might have released products with new features and capabilities since your launch, and you get to create a whole new hype cycle. The downside of course is the backlash from buyers who picked up your earlier product and would feel let down or even betrayed by such rapid forced obsolescence. That's exactly the position OnePlus was in, and from what the company has said, it didn't hesitate at all to launch the OnePlus 5T just five months after the OnePlus 5.
+
+This is a company that has built its identity on delivering more than the big guns can, and that too at lower prices. Samsung and LG both had the same idea earlier this year - make phone screens taller instead of increasing their size proportionately, and that way you can stretch them without the awkwardness of an overgrown phablet. However, Samsung and LG are gigantic multinational corporations that manufacture their own displays. It took a while for third-party suppliers to catch up, but Vivo, Oppo and Honor are already shipping 18:9 models. OnePlus just couldn't afford to not be playing on the same level. That's why the OnePlus 5 is now on its way out despite being launched with much fanfare only five months ago.
+
+Very little else about the OnePlus 5T is new - its processor and nearly all of its hardware as well as software is very much the same. In fact, even its pricing is the same as that of the outgoing OnePlus 5, making this a simple drop-in replacement. In that sense, there shouldn't be much to say about this phone - but we're putting it through the full review process anyway, to see how far this company has come in very little time. Here's everything you need to know about the new OnePlus 5T.
+
+
+OnePlus 5T design
+As with many things in the technology industry, once it's clear that a new feature or specification has everyone talking, almost every company under the sun will race to adopt it. It's interesting when it comes to taller screens, because for the first time in a very long time, there's something visibly different about smartphones right now. It's easy to feel that there is a tangible reason to upgrade when you see a nearly borderless 18:9 screen on a smartphone for the first time - more so than improved camera quality, software or battery life, this is something physical that you can see in front of you. It's aesthetically pleasing, and immediately a line is drawn between the old and the new.
+
+OnePlus isn't the first company to launch such a phone; not by a long shot. When placed side by side with the Oppo F5 (Review), the similarities in their proportions are obvious. Much the same can be said about the Honor 9i (Review), Vivo V7 Plus (Review), and of course the LG G6 (Review) - no one has managed to emulate Samsung's curved screens yet.
+
+The screen measures 6.01 inches diagonally with a resolution of 1080x2160, and uses AMOLED technology. Everything looks sharp, bright, and saturated. There are still black borders around it - thinner at the sides than at the top and bottom - but the effect is still immersive. Videos and games are especially engaging.
+
+The body of the OnePlus 5T is made of aluminium, and the company is quick to point out subtle design cues such as the sharp crease around the edges of an otherwise curved body. Unlike its predecessors, this model is available only in Midnight Black - and OnePlus is not saying why it reduced choices, or whether we can expect more options or even special editions down the line. This phone feels solid, but it isn't especially eye-catching in the way that Apple and Samsung's latest flagships are. It also isn't certified for any sort of weatherproofing.
+
+oneplus 5t rear ndtv oneplus 5t
+
+With regard to the obvious similarity between the OnePlus 5T and sister company Oppo's R11s, the company is vehemently denying any sort of partnership or sharing of design resources - though the similarities are there for all the world to see.
+
+Predictably, the fingerprint sensor has been moved to the rear of the phone. The fact that this phone is no wider than usual means that the sensor is within easy reach. The camera bump has smooth, angled sides, very similar to those of the iPhone 7 Plus (Review) and iPhone 8 Plus (Review), and we are assured that the finish is more durable than that of the OnePlus 5, which started chipping almost as soon as we took it out of its box. The top of the phone is bare, while the bottom has a 3.5mm audio socket, USB Type-C port, and speaker grille.
+
+The left of the phone has OnePlus's trademark Alert Slider, which lets you flip between three positions - Silent, DND, and Ring. It's incredibly handy, especially if you're migrating from an iPhone. The volume buttons are also on the left, and the power button is on the right. Above the power button is a tray for two Nano-SIMS - this phone doesn't support storage expansion at all, which might frustrate some users.
+
+In terms of physical size, the OnePlus 5T is very slightly taller, wider and thicker - not enough to be noticeable unless you stand the two next to each other, but enough that their cases can't be shared. The new model is also a little heavier, at 162g compared to 153g. OnePlus continues to ship an extremely bulky charger with this phone, and you also get the same red USB Type-C cable as before. No headset is included, and if you want to use your own it will need to have a very slim plug to work with any of the official OnePlus cases.
+
+oneplus 5t bottom ndtv oneplus 5t
+
+OnePlus 5T specifications and software
+Qualcomm hasn't released a mid-year flagship upgrade, despite persistent rumours of a Snapdragon 836, and so almost nothing about the OnePlus 5T has changed, compared to the OnePlus 5. It uses the same Snapdragon 835 SoC with its integrated Adreno 540 GPU, and comes in the same two variants - one with 6GB of RAM and 64GB of storage, and one with 8GB of RAM and 128GB of storage.
+
+This phone supports VoLTE and 4G on both SIMs, but only one at a time, as well as dual-band Wi-Fi 802.11ac and Bluetooth 5.0 with aptX HD. NFC, GPS, and GLONASS are supported, and there's a wide range of sensors including an electronic compass and gyroscope. The USB Type-C port works at only USB 2.0 speed. The battery capacity is 3300mAh and OnePlus's own Dash Charge standard for quick charging will work if you use one of the company's own chargers.
+
+The only thing other than the display that's really new about this phone is the fact that its secondary rear camera doesn't have a telephoto lens, but instead a sensor that is tuned for low-light photography. The primary camera is the same 16-megapixel unit as on the OnePlus 5, but now it is joined by a 20-megapixel partner with the same f/1.7 aperture and 27.22mm focal length. OnePlus stresses that this also allows for better portrait shots because the focal lengths match. It's frustrating to see that the optical zoom functionality has been taken away, but it's possible that the tradeoff will be useful to more people, more often.
+
+oneplus 5t left ndtv oneplus 5t
+
+We're surprised and a little disappointed that OnePlus couldn't ship this phone with Android 8.0. As it stands, you get Android 7.1.1 in the form of the custom OxygenOS fork, with a beta test period commencing soon and a final update to Android 8.0 and a new version of OxygenOS arriving early next year. As OnePlus says, the experience it delivers is almost perfectly that of stock Android, but with loads of little improvements throughout. You get a lot more UI customisation options plus overhauled apps such as the Gallery.
+
+Because of the taller screen on the OnePlus 5T, you can swipe down or up anywhere on the home screens to reveal the notifications shade or app drawer. There are multiple gestures, including shortcuts that you can assign yourself, and you can also choose secondary functions for the on-screen Android navigation buttons. OnePlus is also introducing Parallel Apps to let you run two instances of social media services, and an iPhone migration assistant - neither of which is a unique innovation. Other features include a Game DND mode that suppresses notifications, Night Mode, a dark UI theme, and the ability to lock apps of your choice.
+
+Perhaps inevitably, the OnePlus 5T supports facial recognition as a way to unlock itself. Setup works in exactly the same way as on the Oppo F5, and while recognition can be very quick, it simply doesn't work in low light. OnePlus freely admits that facial recognition isn't nearly as secure as a fingerprint, and so you can't use it for banking apps or making purchases. At least you still have the fingerprint sensor, though.
+
+oneplus 5t version ndtv oneplus 5t
+
+OnePlus 5T performance, cameras, and battery life
+We tested the OnePlus 5T variant with 8GB of RAM and 128GB of storage, and as expected, usage was a breeze. The phone was more than adequately fast when it came to loading apps, playing games, and multitasking. HD videos streamed smoothly and we couldn't feel any hiccups at all. You can choose between the default colour profile, sRGB, DCI-P3, adaptive mode, and a custom colour temperature. If you find the default too saturated, sRGB might suit you better.
+
+The single mono speaker is pretty loud but music tends to distort at higher volumes, and there isn't any richness to it. Sound is just about good enough for games, and we would have liked better, especially considering this phone's price. There's no headset in the box, though at least there is a standard 3.5mm socket. According to OnePlus, the Type-C ecosystem for headphones isn't good enough yet, and there isn't enough choice in the market.
+
+We did find ourselves appreciating some of the tweaks that OxygenOS brings to Android, such as the ability to wake the phone with a double-tap and unlock it with our faces instantly. This is an effective workaround to the lack of a fingerprint sensor on the front, which we did miss when we had the phone lying face up on a table. However, the sensor on the rear is easy enough to reach when the phone is in either hand.
+
+We recorded a stellar score of 179,519 with the AnTuTu benchmark, as well as 1,966 and 6,731 in Geekbench's single-core and multi-core tests respectively. 3DMark Ice Storm Extreme gave us 14,291 points and GFXBench managed 60fps in the T-rex test as well as an impressive 23fps in the Car Chase test.
+
+oneplus 5t camera ndtv oneplus 5t
+
+The primary rear camera does a good job as long as there's plenty of light. We noticed that colours popped more and details were much sharper when there was bright sunlight, and everything deteriorated quite a bit on a cloudy day. In favourable conditions, our photos turned out very well, with close-ups faring better than landscapes. The portrait mode produced artificial-looking results about half the time. Parts of the viewfinder flashed on screen for about a second as the phone calculated the foreground and background, and even then there was a slight chance of errors in the blurring. It's a nice effect, but feels just a little gimmicky at this point. Interestingly, OnePlus has retained the iPhone-style zoom button in its app despite the fact that it only triggers the standard digital zoom now.
+
+The secondary rear camera only kicks in when there's very little light. The phone determines when to use it; there's no user-facing control. On very rare occasions, we saw the app jump between the two cameras when we were trying to line up a shot, and the difference in perspective made it difficult for us to frame what we wanted to capture. However, results were excellent. If there was even a little bit of incident light, we can see the difference made by the f/1.7 lens and technique of combining four pixels into one on the higher-density sensor to increase light sensitivity. We took several samples that were more than usable in very low light, with noise and grain well under control.
+
+The front camera is decent enough in various conditions, and you can safely use it for all your social media needs. OnePlus co-founders Carl Pei and Pete Lau told Gadgets 360 at the launch event that the beautification algorithms on the OnePlus 5T are different for Indian, Chinese, and Caucasian faces, and the phone uses your SIM card to determine the nationality it should apply - certainly an interesting feature that isn't widely known.
+
+Video recording goes up to 4K at 30fps, 1080p at 60fps, or 720p slow motion at 120fps. This is slightly disappointing, as other phones on the market can capture better slow-mo video. However, video is still smooth and crisp, and the quality should be adequate for most people.
+
+Battery life is a bright spot. We were able to use the OnePlus 5T for a full day, including some gaming and video streaming and a lot of photography, and we still had a bit of power left over at night. We were never worried about the battery running out. Our HD video loop test ran for 13 hours, 30 minutes which is quite a bit less than the OnePlus 5 managed, and that much of a difference can't entirely be explained by the newer phone's larger screen.
+
+
+
+
+
+
+
+
+
+Tap to see full-sized OnePlus 5T photo samples
+
+Verdict
+Last year, OnePlus replaced the 3 with the 3T because there was a new processor available. This year, it's a new kind of display. In both cases, the changes wouldn't be major enough for large brands to break their yearly cycles, and that just shows the differences between the old and new guards. OnePlus, like most of its Chinese counterparts, does what it takes to try and stay at the top.
+
+The OnePlus 5T is marginally better than the OnePlus 5, that is if you don't desperately need the older model's optical zoom capabilities. You get a more modern, more appealing phone at exactly the same price, so of course the 5T is the better pick. For the most part, we agree that the low-light sensor is more useful than a telephoto lens, but we did miss the ability to frame some shots better. In any case, there's no question of choosing between the two models since OnePlus has replaced the 5 outright and most variants are already out of stock.
+
+Should existing OnePlus 5 owners rush out to buy the new model? Absolutely not, but some loyal fans of the brand will do just that. If you have a phone that's at least two years old, the OnePlus 5T certainly has a strong appeal. We can't say we're thrilled with the upward trend in this company's prices, especially since you don't get all the perks of a top-end phone, such as weather-proofing, wireless charging, and a super-slick design. If you're looking for the phone with the biggest wow factor, the Xiaomi Mi Mix 2 comes in within the same price range. If you aren't caught up in the 18:9 hype, the Honor 8 Pro still sells for a good bit less, and on the other hand if you can afford to spend more, the Samsung Galaxy S8 will keep you happy.

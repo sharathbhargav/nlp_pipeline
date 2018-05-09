@@ -6,7 +6,7 @@ from nlpPipeline1.backend.plotdata import PlottingData
 import os
 from django.conf import settings
 
-
+from sklearn import metrics as metrics
 
 #pathToData="datasets/custom2/"
 #pathToPickles = "datasets/custom2/"
@@ -60,6 +60,17 @@ class pipeLine:
             self.fileDictionary[key] = [os.path.join(self.filePath, file) for file in self.fileDictionary[key]]
         self.absoluteFileNames=[os.path.join(self.filePath, file) for file in self.fileNames]
 
+    def skLearnKmeans(self):
+        (self.clusterCount, clf) = im.skLearnKMeansComplete(self.normalizedData)
+        self.labels=clf.labels_
+
+        self.centroids=(clf.cluster_centers_)
+
+        self.fileDictionary = im.getDocClustersNames(self.clusterCount, self.labels, self.fileNames)
+        print("File dict generated")
+        for key, val in self.fileDictionary.items():
+            self.fileDictionary[key] = [os.path.join(self.filePath, file) for file in self.fileDictionary[key]]
+        self.absoluteFileNames = [os.path.join(self.filePath, file) for file in self.fileNames]
 
     def getNamedEntities(self):
         self.entities = im.getNamedEntties(self.filePath, self.fileDictionary, 10)
@@ -73,13 +84,19 @@ class pipeLine:
         pd.set_named_entities(self.entities)
         pd.prepare_to_plot()
 
-
+    def calculateF1Score(self,trueLabels):
+        f1Score=metrics.f1_score(trueLabels,self.labels)
+        print(f1Score)
 
 def run(fpath, pdir):
 
     pipe=pipeLine()
     pipe.readData(fpath,pdir)
-    pipe.customKmeansExecute()
+    pipe.skLearnKmeans()
+    print(pipe.fileDictionary)
+    for i in range(len(pipe.labels)):
+        print(pipe.fileNames[i],":",pipe.labels[i])
+    print(pipe.labels)
     pipe.getNamedEntities()
     pipe.sendToPlotData()
     #im.plotClusters(normalized,fileNames,labels,centroids,True)

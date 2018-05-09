@@ -296,8 +296,9 @@ def getOptimalClustersSilhoutte(data, algorithm=ClusteringAlgorithm.skLearnKMean
     silhoutteScores = {}
     rotationStored = {}
     thresholdValues = {}
+    kmeansClusterNumberRange= range(2,min(20,len(data)))
     if algorithm == ClusteringAlgorithm.customKMeans:
-        for clusterKmeansNumber in range(2, 20):
+        for clusterKmeansNumber in kmeansClusterNumberRange:
             try:
                 clf = kMeans.K_Means(clusterKmeansNumber, tolerance=0.00001, max_iterations=800)
                 rotation = randamozieSeed(data, clusterKmeansNumber)
@@ -311,7 +312,7 @@ def getOptimalClustersSilhoutte(data, algorithm=ClusteringAlgorithm.skLearnKMean
                 continue
                 # print(clusterKmeansNumber," chucked")
     elif algorithm == ClusteringAlgorithm.skLearnKMeans:
-        for clusterKmeansNumber in range(2, 20):
+        for clusterKmeansNumber in kmeansClusterNumberRange:
             clf = KMeans(n_clusters=clusterKmeansNumber)
             labels = clf.fit_predict(data)
             silhouette_avg = silhouette_score(data, labels)
@@ -337,7 +338,7 @@ def getOptimalClustersSilhoutte(data, algorithm=ClusteringAlgorithm.skLearnKMean
     print("selected number of clusters=", selectedClusterNumber)
     if algorithm == ClusteringAlgorithm.customKMeans:
         return (selectedClusterNumber, rotationStored[selectedClusterNumber])
-    elif algorithm == ClusteringAlgorithm.skLearnBirch:
+    elif algorithm == ClusteringAlgorithm.skLearnKMeans:
         return selectedClusterNumber
     else:
         return thresholdValues[selectedClusterNumber]

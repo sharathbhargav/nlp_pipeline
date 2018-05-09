@@ -1,0 +1,182 @@
+Surface Pro 4 review: Yes, it can really replace your laptop
+Microsoft's latest hybrid tablet is all about refinement (and a great keyboard).
+ 
+Devindra Hardawar, @devindra
+10.21.15
+ 
+244
+Comments
+ 
+23
+Shares
+ 
+   
+Surface Pro 4
+Get more info
+More
+Surface
+86
+Scores
+Engadget
+86
+ 
+Critic 10 Reviews
+7.9
+ 
+Users 1 Reviews
+9
+ 
+Key Specs
+Type  Tablet
+Form factor  Slate
+Screen size  12.322
+Screen resolution  Other
+Bundled OS  Windows
+CPU family  Other
+System RAM  41
+Video outputs  DisplayPort
+Maximum battery life  Up to 920
+From $979.00
+Buy Now 
+  
+Sponsored Links by Taboola
+Get 1 Cr Life Cover @ Just 563* Per Month. With The Confidence of 97.59% Claims Paid
+Max Life Insurance
+Dream Cars: 10 Cars Men Lust After
+Carophile
+How to hedge risk in gold investments? Read here
+BloombergQuint
+With the Surface Pro 4, Microsoft's surprising hybrid tablet journey finally makes sense. It's as if Microsoft was laser-focused on fixing the issues we had with the Surface Pro 3. We liked that device quite a bit, but its Type Cover was endlessly frustrating, with a sloppy keyboard and wonky trackpad. The new keyboard, on the other hand, is far sturdier and more laptop-like, and its trackpad is no longer a thing of nightmares. It's taken a while, but the Surface Pro 4 shows Microsoft has finally accomplished everything it set out to do when it unveiled its crazy hybrid tablet concept three years ago (which makes the announcement of the Surface Book even more curious). Aside from improving the battery life and bundling in the Type Cover (just do it, already), it's hard to imagine how much better the Surface Pro line can get.
+
+Gallery: Surface Pro 4 review | 23 Photos
+        +19
+Engadget ScorePOOR UNINSPIRING GOOD EXCELLENT
+Key
+Microsoft
+Surface
+from $979.00
+ 
+Buy Now 
+86
+Pros
+Works well as both a tablet and a laptop
+New Type Cover and Surface Pen are massive improvements
+Still pretty thin and light for the equivalent of an ultraportable
+ 
+Cons
+Mediocre battery life
+Type Cover is an additional $130
+Summary
+The Surface Pro 4 builds on the best parts of the Surface Pro 3, and it finally delivers a solid typing experience with the revamped Type Cover (which is unfortunately sold separately). It's the ideal hybrid tablet in practically every way -- it's as light as a tablet, but as productive as any laptop. The only problem is you're stuck with so-so battery life.
+
+X
+
+Hardware
+The biggest knock against the Surface Pro 4 is that it looks just like the Surface Pro 3. But honestly, that's not a huge complaint since the Pro 3 still feels like a marvel of engineering today. Their frames are similarly thick (9.1mm on the Pro 3 versus 8.45mm on the Pro 4) and weigh at or near 800 grams (the entry-level Core M3 Surface Pro 4 weighs 766 grams or 1.69 pounds), making them a tad heavier and thicker than most large tablets. They also share the same magnesium case and adjustable kickstand, which can fold out almost completely flat to 150 degrees. The dimensions might not sound very exciting when compared to the ultra-thin tablets we're seeing these days, but they're particularly impressive when you consider that Microsoft is able to fit in modern Intel desktop chips, and not just slower mobile processors.
+
+Look a bit closer at the front of the Surface Pro 4, however, and you'll quickly notice some differences versus its predecessor. The screen is ever so slightly larger at 12.3 inches, for one. Microsoft chipped away at the bezel around the screen to make that possible, and it also removed the capacitive Windows button on the bezel (which is less necessary with Windows 10). The volume rocker has also been moved from the left side of the case to the top, right beside the power button. (It's also a bit more confusing this time, since tapping left on the rocker increases the volume, while tapping right decreases it.)
+
+
+
+Unfortunately, Microsoft didn't add much in the way of ports. There's still just one USB 3.0 socket and a Mini DisplayPort, which might pose a problem for road warriors with lots of peripherals. (If you're in that boat, though, you're probably also traveling with a USB hub.) Once again, there's a microSD card slot under the kickstand, which lets you add up to 128GB of additional storage. Microsoft is also sticking with its proprietary power connector, which is a shame -- it still feels a bit awkward and insecure when it's connected. I'd love to see Microsoft make the move to USB Type-C next year (which would also be an easy way to include more USB connections). On the plus side, there's still an extra USB charging port on the Surface Pro 4's power adapter. You can never really have enough of those.
+
+The Surface Pro 4 has a new 5-megapixel front-facing shooter that's also compatible with Windows Hello, the company's biometric authentication technology. Sadly, I wasn't able to test it out in time for this review (Microsoft says it'll be enabled with a software update), but from demonstrations I've seen, it typically logs you in within a few seconds. Windows Hello has the potential to completely change the way we interact with our computers, so I'll definitely follow up once it's working. On the rear, there's an 8-megapixel camera with 1080p video support.
+
+As a tablet, the Surface feels heftier than most, but it's still easy enough to hold in one hand while browsing the web or hopping through Windows apps. The magnesium case gives it a premium feel and the kickstand is as sturdy as ever. It requires a bit of work to open up, but at least you don't have to worry about it losing its position easily.
+
+Display and pen input
+
+
+The Surface Pro 4's display is not only slightly bigger, but also sharper than last year's model, with 2,736 by 1,824 resolution (around 267 pixels per inch). It packs in even more pixels than Apple's 13-inch Retina MacBook Pro, which sports a resolution of 2,560 by 1,600. It's not even worth comparing the Surface Pro 4 to the 13-inch MacBook Air, whose screen tops out at a comparatively low-res 1,440 by 900.
+
+All of those pixels make for incredibly crisp text, razor-sharp photos and a great movie-viewing experience. You won't see any individual pixels here, unless you've got a magnifying glass handy. For the most part, the Surface Pro 4 also delivered accurate colors, no matter what I was looking at. It's plenty bright, too, even in direct sunlight. As with any glass-covered display (Gorilla Glass 4, in this case), there's some reflection from light sources, but it otherwise does a good job of minimizing glare.
+
+Microsoft has always managed to cram in great screens in the Surface line -- this one just happens to be exceptional. It's also dubbed this a "PixelSense" display, which is just a fancy marketing term for its incredibly thin stack of optical and pen-input components.
+
+
+
+Speaking of pen input, Microsoft also made some significant changes to the Surface Pen this time around. It offers 1,024 levels of pressure sensitivity now (compared to 256 levels from before); there's an eraser at the top that actually works as you'd expect; and it also magnetically attaches to the side of the Surface. That's a big step beyond just holstering it in the Type Cover. Most importantly, though, it simply feels great. Using the Surface Pen is almost as good as putting a pencil to paper. That's due to a combination of new pen tip and input technology. You'll also be able to swap out the Surface Pen tips in the future, which will let you tweak its performance to better suit handwriting or drawing.
+
+Admittedly, I'm not much of an artist. But the Surface Pro 4 and the new Surface Pen did a better job of capturing my scribbles than past Surface models, not to mention other devices, like Samsung's Note phones and tablets. Taking handwritten notes felt natural and fluid -- I can imagine it being particularly useful for instances where you need to draw diagrams more than jot down text. Just like with the Surface Pro 3, clicking the top of the pen almost instantly opens up a blank OneNote file. Tap it again and it gets sent off to your OneDrive. You can also access Cortana by holding down the top button, or take a screenshot by double-clicking it.
+
+Typing experience
+
+
+Microsoft's new Type Cover is simply a revelation: It finally brings a killer keyboard to the Surface lineup. It's a tad heavier than the last Type Cover (0.68 pound compared to 0.65 pound), but it offers an experience that's just as good as most high-end laptops. The keys stick out slightly from the cover now, rather than being uniformly flat, which gives them more feedback than before. The new Type Cover is also far stiffer -- it stays flat even when confronted with heavy typers like myself. (There's also another version of the new Type Cover coming that includes a fingerprint reader for around $150.)
+
+So how good is it, really? I was able to transcribe a 30-minute interview while sitting on a park bench, with the Surface Pro 4 in my lap, in about the same amount of time it would take me on my 13-inch MacBook Air. I'm a pretty fast touch-typer, and I never felt like I had to slow my pace while jotting down that interview. That's particularly impressive since past Surface models, even on a completely flat table, always required some sort of compromise when typing. I'll admit, getting used to balancing the kickstand on your leg takes a bit of time, but once you find the right position, it's just as "lappable" as a typical laptop. As you can see in the video above, the Type Cover also makes a solid connection to the Surface, so much so that you can lift the tablet just by lifting up the cover.
+
+Not only has the typing experience been improved, but also the Type Cover finally delivers a decent trackpad. It's 40 percent larger than the previous model, but most importantly, it's smooth (finally, it's made of glass!) and accurate. When it came to scrolling and using multi-finger gestures, it felt almost as good as my MacBook Air. The last Type Cover's trackpad was so infuriating, with a general lack of accuracy and a tendency to misread swipes and clicks, that I avoided using it at all costs. Back in our Surface Pro 3 review, we even suggested that power users would be better off with a wireless mouse. That's not the case here.
+
+One of the best things about the new Type Cover: It's also compatible with the Surface Pro 3. Credit to Microsoft for taking care of its existing customers.
+
+Performance and battery life
+PCMARK7	PCMARK8 (CREATIVE ACCELERATED)	3DMARK11	3DMARK (SKY DIVER)	ATTO (TOP READS/WRITES)
+Surface Pro 4 (2.4GHz Core i5-6300U, Intel HD 520)	5,403	3,602	E2,697/ P1,556/ X422	3,614	1.6 GB/s / 529 MB/s
+Surface Pro 3 (1.9GHz Core i5-4300U, Intel HD 4400)	5,024	N/A	
+E1,313 / P984
+
+N/A	555 MB/s / 252 MB/s
+Surface Book (2.4GHz Core i5-6300U, Intel HD 520)	5,412	3,610	
+E2758 / P1578 / X429
+
+3,623	1.6 GB/s / 571 MB/s
+Surface Book (2.6GHz Core i7-6600U, 1GB NVIDIA GeForce graphics)	5,740	3,850	
+E4122 / P2696
+
+6,191	1.55 GB/s / 608 MB/s
+Lenovo LaVie Z (2.4GHz Intel Core i7-5500U, Intel HD 5500)	5,232	N/A	
+E2001/ P1122 / X310
+
+N/A	555 MB/s / 245 MB/s
+HP Spectre x360 (2015, 2.2GHz Intel Core i5-5200U, Intel HD 5500)	4,965	N/A	
+E1667 / P932 / X265
+
+N/A	555 MB/s / 270 MB/s
+Dell XPS 13 (2015, 2.2GHz Intel Core i5-5200U, Intel HD 5500)	4,900	N/A	
+E2114 / P1199 / X330
+
+N/A	515 MB/s / 455 MB/s
+When it comes down to pure computational performance, I didn't feel a huge difference between the Surface Pro 4 and the Pro 3. I'm testing a Core i5 model running at 2.4GHz with 8GB of RAM, so sure, it's technically zippier than the Core i5 I tested last year. It's a particularly big jump if you're dealing with media editing, where the significantly faster disk speeds will be very noticeable. Really, though, it's more useful to look at the productivity benefits the Surface Pro 4 delivers with the new Surface Pen and Type Cover. And in that respect, it's a night-and-day difference from its predecessor.
+
+Transcribing isn't fun, folks -- the fact that I was able to jot down a lengthy and dense interview with the new Type Cover in a less-than-ideal seating situation, with the Surface balanced on my lap, is worth praising. I also didn't have any trouble fitting the Surface Pro 4 into my daily workflow, which is something the Pro 3 never quite achieved. Microsoft has finally managed to build a Surface that can keep up with me productivity-wise. That's a huge win.
+
+BATTERY LIFE
+
+Surface Pro 4	7:15
+Surface Book (Core i5, integrated graphics)	13:54 / 3:20 (tablet only)
+Surface Book (Core i7, discrete graphics)	11:31 / 3:02 (tablet only)
+MacBook Air (13-inch, 2013)	12:51
+HP Spectre x360	11:34
+Apple MacBook Pro with Retina display (13-inch, 2015)	11:23
+Chromebook Pixel (2015)	10:01
+Microsoft Surface 3	9:11
+Apple MacBook (2015)	7:47
+Dell XPS 13 (2015)	7:36
+Lenovo Yoga 3 Pro	7:36
+Lenovo LaVie Z	7:32
+Microsoft Surface Pro 3	7:08
+Lenovo LaVie Z 360	6:54
+Despite being a huge leap forward in many ways, the Surface Pro 4 still falters in one critical area: battery life. In typical daily usage, which mostly consists of lots of web browsing, some image editing, constant Spotify streaming and a bunch of Slack messaging, it usually lasted me between five and seven hours. In our standard rundown test (looping a video until the battery dies), it lasted around seven hours and 15 minutes. That's pretty disappointing for a flagship device in 2015 -- especially when the MacBook Air has been getting almost double that amount for a few years now (it's worth noting that the super-thin MacBook clocks only 7:47 in our test). Of course, the Surface Pro 4's svelte design limits the size of the battery Microsoft can actually fit in, but it's still a shame that it won't last a full workday.
+
+Configuration options and the competition
+
+
+While the Surface Pro 4 starts at $899 for the Core M3 version, we'd really recommend spending the extra $100 to step up to the Core i5 model with 4GB of RAM and 128GB SSD, at the bare minimum. If you want something more, it's worth shelling out for the $1,299 Core i5 model with 8GB RAM and 256GB SSD. And if you're particularly power hungry, you can nab the Core i7 Surface Pro 4 starting at $1,599 with 8GB of RAM and 256GB SSD.
+
+Of course, you'll also have to add another $130 to your total for the Type Cover, which is once again sold separately. I'm not sure why Microsoft still thinks anyone would buy a Surface Pro without a keyboard, especially when it's positioning it as a device that can replace your existing laptop. You wouldn't expect a MacBook or an HP laptop to show up at your door without a keyboard, would you? It's worth noting that all of the Surface competitors we mention below come with keyboards. And while Apple's new Surface-inspired iPad Pro also has a separate keyboard accessory, Apple has been very careful to position that device as mainly a tablet.
+
+Even with the lowly Core M3 processor, an entry-level Surface Pro 4 will end up costing you around $1,030 once you add in the Type Cover. And if you want something decently powerful with a Core i5 chip, you're looking at a $1,130 layout. I'm not pushing for Microsoft to offer the Type Cover for free (although it's not as if it can't absorb that loss to make the Surface successful), but it would be nice if it were more transparent with its advertised pricing.
+
+Every time I bring up this issue with Microsoft reps, they repeat the same pre-programmed mantra: "We believe we're delivering significant value with the Surface." That may be technically true, but I don't think most consumers would call the Surface's semi-hidden fees a "significant value."
+
+
+
+When it comes to the competition, this year is looking far more interesting than the last few. We're now seeing Surface-like devices all over the place: HP has the Spectre x2; Lenovo has the Miix 700; and Dell has the revamped XPS 12. And of course, there's the iPad Pro on the horizon, which starts at $799 and has the aforementioned keyboard accessory and a stylus of its own, the $99 Apple Pencil (sold separately). If you're looking for something with a bit more horsepower, it's also hard to ignore Microsoft's other hybrid laptop, the Surface Book ($1,499 ... with a keyboard).
+
+Wrap-up
+
+
+The Surface Pro 3 was a sign that Microsoft's crazy hybrid tablet experiment might actually have legs. The Surface Pro 4, on the other hand, is the company's Surface dream made real. Everything Microsoft promised at that surprise Surface unveiling in 2012 is here today with the Pro 4. Future models might eventually fix the battery life issue and add faster hardware, but we'll likely remember the Surface Pro 4 as the turning point for Microsoft.
+
+If anything, Microsoft's big problem now isn't with building a killer device; it's with public perception. It took several failed Surface models to get to this point, and the company might have a hard time convincing consumers that it's finally cracked the code. But who knows -- maybe a free Type Cover would help.
