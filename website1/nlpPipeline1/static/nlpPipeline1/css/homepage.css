@@ -21,12 +21,11 @@
     margin-bottom: 20px;
 }
 
-#offline_form {
-    vertical-align: bottom;
-}
-
-#offline_submit {
-    margin-top: 10px;
+#doc_demo_forms {
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin:bottom: 20px;
 }
 
 .modal {

@@ -29,9 +29,9 @@ extraWords = ['.', ',', '/', '<', '>', '?', ';', '\'', ':', '"', '[', ']', '{', 
 removableWords.update(extraWords)
 vectorSize = 300
 
-print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
-print(settings.PROJECT_ROOT)
-print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.")
+#print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+#print(settings.PROJECT_ROOT)
+#print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
 trainingModelGoogle = KeyedVectors.load_word2vec_format(os.path.join(settings.BASE_DIR, 'nlpPipeline1/backend/models/GoogleNews-vectors-negative300.bin'), binary=True, limit=10000)
 nlp = spacy.load('/home/ullas/anaconda3/lib/python3.6/site-packages/en_core_web_sm/en_core_web_sm-2.0.0')
 
@@ -220,7 +220,7 @@ def getCommonWordsBetweenDocs(documentHandle1, documentHandle2):
 
 def getPlotValuesOfDocuments(documentHandles):
     vectors = []
-    print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+    print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
     print(documentHandles)
     print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
     for handle in documentHandles:

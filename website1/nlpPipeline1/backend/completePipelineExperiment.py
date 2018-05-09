@@ -12,55 +12,70 @@ from django.conf import settings
 #pathToPickles = "datasets/custom2/"
 
 
+class pipeLine:
 
+    def __init__(self):
+        self.filePath=None
+        self.picklePath=None
+        self.normalizedData=None
+        self.clusterCount=None
+        self.labels=None
+        self.centroids=list()
+        self.fileDictionary=None
+        self.entities=None
+        self.fileNames=None
+        self.absoluteFileNames=None
+
+    def readData(self,filePath,picklePath):
+        print("Begin reading data")
+        self.filePath=filePath
+
+
+        self.picklePath = os.path.join(settings.BASE_DIR, picklePath)
+
+        custom2Names = open(os.path.join(self.picklePath, 'plotNamesOfDocs'), 'rb')
+        self.fileNames = pickle.load(custom2Names)
+        custom2Pickle = open(os.path.join(self.picklePath, 'plotValuesOfDocs'), 'rb')
+        total1 = pickle.load(custom2Pickle)
+
+        self.normalizedData = normalize(total1)
+
+    def customKmeansExecute(self):
+        print("Beginning Clustering")
+
+        (self.clusterCount, clf) = im.customKMeansComplete(self.normalizedData)
+
+        print("Clustering done with : " + str(self.clusterCount) + " clusters")
+        self.labels=clf.getLabels(self.normalizedData)
+        centroidsCustom = clf.centroids
+        for each in range(len(centroidsCustom)):
+            centroid = centroidsCustom[each]
+            self.centroids.append(list(centroid))
+        self.centroids=np.asarray(self.centroids)
+        self.fileDictionary=im.getDocClustersNames(self.clusterCount,self.labels,self.fileNames)
+        print("File dict generated")
+        for key, val in self.fileDictionary.items():
+            self.fileDictionary[key] = [os.path.join(self.filePath, file) for file in self.fileDictionary[key]]
+        self.absoluteFileNames=[os.path.join(self.filePath, file) for file in self.fileNames]
+
+    def getNamedEntities(self):
+        self.entities = im.getNamedEntties(self.filePath, self.fileDictionary, 10)
+
+    def sendToPlotData(self):
+        pd = PlottingData()
+        pd.set_filenames(self.absoluteFileNames)
+        pd.set_points(self.normalizedData)
+        pd.set_colors(self.labels)
+        pd.set_clusters(self.clusterCount, self.fileDictionary, self.centroids)
+        pd.set_named_entities(self.entities)
+        pd.prepare_to_plot()
 
 
 
 def run(fpath, pdir):
-    print("Beginning Clustering")
-    pathToData = fpath
-    pathToPickles = os.path.join(settings.BASE_DIR, pdir)
-
-    custom2Names=open(os.path.join(pathToPickles, 'plotNamesOfDocs'), 'rb')
-    fileNames=pickle.load(custom2Names)
-    custom2Pickle=open(os.path.join(pathToPickles, 'plotValuesOfDocs'), 'rb')
-    total1=pickle.load(custom2Pickle)
-
-
-    normalized=normalize(total1)
-
-
-    (clusterCount,clf)=im.customKMeansComplete(normalized)
-
-    print("Clustering done with",clusterCount)
-    #labels=clf.labels_
-    labels=clf.getLabels(normalized)
-
-    centroids=[]
-    centroidsCustom=clf.centroids
-    for each in range(len(centroidsCustom)):
-        centroid=centroidsCustom[each]
-        centroids.append(list(centroid))
-    #print(centroids)
-    centroids=np.asarray(centroids)
-    #print(centroids)
-    fileNameDictionary=im.getDocClustersNames(clusterCount,labels,fileNames)
-    print("File dict generated")
-    for key, val in fileNameDictionary.items():
-        fileNameDictionary[key] = [os.path.join(fpath, file) for file in fileNameDictionary[key]]
-    file_names = [os.path.join(fpath, file) for file in fileNames]
-    pd = PlottingData()
-    pd.set_filenames(file_names)
-    pd.set_points(normalized)
-    pd.set_colors(labels)
-    pd.set_clusters(clusterCount, fileNameDictionary, centroids)
-
-
-    ents = im.getNamedEntties(pathToData,fileNameDictionary,10)
-    pd.set_named_entities(ents)
-
-
-    pd.prepare_to_plot()
-    print("Done clustering")
-
+    pipe=pipeLine()
+    pipe.readData(fpath,pdir)
+    pipe.customKmeansExecute()
+    pipe.getNamedEntities()
+    pipe.sendToPlotData()
     #im.plotClusters(normalized,fileNames,labels,centroids,True)

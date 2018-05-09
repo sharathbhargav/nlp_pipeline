@@ -4,11 +4,11 @@ import json
 from django.utils.safestring import mark_safe
 from django.conf import settings
 import os
-import nlpPipeline1.backend
-from nlpPipeline1.backend import completePipelineExperiment as complete
-from nlpPipeline1.backend import individualModules as im
-from nlpPipeline1.backend import createPickleFilesForDocs as createPickles
-from nlpPipeline1.backend.redditbot import postman as pm
+from .backend.twodocsdemo import demo
+from .backend import completePipelineExperiment as complete
+from .backend import individualModules as im
+from .backend import createPickleFilesForDocs as createPickles
+from .backend.redditbot import postman as pm
 from rest_framework import permissions
 from rest_framework.views import APIView
 from rest_framework.response import Response
@@ -38,10 +38,7 @@ def delete_older_posts(doc_dir):
     print('Done deleting older downloaded posts.')
 
 
-def fetch_documents(request):
-    n_docs = int(request.GET.get('n_docs')) if request.GET.get('n_docs') != '' else 1000
-    reddit = request.GET.get('reddit')
-    doc_dir = os.path.join(settings.BASE_DIR, 'reddit/')
+def downloadRedditDocs(doc_dir, n_docs, reddit):
     print("Fetching reddit posts")
     if reddit == 'Hot':
         doc_dir = os.path.join(doc_dir, 'hot/')
@@ -68,6 +65,39 @@ def fetch_documents(request):
         delete_older_posts(doc_dir)
         pm.get_gilded_posts(n_docs)
     print("Done fetching posts.")
+
+
+def two_files_fun(request):
+    if request.method == 'POST':
+        f1 = request.FILES['file_1']
+        f2 = request.FILES['file_2']
+        demo_doc_dir = os.path.join(settings.BASE_DIR, 'nlpPipeline1/data/demodocs')
+        for file in os.listdir(demo_doc_dir):
+            os.remove(os.path.join(demo_doc_dir, file))
+        fh1 = open(os.path.join(demo_doc_dir, f1.name), 'w+')
+        fh2 = open(os.path.join(demo_doc_dir, f2.name), 'w+')
+        fh1.write(f1.read().decode('utf-8'))
+        fh2.write(f2.read().decode('utf-8'))
+        fh1.seek(0, 0)
+        fh2.seek(0, 0)
+        plotdata = demo(fh1, fh2)
+        return render_to_response('nlpPipeline1/twofilesplot.html', {'data': mark_safe(plotdata)})
+
+
+def compare(request):
+    if request.method == 'POST':
+        f = request.FILES.getlist('source_1')
+        return HttpResponse(f[0].read())
+
+
+def fetch_documents(request):
+    n_docs = int(request.GET.get('n_docs')) if request.GET.get('n_docs') != '' else 1000
+    reddit = request.GET.get('reddit')
+    doc_dir = os.path.join(settings.BASE_DIR, 'reddit/')
+
+    downloadRedditDocs(doc_dir, n_docs, reddit)
+
+
     createPickles.generate_pickle_files(doc_dir, 'pickles/')
     complete.run(doc_dir, 'pickles/')
     json_data = json.load(open(os.path.join(settings.BASE_DIR, 'nlpPipeline1/static/nlpPipeline1/js/plot.json')))

@@ -45,7 +45,7 @@ function load(data) {
         y : cY,
         type : 'scatter',
         mode : 'markers',
-        marker : {size : 22, color : cColors},
+        marker : {size : 22, color : cColors, line: {color: 'rgb(0, 0, 0)',width: 2}},
         name : 'Clusters'
     }];
 
@@ -114,7 +114,7 @@ function load(data) {
         };
         if (cn == 0){
             var file = filenames[pn];
-            var url = 'http://127.0.0.1:8000/displaydoc/' + file.replace(new RegExp('/', 'g'), '+');
+            var url = '/displaydoc/' + file.replace(new RegExp('/', 'g'), '+');
             var win = window.open(url, '_blank');
             win.focus();
         }

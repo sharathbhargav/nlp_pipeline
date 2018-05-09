@@ -92,8 +92,8 @@
             0.48675939440727234,
             -0.8735361099243164
         ],
-        "color": "#3AFF00",
-        "cluster": 1,
+        "color": "#0092FF",
+        "cluster": 2,
         "org_entities": [
             "Interlaken",
             "Matterhorn",
@@ -326,8 +326,8 @@
             0.9914569854736328,
             0.13043475151062012
         ],
-        "color": "#3AFF00",
-        "cluster": 1,
+        "color": "#FFE800",
+        "cluster": 3,
         "org_entities": [
             "Trump",
             "Congress",
@@ -409,8 +409,8 @@
             -0.004412596579641104,
             0.9999902248382568
         ],
-        "color": "#E82C0C",
-        "cluster": 0,
+        "color": "#FFE800",
+        "cluster": 3,
         "org_entities": [
             "SCP",
             "the SCP Foundation",
@@ -547,8 +547,8 @@
             0.32251057028770447,
             -0.9465658068656921
         ],
-        "color": "#3AFF00",
-        "cluster": 1,
+        "color": "#0092FF",
+        "cluster": 2,
         "org_entities": [
             "Crowdrise",
             "Donor",
@@ -695,8 +695,8 @@
             0.2599638104438782,
             -0.965618371963501
         ],
-        "color": "#3AFF00",
-        "cluster": 1,
+        "color": "#0092FF",
+        "cluster": 2,
         "org_entities": [
             "Uber",
             "Target",
@@ -771,8 +771,8 @@
             0.4109184145927429,
             0.9116721749305725
         ],
-        "color": "#E82C0C",
-        "cluster": 0,
+        "color": "#FFE800",
+        "cluster": 3,
         "org_entities": [
             "Autistic Forest",
             "Wailing Woods",
@@ -830,48 +830,48 @@
             "leaf eating insects"
         ]
     },
-    "n_clusters": 2,
+    "n_clusters": 4,
     "0": {
         "xy": [
-            -0.45627933740615845,
-            0.6479948163032532
+            -0.8959674835205078,
+            0.4427705705165863
         ],
         "color": "#E82C0C",
         "org_entities": [
             "  ",
-            "SCP",
-            "the SCP Foundation",
             "MJ",
             "SeaWorld",
             "Great White",
             "YouTube",
-            "Iron Maiden",
-            "FEV",
-            "Matrix"
+            "Matrix",
+            " Fast",
+            "Arrested Development",
+            "unusable.](https://en.m.wikipedia.org/wiki/Seal_finger",
+            "Great White Sharks"
         ],
         "person_entities": [
             "Michael Jackson",
             "Cat.exe",
             "Glitch",
             "Narooma",
-            "Yea",
             "Damn",
             "Layla",
             "Kitty",
             "Ed",
-            "Dude"
+            "Michael Jackson's",
+            "Yea"
         ],
         "place_entities": [
             "China",
             "Australia",
-            "New Vegas",
             "Tierzoo",
             "VR",
-            "/r",
-            "Bethesda",
             "Gate",
             "Dammit",
-            "H U N"
+            "H U N",
+            "Karma",
+            "Magikarp",
+            "BRAVO"
         ],
         "loc_entities": [
             "Sea",
@@ -879,27 +879,24 @@
             "  Go",
             "Mars",
             "South coast",
-            "Earth",
-            "earth"
+            "Earth"
         ],
         "noun_entities": [
-            "something",
-            "people",
-            "someone",
             "the cat",
             "the car",
             "a cat",
             "a seal",
+            "something",
+            "people",
             "a leash",
+            "someone",
             "the matrix",
             "the guy"
         ],
         "summary": [
             "Michael Jackson",
             "  ",
-            "SCP",
             "China",
-            "\n",
             "Cat.exe",
             "Narooma",
             "Matrix",
@@ -907,10 +904,7 @@
             "Kitty",
             "Australia",
             "VR",
-            "/r",
-            "New Vegas",
-            "the SCP Foundation",
-            "Yea",
+            "\n",
             "MJ",
             "Damn",
             "Layla",
@@ -919,101 +913,289 @@
             "SeaWorld",
             "Sea World",
             "Ed",
-            "Dude"
+            "Great White",
+            "YouTube",
+            "/r",
+            "Skyrim",
+            "Michael Jackson's",
+            "Yea"
         ]
     },
     "1": {
         "xy": [
-            0.23755581676959991,
-            -0.7505154609680176
+            -0.31767791509628296,
+            -0.9239035844802856
         ],
         "color": "#3AFF00",
         "org_entities": [
             "Navy",
-            "Interlaken",
             "EDM",
-            "  ",
-            "Trump",
-            "Congress",
-            "GOP",
             "Bowie",
-            "Trump's",
-            "Senate"
+            "DJ",
+            "Black Hole Sun",
+            "WHOLE",
+            " Goosebumps",
+            "Shrek",
+            "the Marble Machine Song](https://www.youtube.com",
+            "MIDI"
         ],
         "person_entities": [
-            "Obama",
             "Avicii",
             "Dom",
-            "Trump",
-            "compose?to",
-            "Pretty",
-            "Robert Lighthizer",
-            "Damn",
             "Domtoren",
-            "Yea"
+            "USS Carl Vinson",
+            "Seek Bromance",
+            "Damn",
+            "Spotify",
+            "Deadmau5",
+            "Ahhh",
+            "Yvan"
         ],
         "place_entities": [
-            "US",
-            "China",
-            "Switzerland",
-            "America",
-            "Rome",
-            "Canada",
             "Utrecht",
-            "USA",
-            "Florida",
-            "U.S."
+            "Amsterdam",
+            "America",
+            "Netherlands",
+            "Videos",
+            "San Diego",
+            "Boston",
+            "Vatican",
+            "Android",
+            "Munich"
         ],
         "loc_entities": [
             "Europe",
-            "Mediterranean",
-            "East Asia",
             "  40 minutes",
+            "Mediterranean",
+            "SoCal",
+            " Oof"
+        ],
+        "noun_entities": [
+            "Avicii",
+            "people",
+            "a lot",
+            "the Navy",
+            "his music",
+            "Utrecht",
+            "the military",
+            "something",
+            "the world",
+            "his songs"
+        ],
+        "summary": [
+            "Navy",
+            "Utrecht",
+            "Avicii",
+            "EDM",
+            "Dom",
+            "Amsterdam",
+            "America",
+            "Bowie",
+            "Domtoren",
+            "DJ",
+            "USS Carl Vinson",
+            "Seek Bromance",
+            "Damn",
+            "Europe",
+            "Black Hole Sun",
+            "Spotify",
+            "Netherlands",
+            "WHOLE",
+            "Deadmau5",
+            "Ahhh",
+            "\n",
+            "Yvan",
+            "Videos",
+            "San Diego",
+            "SoCal"
+        ]
+    },
+    "2": {
+        "xy": [
+            0.35641124844551086,
+            -0.9285734295845032
+        ],
+        "color": "#0092FF",
+        "org_entities": [
+            "Interlaken",
+            "Uber",
+            "Matterhorn",
+            "Google",
+            "Crowdrise",
+            "Meiringen",
+            "  ",
+            "Donor",
+            "CSS",
+            "MaiaNyx"
+        ],
+        "person_entities": [
+            "Pretty",
+            "Yea",
+            "Tina Turner",
+            "Brienz",
+            "Med",
+            "Username",
+            "Meh",
+            "Lauterbrunnen",
+            "Skyrim Crazy",
+            "IRL Bet"
+        ],
+        "place_entities": [
+            "Switzerland",
+            "Rome",
+            "US",
+            "Canada",
+            "Italy",
+            "Florida",
+            "America",
+            "Austria",
+            "California",
+            "Russia"
+        ],
+        "loc_entities": [
+            "Mediterranean",
             "Southern California",
             "Valley",
             "NYC",
             "the North Cascades",
+            "Europe",
             " The",
-            "the Far Side"
+            "the Far Side",
+            "Viagra",
+            "Rewilding Europe"
+        ],
+        "noun_entities": [
+            "people",
+            "Switzerland",
+            "the end",
+            "the road",
+            "something",
+            "everyone",
+            "Rome",
+            "the middle",
+            "Thanks",
+            "Interlaken"
+        ],
+        "summary": [
+            "Switzerland",
+            "Rome",
+            "Interlaken",
+            "US",
+            "Canada",
+            "Italy",
+            "Florida",
+            "America",
+            "Austria",
+            "California",
+            "Russia",
+            "Uber",
+            "Mexico",
+            "Pretty",
+            "OP",
+            "Matterhorn",
+            "Yea",
+            "Tina Turner",
+            "Meiringen",
+            "Norway",
+            "  ",
+            "Google",
+            "Australia",
+            "\n",
+            "Donor"
+        ]
+    },
+    "3": {
+        "xy": [
+            0.46598759293556213,
+            0.6806990504264832
+        ],
+        "color": "#FFE800",
+        "org_entities": [
+            "SCP",
+            "Trump",
+            "Congress",
+            "GOP",
+            "Trump's",
+            "Senate",
+            "  ",
+            "Apple",
+            "MW",
+            "JOBS"
+        ],
+        "person_entities": [
+            "Obama",
+            "Trump",
+            "compose?to",
+            "Robert Lighthizer",
+            "Shit",
+            "WikiTextBot",
+            "^to",
+            "Hillary Clinton",
+            "Ralph Norman",
+            "Iirc"
+        ],
+        "place_entities": [
+            "China",
+            "US",
+            "America",
+            "USA",
+            "U.S.",
+            "Berlin",
+            "Texas",
+            "Korea",
+            "Canada",
+            "India"
+        ],
+        "loc_entities": [
+            "earth",
+            "East Asia",
+            "T.  ",
+            " China",
+            "Asia",
+            "Pacific",
+            "the Rust Belt",
+            "Mother Earth",
+            "Yucca Mountain",
+            "Battery"
         ],
         "noun_entities": [
             "China",
+            "tariffs",
             "people",
             "something",
-            "us",
-            "tariffs",
             "the US",
-            "a lot",
-            "the end",
-            "Switzerland",
-            "everyone"
+            "us",
+            "Trump",
+            "solar panels",
+            "the tariffs",
+            "anything"
         ],
         "summary": [
-            "US",
             "China",
-            "Switzerland",
+            "US",
             "America",
             "Obama",
-            "Rome",
-            "Interlaken",
-            "Navy",
-            "Canada",
             "Trump",
-            "Utrecht",
             "USA",
-            "Avicii",
-            "Florida",
             "U.S.",
+            "SCP",
+            "compose?to",
+            "Congress",
+            "GOP",
             "  ",
-            "Italy",
-            "EDM",
-            "OP",
-            "Russia",
-            "Dom",
-            "\n",
             "Berlin",
-            "California",
-            "compose?to"
+            "Trump's",
+            "Senate",
+            "Texas",
+            "Korea",
+            "Canada",
+            "Apple",
+            "MW",
+            "Robert Lighthizer",
+            "India",
+            "the United States",
+            "china",
+            "EU"
         ]
     }
 }
