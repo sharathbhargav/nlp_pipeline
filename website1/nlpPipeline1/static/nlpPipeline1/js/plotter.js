@@ -74,7 +74,7 @@ function load(data) {
         var n_entities;
         if (cn == 0){
             entities_array = file_entities;
-            entities_fname.innerHTML = file;
+            entities_fname.innerHTML = file.split('/').slice(-1)[0];
             n_entities = entities_array.length;
         }
         else if (cn == 1){
@@ -119,4 +119,11 @@ function load(data) {
             win.focus();
         }
     });
+
+    var card_cluster_stats = document.getElementById('num_clusters');
+    var stats = "<h4>Number of Clusters : " + n_clusters.toString() + "</h4>";
+    stats = stats + "<h4>Number of Files : " + filenames.length.toString() + "</h4>";
+    card_cluster_stats.innerHTML = stats;
+
+    var cluster_detail_stats = document.getElementById('cluster_details_list');
 }

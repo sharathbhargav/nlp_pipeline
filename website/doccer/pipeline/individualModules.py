@@ -29,12 +29,9 @@ extraWords = ['.', ',', '/', '<', '>', '?', ';', '\'', ':', '"', '[', ']', '{', 
 removableWords.update(extraWords)
 vectorSize = 300
 
-'''
-trainingModelGoogle = KeyedVectors.load_word2vec_format(
-    "/home/ullas/PycharmProjects/nlp_pipeline/models/GoogleNews-vectors-negative300.bin",binary=True,limit=10000)
-modelUsed = trainingModelGoogle
-nlp = spacy.load('/home/ullas/anaconda3/lib/python3.6/site-packages/en_core_web_sm/en_core_web_sm-2.0.0')
-'''
+trainingModelGoogle = KeyedVectors.load_word2vec_format(os.path.join(settings.BASE_DIR, 'models/GoogleNews-vectors-negative300.bin'), binary=True, limit=10000)
+nlp = spacy.load('/home/sharathbhragav/anaconda3/lib/python3.6/site-packages/en_core_web_sm/en_core_web_sm-2.0.0')
+
 
 
 
@@ -174,8 +171,7 @@ def getWordSimilarity(word1, word2):
 
 
 def getWord2VecWordSimilarity(word1, word2):
-    trainingModelGoogle = KeyedVectors.load_word2vec_format(
-        os.path.join(settings.BASE_DIR, 'models/GoogleNews-vectors-negative300.bin'), binary=True, limit=10000)
+
     modelUsed = trainingModelGoogle
     similarity = modelUsed.similarity(word1, word2)
     return similarity
@@ -395,7 +391,7 @@ def getDocClustersNames(clusterCount, labels, fileNames):
 
 
 def getNamedEntties(path, fileDictionary, numberOfEntities=5, summaryLimitWords=25):
-    nlp = spacy.load('/home/ullas/anaconda3/lib/python3.6/site-packages/en_core_web_sm/en_core_web_sm-2.0.0')
+
     organizations = {}
     persons = {}
     places = {}

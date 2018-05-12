@@ -17,7 +17,7 @@ urlpatterns = [
     path('tabulate/', views.compare, name='tabulate'),
     path('docdemo/', views.two_files_fun, name='doc_demo'),
     path('fetch/', views.fetch_documents, name='fetcher'),
-    path('offline/<str:filedir>', views.fetch_offline_documents, name='offline_fetcher'),
+    path('offline/<str:file_dir>', views.fetch_offline_documents, name='offline_fetcher'),
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)

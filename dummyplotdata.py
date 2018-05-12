@@ -8,7 +8,7 @@ from docprocessing.util import get_files
 pd = PlottingData()
 
 # filenames = [file_location + 'hot/' + file for file in listdir(file_location + 'hot')]
-filenames = get_files("/home/ullas/PycharmProjects/nlp_pipeline/datasets/bbc/")
+filenames = get_files("/home/sharathbhragav/PycharmProjects/nlp_pipeline/datasets/bbc/")
 pd.set_filenames(filenames)
 
 points = []
