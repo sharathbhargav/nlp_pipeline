@@ -1,6 +1,6 @@
 from math import log, pow, sqrt
-from docprocessing.processing import fusion, cleanup, wordify
-from docprocessing.util import get_files
+from nlpPipeline1.backend.processing import fusion, cleanup, wordify
+from .util import get_files
 
 
 class TFIDFVectorizer:

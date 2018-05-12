@@ -7,7 +7,8 @@ urlpatterns = [
     path('index', views.index1, name='index'),
     path('dump',views.dataDump,name='dump'),
     url(r'api/demo',views.DemoAPI.as_view()),
-    url(r'api/file',views.fileDetails.as_view()),
+    url(r'api/file$',views.fileComparision.as_view()),
+    url(r'api/file_details',views.fileDetails.as_view()),
 
 
 

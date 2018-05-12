@@ -1,11 +1,11 @@
-from docprocessing.processing import cleanup, wordify, baggify
+from nlpPipeline1.backend.processing import cleanup, wordify, baggify
 from numpy import zeros
-from docsimilarity.util import gf
+from .util import gf
 from math import log
 from sklearn.utils.extmath import randomized_svd
 from numpy.matlib import transpose
 from numpy import matmul
-from docsimilarity.similarity import euclidean_similarity
+from .similarity import euclidean_similarity
 import matplotlib.pyplot as plt
 from os import listdir
 from os.path import isdir, isabs, abspath

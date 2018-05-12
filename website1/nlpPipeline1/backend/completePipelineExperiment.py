@@ -99,8 +99,10 @@ class pipeLine:
 
     def calculateF1Score(self,trueLabels):
 
-        f1Score1=metrics.adjusted_rand_score(trueLabels,self.labels)
-        print(f1Score1)
+        f1Score1=metrics.f1_score(trueLabels,self.labels,average='weighted')
+        rand=metrics.adjusted_rand_score(trueLabels,self.labels)
+        print("F score",f1Score1)
+        print("Rand score",rand)
 
 
 def run(fpath, pdir):
@@ -110,22 +112,39 @@ def run(fpath, pdir):
     pipe.skLearnKmeans()
     #print(pipe.fileDictionary)
     for i in range(len(pipe.labels)):
-        print(pipe.fileNames[i],":",pipe.labels[i])
-    jsonLoad=open(os.path.join(settings.BASE_DIR, 'nlpPipeline1/data/imdb/movies.json'),"r")
-    labelJson=json.load(jsonLoad)
-    trueLabels=[]
-    #for fName in pipe.fileNames:
-        #trueLabels.append(labelJson[fName])
+        print("index",i,">>>>>>",pipe.fileNames[i],":",pipe.labels[i])
 
     print(pipe.labels," len",len(pipe.labels))
     print("True labels>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
 
-    trueLabels1=np.asarray([0,1,2,2,0,1,3,4,2,1])
+    temp={0:[3, 7, 17, 18, 20, 28, 36, 41, 42, 39, 60, 62, 71, 72, 73, 74, 75, 77, 80, 81, 82, 83, 87, 90, 91, 92],
+          1:[1, 8, 13, 14, 15, 16, 24, 31 , 33, 34, 44, 53, 65, 68, 84],
+          2:[4, 5, 6, 10, 12, 19, 23, 25, 29, 32, 37, 38, 46, 48, 49, 50, 51, 52, 55, 64, 67, 70, 93],
+          3:[0, 2, 9, 22, 35, 45, 66, 88, 89, 94, 40, 47, 56, 57, 58, 59, 69, 78, 86, 95, 21],
+          4:[26, 54, 61, 79, 85,27, 43],
+          5:[11, 30, 63, 76]}
 
-    print(trueLabels1,"labels",len(trueLabels1))
+    movie_plotTrueLabels=[]
+
+    missing=[]
+    for key,value in temp.items():
+        print(len(value))
+        for i in value:
+            missing.append(i)
+            movie_plotTrueLabels.insert(i,key)
+
+
+    customTrueLabels = [0,1,2,2,0,1,3,4,2,1]
+
+
+
+
+
+    print(movie_plotTrueLabels,"labels",len(movie_plotTrueLabels))
     print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
     print("Cluster count",pipe.clusterCount)
-    #pipe.calculateF1Score(trueLabels1)
+    #pipe.calculateF1Score(customTrueLabels)
+
     pipe.getNamedEntities()
     pipe.sendToPlotData()
     #im.plotClusters(normalized,fileNames,labels,centroids,True)

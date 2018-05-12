@@ -190,11 +190,11 @@ def fetch_documents(request):
 
 def fetch_offline_documents(request, file_dir):
     rel_dir = 'nlpPipeline1/data/offlinefiles/' + file_dir
-    pickle_path = 'nlpPipeline1/data/offlinefiles/pickles'
+    pickle_path = 'nlpPipeline1/data/offlinefiles/pickles/' + file_dir
     doc_dir = os.path.join(settings.BASE_DIR, rel_dir)
     pickle_dir = os.path.join(settings.BASE_DIR, pickle_path)
-
-    createPickles.generate_pickle_files(doc_dir, pickle_dir)
+    if len(os.listdir(pickle_dir)) == 0:
+        createPickles.generate_pickle_files(doc_dir, pickle_dir)
     complete.run(doc_dir, pickle_dir)
     json_data = json.load(open(os.path.join(settings.BASE_DIR, 'nlpPipeline1/static/nlpPipeline1/js/plot.json')))
     return render_to_response('nlpPipeline1/plot.html', {'data': mark_safe(json_data)})
@@ -211,18 +211,6 @@ def display_file(request, file_loc):
     f.close()
     return HttpResponse(file_data)
 
-
-
-def get1(request):
-    """
-    Return a hardcoded response.
-    """
-    print(request)
-    d=request.GET.get('param1', '$$$$')
-    print(d)
-    #x = temp.run()
-    #x=json.dumps(x)
-    return Response({"success": True, "content": "hello gube"})
 
 
 
@@ -247,7 +235,7 @@ class DemoAPI(APIView):
     complete.run(doc_dir, pickle_dir)
     json_data = json.load(open(os.path.join(settings.BASE_DIR, 'nlpPipeline1/static/nlpPipeline1/js/plot.json')))
 
-    """
+
     print(request.data)
     d=request.GET.get('file', '$$$$')
     print(d)
@@ -260,19 +248,7 @@ class DemoAPI(APIView):
     """
     Return a hardcoded response.
     """
-    """
-    print(type(request.data))
-    queryData=request.data
 
-    file1=queryData['file1']
-    file2=queryData['file2']
-    #x = temp.run()
-    #x=json.dumps(x)
-    print(file1)
-    print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
-    print(file2)
-
-    """
     filedir='source2'
     rel_dir = 'nlpPipeline1/data/offlinefiles/' + filedir + '/'
     pickle_dir = 'nlpPipeline1/data/offlinefiles/pickles/' + filedir + '/'
@@ -292,7 +268,7 @@ class DemoAPI(APIView):
 
 
 
-class fileDetails(APIView):
+class fileComparision(APIView):
     def post(self,request):
         queryData = request.data
 
@@ -315,3 +291,18 @@ class fileDetails(APIView):
 
 
         return Response({'data':plotdata['similarity']})
+
+
+class fileDetails(APIView):
+
+    def post(self,request):
+        queryData=request.data
+        print(queryData)
+        fileName=queryData['file']
+
+
+        fileHandle=open(fileName,"r")
+        entities=im.getNamedEntitiesForSingleFile(fileHandle)
+        fileHandle.seek(0)
+        data=fileHandle.read()
+        return Response({'entities':entities,'data':data})

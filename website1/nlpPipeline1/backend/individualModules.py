@@ -22,14 +22,14 @@ from collections import Counter
 from django.conf import settings
 import pdb
 from nltk.tokenize import RegexpTokenizer
-
+from spacy import displacy
 
 
 
 tokenizer = RegexpTokenizer(r'[a-zA-Z\']+')
 removableWords = set(stopwords.words('english'))
-extraWords = ['.', ',', '/', '<', '>', '?', ';', '\'', ':', '"', '[', ']', '{', '}', '!', '@', '#', '$', '%',
-                        '^', '&', '*', '(', ')', '-', '_', '=', '+', '—']
+extraWords = [ '/', '<', '>', '?', ';', '\'', ':', '"', '[', ']', '{', '}', '!', '@', '#', '$', '%',
+                        '^', '&', '*', '(', ')', '-', '_', '=', '+', '—',r' *']
 removableWords.update(extraWords)
 vectorSize = 300
 
@@ -350,7 +350,7 @@ def getOptimalClustersSilhoutte(data, algorithm=ClusteringAlgorithm.skLearnKMean
             brc = Birch(branching_factor=50, n_clusters=None, threshold=0.01 * i, compute_labels=True)
 
             labels = brc.fit_predict(data)
-            print(len(labels))
+            #print(len(labels))
             try:
                 silhouette_avg = silhouette_score(data, labels)
                 clusterNumber = len(set(labels))
@@ -453,13 +453,15 @@ def getNamedEntties(path, fileDictionary, numberOfEntities=5, summaryLimitWords=
             eachNoun=[]
             eachSummery=[]
             docTemp = open(os.path.join(path, docName), "r")
+            """
             sentList=splitCorpusIntoSentances(docTemp)
             cleanedList=[]
             for eachSent in sentList:
                 cleaned=tokanizeAndRemoveStopWordsSingleSentance(eachSent)
                 cleanedList.append(' '.join(cleaned))
-
-            doc = nlp(' '.join(cleanedList))
+            docTemp.seek(0)
+            """
+            doc = nlp(docTemp.read().replace('\n',' '))
             for eachNoun1 in doc.noun_chunks:
                 if str(eachNoun1).lower() not in removableWords:
                     clusterNouns.append(str(eachNoun1))
@@ -546,8 +548,7 @@ def getNamedEntties(path, fileDictionary, numberOfEntities=5, summaryLimitWords=
 
         print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
         '''
-    for key, val in organizations.items():
-        print(key, len(val))
+
     entities = dict()
     entities['org'] = organizations
     entities['persons'] = persons
@@ -584,7 +585,31 @@ def getNamedEntitiesForAPI(path,fileDictionary):
                     if ent.label_ == "LOC":
                         eachSummary.append(ent.text)
 
-        totalSummary[i]=[ent[0] for ent in Counter(eachSummary).most_common(10)]
+        totalSummary[i]=[ent[0] for ent in Counter(eachSummary).most_common(20)]
     entities = dict()
     entities['summary']=totalSummary
     return entities
+
+
+def getNamedEntitiesForSingleFile(fileHandle):
+    data=fileHandle.read()
+    doc = nlp(data.replace('\n', ' '))
+    eachSummary=[]
+    for eachNoun1 in doc.noun_chunks:
+        if str(eachNoun1).lower() not in removableWords:
+
+            eachSummary.append(str(eachNoun1))
+    for ent in doc.ents:
+        if ent.text not in removableWords:
+            if ent.label_ == "ORG":
+                eachSummary.append(ent.text)
+            if ent.label_ == "PERSON":
+                eachSummary.append(ent.text)
+            if ent.label_ == "GPE":
+                eachSummary.append(ent.text)
+            if ent.label_ == "LOC":
+                eachSummary.append(ent.text)
+
+    summary=  [ent[0] for ent in Counter(eachSummary).most_common(20)]
+
+    return summary

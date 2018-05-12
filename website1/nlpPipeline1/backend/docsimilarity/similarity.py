@@ -1,5 +1,5 @@
-from docprocessing.processing import cleanup
-from docprocessing.processing import fusion
+from nlpPipeline1.backend.processing import cleanup
+from nlpPipeline1.backend.processing import fusion
 #from docsimilarity.tdmgenerator import TDMatrix
 from math import pow
 from math import sqrt
