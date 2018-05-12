@@ -31,7 +31,7 @@ def fetch_documents(request):
         delete_older_posts(doc_dir)
         pm.get_hot_posts(n_docs)
     elif reddit == 'New':
-        doc_dir = os.path.join(doc_dir, 'new/')
+        doc_dir = os.path.join(doc_dir, 'files/')
         delete_older_posts(doc_dir)
         pm.get_new_posts(n_docs)
     elif reddit == 'Rising':

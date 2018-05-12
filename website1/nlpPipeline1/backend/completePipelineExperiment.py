@@ -29,10 +29,7 @@ class pipeLine:
     def readData(self,filePath,picklePath):
         print("Begin reading data")
         self.filePath=filePath
-
-
-        self.picklePath = os.path.join(settings.BASE_DIR, picklePath)
-
+        self.picklePath = picklePath
         custom2Names = open(os.path.join(self.picklePath, 'plotNamesOfDocs'), 'rb')
         self.fileNames = pickle.load(custom2Names)
         custom2Pickle = open(os.path.join(self.picklePath, 'plotValuesOfDocs'), 'rb')
