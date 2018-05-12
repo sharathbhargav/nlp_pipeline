@@ -112,12 +112,14 @@ class K_Means:
     def getLabels(self,data):
         labels=[]
         #print(self.classifications)
-        for entity in range(len(data)):
 
+        for entity in range(len(data)):
             for each in range(len(self.classifications)):
                 for classification in self.classifications[each]:
-                    if all(data[entity] ==classification):
+                    if (data[entity] in classification):
                         labels.append(each)
+                        break
+
         return labels
 
 

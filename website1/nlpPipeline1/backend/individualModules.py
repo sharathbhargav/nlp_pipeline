@@ -20,12 +20,16 @@ import spacy
 from .algorithms import kMeans
 from collections import Counter
 from django.conf import settings
+import pdb
+from nltk.tokenize import RegexpTokenizer
 
+
+
+
+tokenizer = RegexpTokenizer(r'[a-zA-Z\']+')
 removableWords = set(stopwords.words('english'))
-
-extraWords = ['.', ',', '/', '<', '>', '?', ';', '\'', ':', '"', '[', ']', '{', '}', '!', '@', '#', '$', '%', '^',
-              '&', '*', '(', ')', '-', '_', '=', '+', '—', ' ', 'Reddit', 'reddit', 'Lol', 'Nah', 'I']
-
+extraWords = ['.', ',', '/', '<', '>', '?', ';', '\'', ':', '"', '[', ']', '{', '}', '!', '@', '#', '$', '%',
+                        '^', '&', '*', '(', ')', '-', '_', '=', '+', '—']
 removableWords.update(extraWords)
 vectorSize = 300
 
@@ -33,7 +37,7 @@ vectorSize = 300
 #print(settings.PROJECT_ROOT)
 #print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
 trainingModelGoogle = KeyedVectors.load_word2vec_format(os.path.join(settings.BASE_DIR, 'nlpPipeline1/backend/models/GoogleNews-vectors-negative300.bin'), binary=True, limit=10000)
-nlp = spacy.load('/home/ullas/anaconda3/lib/python3.6/site-packages/en_core_web_sm/en_core_web_sm-2.0.0')
+nlp = spacy.load('/home/sharathbhragav/anaconda3/lib/python3.6/site-packages/en_core_web_sm/en_core_web_sm-2.0.0')
 
 modelUsed=trainingModelGoogle
 
@@ -54,8 +58,12 @@ def splitCorpusIntoSentances(fileHandle):
 
 
 def tokanizeAndRemoveStopWordsSingleSentance(inputSentance):
+    tokenized_line = tokenizer.tokenize(inputSentance)
+    cleaned = [word for word in tokenized_line if word not in removableWords]
+    """
     temp1 = word_tokenize(inputSentance)
     cleaned = [word.lower() for word in temp1 if word not in removableWords and len(word) > 0]
+    """
     return cleaned
 
 
@@ -296,21 +304,40 @@ def getOptimalClustersSilhoutte(data, algorithm=ClusteringAlgorithm.skLearnKMean
     silhoutteScores = {}
     rotationStored = {}
     thresholdValues = {}
-    kmeansClusterNumberRange= range(2,min(20,len(data)))
+    kmeansClusterNumberRange= range(2,len(data))
     if algorithm == ClusteringAlgorithm.customKMeans:
         for clusterKmeansNumber in kmeansClusterNumberRange:
             try:
-                clf = kMeans.K_Means(clusterKmeansNumber, tolerance=0.00001, max_iterations=800)
+                #pdb.set_trace()
+
+                try:
+                    clf = kMeans.K_Means(clusterKmeansNumber, tolerance=0.00001, max_iterations=800)
+                except:
+                    print("k class failed")
+
                 rotation = randamozieSeed(data, clusterKmeansNumber)
-                clf.fit(data, spherical=True, rotationArray=rotation)
-                labels = clf.getLabels(data)
-                silhouette_avg = silhouette_score(data, labels)
+                try:
+                    clf.fit(data, spherical=True, rotationArray=rotation)
+                except:
+                    print("fit failed")
+                try:
+                    labels = clf.getLabels(data)
+                except:
+                    print("labels failed")
+                try:
+                    silhouette_avg = silhouette_score(data, labels)
+                except:
+                    print("sil score failed")
+                    print("labels",len(labels))
+                    print("data",len(data))
+
                 silhoutteScores[clusterKmeansNumber] = silhouette_avg
                 rotationStored[clusterKmeansNumber] = rotation
                 # print(clusterKmeansNumber,">>>>>>>",rotation)
             except:
+                print(clusterKmeansNumber, " chucked custom kmeans")
                 continue
-                # print(clusterKmeansNumber," chucked")
+
     elif algorithm == ClusteringAlgorithm.skLearnKMeans:
         for clusterKmeansNumber in kmeansClusterNumberRange:
             clf = KMeans(n_clusters=clusterKmeansNumber)
@@ -408,6 +435,7 @@ def getNamedEntties(path, fileDictionary, numberOfEntities=5, summaryLimitWords=
     filePlaces={}
     fileLocations={}
     fileNouns={}
+    fileSummary={}
     completeSummery = {}
     for i in range(len(fileDictionary)):
         clusterOrganization = []
@@ -425,8 +453,13 @@ def getNamedEntties(path, fileDictionary, numberOfEntities=5, summaryLimitWords=
             eachNoun=[]
             eachSummery=[]
             docTemp = open(os.path.join(path, docName), "r")
-            docTempRead = docTemp.read().replace("\n", ' ')
-            doc = nlp(docTempRead)
+            sentList=splitCorpusIntoSentances(docTemp)
+            cleanedList=[]
+            for eachSent in sentList:
+                cleaned=tokanizeAndRemoveStopWordsSingleSentance(eachSent)
+                cleanedList.append(' '.join(cleaned))
+
+            doc = nlp(' '.join(cleanedList))
             for eachNoun1 in doc.noun_chunks:
                 if str(eachNoun1).lower() not in removableWords:
                     clusterNouns.append(str(eachNoun1))
@@ -439,19 +472,22 @@ def getNamedEntties(path, fileDictionary, numberOfEntities=5, summaryLimitWords=
                         clusterOrganization.append(ent.text)
                         eachOrg.append(ent.text)
                         clusterSummery.append(ent.text)
+                        eachSummery.append(ent.text)
                     if ent.label_ == 'PERSON':
                         eachPerson.append(ent.text)
                         clusterPerson.append(ent.text)
                         clusterSummery.append(ent.text)
-
+                        eachSummery.append(ent.text)
                     if ent.label_ == "GPE":
                         eachPlace.append(ent.text)
                         clusterPlace.append(ent.text)
                         clusterSummery.append(ent.text)
+                        eachSummery.append(ent.text)
                     if ent.label_ == "LOC":
                         eachLocation.append(ent.text)
                         clusterLocation.append(ent.text)
                         clusterSummery.append(ent.text)
+                        eachSummery.append(ent.text)
             # summer_freq = Counter(clusterSummery)
             # clusterSummery=summer_freq.most_common(10)
             organizations_freq = Counter(eachOrg)
@@ -459,17 +495,19 @@ def getNamedEntties(path, fileDictionary, numberOfEntities=5, summaryLimitWords=
             places_freq = Counter(eachPlace)
             locations_freq = Counter(eachLocation)
             noun_freq = Counter(eachNoun)
+            summary_freq=Counter(eachSummery)
             orgCount=10#int(0.20*(len(eachOrg)))
             personCount=10#int(0.20*(len(eachPerson)))
             placesCount=10#int(0.20*(len(eachPlace)))
             locCount=10#int(0.20*(len(eachLocation)))
             nounCount=25#int(0.20*(len(eachNoun)))
 
-            fileOrgs[docName]=organizations_freq.most_common(orgCount)
-            filePersons[docName]=persons_freq.most_common(personCount)
-            filePlaces[docName]=places_freq.most_common(placesCount)
-            fileLocations[docName]=locations_freq.most_common(locCount)
-            fileNouns[docName]=noun_freq.most_common(nounCount)
+            fileOrgs[docName]=[ent[0] for ent in organizations_freq.most_common(orgCount)]
+            filePersons[docName]=[ent[0] for ent in persons_freq.most_common(personCount)]
+            filePlaces[docName]=[ent[0] for ent in places_freq.most_common(placesCount)]
+            fileLocations[docName]=[ent[0] for ent in locations_freq.most_common(locCount)]
+            fileNouns[docName]=[ent[0] for ent in noun_freq.most_common(nounCount)]
+            fileSummary[docName] = [ent[0] for ent in summary_freq.most_common(25)]
             #print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
             #print(nounCount)
             #print(fileNouns)
@@ -477,12 +515,12 @@ def getNamedEntties(path, fileDictionary, numberOfEntities=5, summaryLimitWords=
             clusterSummery.append("\n")
             docTemp.close()
         # clusterNouns = list(set(clusterNouns))
-        organizations[i] = clusterOrganization
-        persons[i] = clusterPerson
-        places[i] = clusterPlace
-        locations[i] = clusterLocation
-        nouns[i] = clusterNouns
-        completeSummery[i] = clusterSummery
+        organizations[i] = [ent[0] for ent in Counter(clusterOrganization).most_common(10)]
+        persons[i] = [ent[0] for ent in Counter(clusterPerson).most_common(10)]
+        places[i] = [ent[0] for ent in Counter(clusterPlace).most_common(10)]
+        locations[i] = [ent[0] for ent in Counter(clusterLocation).most_common(10)]
+        nouns[i] = [ent[0] for ent in Counter(clusterNouns).most_common(10)]
+        completeSummery[i] = [ent[0] for ent in Counter(clusterSummery).most_common(10)]
 
 
 
@@ -522,4 +560,31 @@ def getNamedEntties(path, fileDictionary, numberOfEntities=5, summaryLimitWords=
     entities['file_places'] = filePlaces
     entities['file_loc'] = fileLocations
     entities['file_nouns'] = fileNouns
+    entities['file_summary']=fileSummary
+
+    return entities
+
+def getNamedEntitiesForAPI(path,fileDictionary):
+    totalSummary = dict()
+    for i in range(len(fileDictionary)):
+        eachSummary = []
+        for docName in fileDictionary[i]:
+
+            docTemp = open(os.path.join(path, docName), "r")
+            docTempRead = docTemp.read().replace("\n", ' ')
+            doc = nlp(docTempRead)
+            for ent in doc.ents:
+                if ent.text not in removableWords:
+                    if ent.label_ == "ORG":
+                        eachSummary.append(ent.text)
+                    if ent.label_ == "PERSON":
+                        eachSummary.append(ent.text)
+                    if ent.label_ == "GPE":
+                        eachSummary.append(ent.text)
+                    if ent.label_ == "LOC":
+                        eachSummary.append(ent.text)
+
+        totalSummary[i]=[ent[0] for ent in Counter(eachSummary).most_common(10)]
+    entities = dict()
+    entities['summary']=totalSummary
     return entities

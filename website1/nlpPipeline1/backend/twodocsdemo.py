@@ -25,10 +25,12 @@ def _get_word_vectors(sentences):
 
 
 def demo(fh1, fh2):
+
     file_1_sents = cleanup(fh1)
     file_2_sents = cleanup(fh2)
     file_1_word_vectors = _get_word_vectors(file_1_sents)
     file_2_word_vectors = _get_word_vectors(file_2_sents)
+
     common_words = list(set(file_1_word_vectors[0]).intersection(set(file_2_word_vectors[0])))
     print('commons : ' + str(len(common_words)))
     fh1.seek(0,0)
@@ -38,9 +40,11 @@ def demo(fh1, fh2):
     plot_data['fname_1'] = fh1.name
     plot_data['fname_2'] = fh2.name
     plot_data['similarity'] = doc_similarity
+
     plot_data['f1_points'] = [point for point in file_1_word_vectors[1] if point[0] not in common_words]
     plot_data['f2_points'] = [point for point in file_2_word_vectors[1] if point[0] not in common_words]
     plot_data['common_points'] = [point for point in file_1_word_vectors[1] if point[0] in common_words]
+
     return plot_data
 
 

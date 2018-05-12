@@ -154,6 +154,8 @@ class DemoAPI(APIView):
     Return a hardcoded response.
     """
     filedir=request.GET.get("filePath",'new')
+
+    """
     rel_dir = 'nlpPipeline1/data/offlinefiles/' + filedir + '/'
     pickle_dir = 'nlpPipeline1/data/offlinefiles/pickles/' + filedir + '/'
     doc_dir = os.path.join(settings.BASE_DIR, rel_dir)
@@ -164,35 +166,72 @@ class DemoAPI(APIView):
     complete.run(doc_dir, pickle_dir)
     json_data = json.load(open(os.path.join(settings.BASE_DIR, 'nlpPipeline1/static/nlpPipeline1/js/plot.json')))
 
+    """
 
-
-    print(request)
-    d=request.GET.get('param2', '$$$$')
+    print(request.data)
+    d=request.GET.get('file', '$$$$')
     print(d)
-    print(json_data)
+    #print(json_data)
     #x = temp.run()
     #x=json.dumps(x)
-    return Response({"success": True, "content": json_data})
+    return Response({"success": True, "content": "json"})
 
   def post(self, request):
     """
     Return a hardcoded response.
     """
-    print(request)
-    d=request.GET.get('param1', '$$$$')
-    print(d)
+    """
+    print(type(request.data))
+    queryData=request.data
+
+    file1=queryData['file1']
+    file2=queryData['file2']
     #x = temp.run()
     #x=json.dumps(x)
-    return Response({"success": True, "content": "hello post1"})
+    print(file1)
+    print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+    print(file2)
+    
+    """
+    filedir='source2'
+    rel_dir = 'nlpPipeline1/data/offlinefiles/' + filedir + '/'
+    pickle_dir = 'nlpPipeline1/data/offlinefiles/pickles/' + filedir + '/'
+    doc_dir = os.path.join(settings.BASE_DIR, rel_dir)
+    print("Processing offline docs.")
+    if len(os.listdir(os.path.join(settings.BASE_DIR, pickle_dir))) == 0:
+        print(">>>>>>>> pickles not present")
+        createPickles.generate_pickle_files(doc_dir, pickle_dir)
+    fileDict=complete.runForAPI(doc_dir, pickle_dir)
 
 
 
-class testAPI(APIView):
-    def get(self,request):
-        filePath=request.GET.get('filePath1','')
-        param1=request.GET.get('param1','')
+    #print(JSONDICT)
 
-        print(param1)
-        print(filePath)
+    return Response({"content": fileDict})
 
-        return Response({"success":True,"content":"Hello dumma"})
+
+
+
+class fileDetails(APIView):
+    def post(self,request):
+        queryData = request.data
+
+        file1 = queryData['file1']
+        file2 = queryData['file2']
+        print("File1>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+        print(file1)
+        print("file2>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+        print(file2)
+        demo_doc_dir = os.path.join(settings.BASE_DIR, 'nlpPipeline1/data/apiDocs')
+        for file in os.listdir(demo_doc_dir):
+            os.remove(os.path.join(demo_doc_dir, file))
+        fh1 = open(os.path.join(demo_doc_dir, "file1"), 'w+')
+        fh2 = open(os.path.join(demo_doc_dir, "file2"), 'w+')
+        fh1.write(file1)
+        fh2.write(file2)
+        fh1.seek(0, 0)
+        fh2.seek(0, 0)
+        plotdata = demo(fh1, fh2)
+
+
+        return Response({'data':plotdata['similarity']})

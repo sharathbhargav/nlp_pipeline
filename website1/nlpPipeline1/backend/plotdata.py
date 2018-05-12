@@ -51,45 +51,36 @@ class PlottingData:
             for key, value in self._clusters.items():
                 if file in self._clusters[key]:
                     filedata['cluster'] = key
-            filedata['org_entities'] = [
-                ent[0] for ent in dict(self._named_entities['file_org'])[file]
-            ]
-            filedata['person_entities'] = [
-                ent[0] for ent in dict(self._named_entities['file_persons'])[file]
-            ]
-            filedata['place_entities'] = [
-                ent[0] for ent in dict(self._named_entities['file_places'])[file]
-            ]
-            filedata['loc_entities'] = [
-                ent[0] for ent in dict(self._named_entities['file_loc'])[file]
-            ]
-            filedata['noun_entities'] = [
-                ent[0] for ent in dict(self._named_entities['file_nouns'])[file]
-            ]
+            if self._named_entities is not None:
+                filedata['org_entities'] =  dict(self._named_entities['file_org'])[file]
+
+                filedata['person_entities'] = dict(self._named_entities['file_persons'])[file]
+
+                filedata['place_entities'] = dict(self._named_entities['file_places'])[file]
+
+                filedata['loc_entities'] =  dict(self._named_entities['file_loc'])[file]
+
+                filedata['noun_entities'] = dict(self._named_entities['file_nouns'])[file]
+
             data[file] = filedata
         data['n_clusters'] = self._n_clusters
         for i in range(self._n_clusters):
             clusterdata = dict()
             clusterdata['xy'] = self._cluster_points[i].tolist()
             clusterdata['color'] = self.__color_ref[i]
-            clusterdata['org_entities'] = [
-                ent[0] for ent in Counter(dict(self._named_entities['org'])[i]).most_common(10)
-            ]
-            clusterdata['person_entities'] = [
-                ent[0] for ent in Counter(dict(self._named_entities['persons'])[i]).most_common(10)
-            ]
-            clusterdata['place_entities'] = [
-                ent[0] for ent in Counter(dict(self._named_entities['places'])[i]).most_common(10)
-            ]
-            clusterdata['loc_entities'] = [
-                ent[0] for ent in Counter(dict(self._named_entities['loc'])[i]).most_common(10)
-            ]
-            clusterdata['noun_entities'] = [
-                ent[0] for ent in Counter(dict(self._named_entities['nouns'])[i]).most_common(10)
-            ]
-            clusterdata['summary'] = [
-                ent[0] for ent in Counter(dict(self._named_entities['summary'])[i]).most_common(25)
-            ]
+            if self._named_entities is not None:
+                clusterdata['org_entities'] = dict(self._named_entities['org'])[i]
+
+                clusterdata['person_entities'] = dict(self._named_entities['persons'])[i]
+
+                clusterdata['place_entities'] = dict(self._named_entities['places'])[i]
+
+                clusterdata['loc_entities'] = dict(self._named_entities['loc'])[i]
+
+                clusterdata['noun_entities'] = dict(self._named_entities['nouns'])[i]
+
+                clusterdata['summary'] =dict(self._named_entities['summary'])[i]
+
             data[i] = clusterdata
         with open(os.path.join(json_loc, 'plot.json'), 'w+') as f:
             json.dump(data, f, indent=4)

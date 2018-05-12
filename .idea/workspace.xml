@@ -2,32 +2,225 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55e0dcca-08ee-4eea-8a97-e33d90a8d217" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/custom1/source1/haleem.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/custom1/source1/heartattack.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/custom1/source1/hyderabadibiryani.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/custom1/source1/iPhoneX.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/custom1/source1/mango.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/custom1/source1/niravmodi.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/custom1/source1/oneplus5t.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/custom1/source1/pavbhaji.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/custom1/source1/surfacepro.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/custom1/source1/watermelon.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/pickles/source2/plotNamesOfDocs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/pickles/source2/plotValuesOfDocs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/source2/haleem.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/source2/heartattack.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/source2/hyderabadibiryani.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/source2/iPhoneX.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/source2/mango.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/source2/niravmodi.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/source2/oneplus5t.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/source2/pavbhaji.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/source2/surfacepro.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/source2/watermelon.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/apiDocs/file1" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/apiDocs/file2" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/demodocs/haleem.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/demodocs/niravmodi.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/imdb/movies.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/12_angry_men" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/2001:_a_space_odyssey" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/a_clockwork_orange" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/a_place_in_the_sun" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/a_streetcar_named_desire" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/all_quiet_on_the_western_front" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/amadeus" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/american_graffiti" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/an_american_in_paris" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/annie_hall" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/apocalypse_now" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/ben-hur" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/braveheart" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/butch_cassidy_and_the_sundance_kid" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/casablanca" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/chinatown" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/citizen_kane" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/city_lights" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/close_encounters_of_the_third_kind" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/dances_with_wolves" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/doctor_zhivago" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/double_indemnity" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/dr._strangelove_or:_how_i_learned_to_stop_worrying_and_love_the_bomb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/e.t._the_extra-terrestrial" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/fargo" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/forrest_gump" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/from_here_to_eternity" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/gandhi" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/giant" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/gladiator" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/gone_with_the_wind" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/good_will_hunting" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/goodfellas" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/high_noon" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/it's_a_wonderful_life" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/it_happened_one_night" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/jaws" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/lawrence_of_arabia" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/midnight_cowboy" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/mr._smith_goes_to_washington" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/mutiny_on_the_bounty" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/my_fair_lady" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/nashville" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/network" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/north_by_northwest" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/on_the_waterfront" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/one_flew_over_the_cuckoo's_nest" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/out_of_africa" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/patton" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/platoon" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/psycho" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/pulp_fiction" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/raging_bull" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/raiders_of_the_lost_ark" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/rain_man" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/rear_window" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/rebel_without_a_cause" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/rocky" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/saving_private_ryan" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/schindler's_list" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/shane" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/singin'_in_the_rain" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/some_like_it_hot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/stagecoach" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/star_wars" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/sunset_blvd." />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/taxi_driver" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/terms_of_endearment" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/the_african_queen" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/the_apartment" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/the_best_years_of_our_lives" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/the_bridge_on_the_river_kwai" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/the_deer_hunter" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/the_exorcist" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/the_french_connection" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/the_godfather" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/the_godfather:_part_ii" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/the_good,_the_bad_and_the_ugly" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/the_graduate" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/the_grapes_of_wrath" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/the_green_mile" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/the_king's_speech" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/the_lord_of_the_rings:_the_return_of_the_king" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/the_maltese_falcon" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/the_philadelphia_story" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/the_pianist" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/the_shawshank_redemption" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/the_silence_of_the_lambs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/the_sound_of_music" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/the_third_man" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/the_treasure_of_the_sierra_madre" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/the_wizard_of_oz" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/titanic" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/to_kill_a_mockingbird" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/tootsie" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/unforgiven" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/vertigo" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/west_side_story" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/wuthering_heights" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/imdb/yankee_doodle_dandy" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/pickles/imdb/plotNamesOfDocs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/pickles/imdb/plotValuesOfDocs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/pickles/wiki/plotNamesOfDocs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/pickles/wiki/plotValuesOfDocs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/12_angry_men" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/2001:_a_space_odyssey" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/a_clockwork_orange" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/a_place_in_the_sun" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/a_streetcar_named_desire" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/all_quiet_on_the_western_front" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/amadeus" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/american_graffiti" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/an_american_in_paris" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/annie_hall" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/apocalypse_now" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/ben-hur" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/braveheart" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/butch_cassidy_and_the_sundance_kid" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/casablanca" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/chinatown" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/citizen_kane" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/city_lights" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/close_encounters_of_the_third_kind" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/dances_with_wolves" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/doctor_zhivago" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/double_indemnity" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/dr._strangelove_or:_how_i_learned_to_stop_worrying_and_love_the_bomb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/e.t._the_extra-terrestrial" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/fargo" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/forrest_gump" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/from_here_to_eternity" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/gandhi" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/giant" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/gladiator" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/gone_with_the_wind" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/good_will_hunting" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/goodfellas" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/high_noon" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/it's_a_wonderful_life" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/it_happened_one_night" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/jaws" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/lawrence_of_arabia" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/midnight_cowboy" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/mr._smith_goes_to_washington" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/mutiny_on_the_bounty" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/my_fair_lady" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/nashville" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/network" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/north_by_northwest" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/on_the_waterfront" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/one_flew_over_the_cuckoo's_nest" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/out_of_africa" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/patton" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/platoon" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/psycho" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/pulp_fiction" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/raging_bull" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/raiders_of_the_lost_ark" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/rain_man" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/rear_window" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/rebel_without_a_cause" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/rocky" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/saving_private_ryan" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/schindler's_list" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/shane" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/singin'_in_the_rain" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/some_like_it_hot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/stagecoach" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/star_wars" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/sunset_blvd." />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/taxi_driver" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/terms_of_endearment" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/the_african_queen" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/the_apartment" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/the_best_years_of_our_lives" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/the_bridge_on_the_river_kwai" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/the_deer_hunter" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/the_exorcist" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/the_french_connection" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/the_godfather" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/the_godfather:_part_ii" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/the_good,_the_bad_and_the_ugly" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/the_graduate" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/the_grapes_of_wrath" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/the_green_mile" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/the_king's_speech" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/the_lord_of_the_rings:_the_return_of_the_king" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/the_maltese_falcon" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/the_philadelphia_story" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/the_pianist" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/the_shawshank_redemption" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/the_silence_of_the_lambs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/the_sound_of_music" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/the_third_man" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/the_treasure_of_the_sierra_madre" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/the_wizard_of_oz" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/titanic" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/to_kill_a_mockingbird" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/tootsie" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/unforgiven" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/vertigo" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/west_side_story" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/wuthering_heights" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/wiki/yankee_doodle_dandy" />
+      <change beforePath="$PROJECT_DIR$/.idea/nlp_pipeline.iml" afterPath="$PROJECT_DIR$/.idea/nlp_pipeline.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/backend/algorithms/kMeans.py" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/backend/algorithms/kMeans.py" />
       <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/backend/completePipelineExperiment.py" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/backend/completePipelineExperiment.py" />
       <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/backend/individualModules.py" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/backend/individualModules.py" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/backend/plotdata.py" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/backend/plotdata.py" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/backend/twodocsdemo.py" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/backend/twodocsdemo.py" />
       <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/plot.json" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/plot.json" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/urls.py" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/urls.py" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/views.py" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/views.py" />
     </list>
     <ignored path=".idea/" />
     <ignored mask=".idea" />
@@ -39,27 +232,39 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="39116" />
+    <option name="totalTimeSeconds" value="62659" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="temp.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/temp.py">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="20" />
+            <state relative-caret-position="602">
+              <caret line="224" column="37" lean-forward="true" selection-start-line="224" selection-start-column="37" selection-end-line="224" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#55#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="createPickleFilesForDocs.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/createPickleFilesForDocs.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="31" column="38" lean-forward="true" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/views.py">
+      <file leaf-file-name="twodocsdemo.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/twodocsdemo.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="615">
-              <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+              <caret line="41" column="35" lean-forward="false" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
               <folding>
-                <element signature="e#0#55#0" expanded="true" />
+                <element signature="e#0#37#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -68,10 +273,22 @@
       <file leaf-file-name="individualModules.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/individualModules.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="692">
-              <caret line="340" column="55" lean-forward="false" selection-start-line="340" selection-start-column="55" selection-end-line="340" selection-end-column="55" />
+            <state relative-caret-position="347">
+              <caret line="460" column="0" lean-forward="false" selection-start-line="460" selection-start-column="0" selection-end-line="460" selection-end-column="0" />
               <folding>
                 <element signature="e#0#54#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="processing.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/processing.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#33#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -80,8 +297,8 @@
       <file leaf-file-name="plotdata.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/plotdata.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="57" lean-forward="false" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
+            <state relative-caret-position="15">
+              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -89,11 +306,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="completePipelineExperiment.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="completePipelineExperiment.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/completePipelineExperiment.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="587">
-              <caret line="85" column="0" lean-forward="true" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+            <state relative-caret-position="512">
+              <caret line="133" column="64" lean-forward="true" selection-start-line="133" selection-start-column="64" selection-end-line="133" selection-end-column="64" />
               <folding>
                 <element signature="e#0#56#0" expanded="true" />
               </folding>
@@ -101,41 +318,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="completePipelineExperiment1.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/completePipelineExperiment1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="kMeans.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/algorithms/kMeans.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="47" column="13" lean-forward="false" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="plot.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/plot.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="36" lean-forward="false" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+            <state relative-caret-position="90">
+              <caret line="9" column="37" lean-forward="false" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -209,13 +396,15 @@
         <option value="$PROJECT_DIR$/completePipelineExperiment1.py" />
         <option value="$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/index.html" />
         <option value="$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/plot.html" />
-        <option value="$PROJECT_DIR$/website1/nlpPipeline1/backend/plotdata.py" />
-        <option value="$PROJECT_DIR$/website1/nlpPipeline1/urls.py" />
         <option value="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/plotter.js" />
-        <option value="$PROJECT_DIR$/website1/nlpPipeline1/views.py" />
         <option value="$PROJECT_DIR$/website1/nlpPipeline1/backend/temp.py" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/backend/algorithms/kMeans.py" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/urls.py" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/backend/twodocsdemo.py" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/backend/plotdata.py" />
         <option value="$PROJECT_DIR$/website1/nlpPipeline1/backend/individualModules.py" />
         <option value="$PROJECT_DIR$/website1/nlpPipeline1/backend/completePipelineExperiment.py" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/views.py" />
       </list>
     </option>
   </component>
@@ -240,6 +429,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
@@ -251,18 +441,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="nlp_pipeline" type="b2602c69:ProjectViewProjectNode" />
               <item name="nlp_pipeline" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nlp_pipeline" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nlp_pipeline" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="nlp_pipeline" type="b2602c69:ProjectViewProjectNode" />
@@ -298,6 +482,14 @@
               <item name="nlp_pipeline" type="462c0819:PsiDirectoryNode" />
               <item name="website1" type="462c0819:PsiDirectoryNode" />
               <item name="nlpPipeline1" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nlp_pipeline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nlp_pipeline" type="462c0819:PsiDirectoryNode" />
+              <item name="website1" type="462c0819:PsiDirectoryNode" />
+              <item name="nlpPipeline1" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -314,8 +506,7 @@
               <item name="website1" type="462c0819:PsiDirectoryNode" />
               <item name="nlpPipeline1" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="custom1" type="462c0819:PsiDirectoryNode" />
-              <item name="source1" type="462c0819:PsiDirectoryNode" />
+              <item name="offlinefiles" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -546,7 +737,7 @@
     <frame x="398" y="123" width="1920" height="1046" extended-state="6" />
     <layout>
       <window_info id="Key Promoter X" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14164004" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14270501" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3278867" sideWeight="0.5042598" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3278867" sideWeight="0.49574015" order="2" side_tool="false" content_ui="tabs" />
@@ -627,16 +818,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/models/bbc.csv" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/bbc_sigma.csv" />
-    <entry file="file://$PROJECT_DIR$/docprocessing/pdfextractor.py" />
     <entry file="file://$PROJECT_DIR$/datasets/bbc/tech.pickle" />
     <entry file="file://$PROJECT_DIR$/datasets/bbc/README.TXT" />
     <entry file="file://$PROJECT_DIR$/word2vec2.py">
@@ -723,16 +904,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/createPickleFilesForDocs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/temp1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -763,27 +934,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithms/kMeans.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="47" column="13" lean-forward="false" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithms/kMeans.py" />
     <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/plotter.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="73">
           <caret line="74" column="21" lean-forward="true" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -795,21 +950,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/clusteringExperiments1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-868">
           <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -817,44 +961,107 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="624">
           <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/completePipelineExperiment1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
-          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/individualModules.py">
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/data/imdb/movies.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="692">
-          <caret line="340" column="55" lean-forward="false" selection-start-line="340" selection-start-column="55" selection-end-line="340" selection-end-column="55" />
+        <state relative-caret-position="197">
+          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/algorithms/kMeans.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
           <folding>
-            <element signature="e#0#54#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="37" lean-forward="false" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/twodocsdemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="35" lean-forward="false" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/processing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/plotdata.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="57" lean-forward="false" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
+        <state relative-caret-position="15">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/individualModules.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="460" column="0" lean-forward="false" selection-start-line="460" selection-start-column="0" selection-end-line="460" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/createPickleFilesForDocs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="31" column="38" lean-forward="true" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/completePipelineExperiment.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="85" column="0" lean-forward="true" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+        <state relative-caret-position="512">
+          <caret line="133" column="64" lean-forward="true" selection-start-line="133" selection-start-column="64" selection-end-line="133" selection-end-column="64" />
           <folding>
             <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="602">
+          <caret line="224" column="37" lean-forward="true" selection-start-line="224" selection-start-column="37" selection-end-line="224" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
           </folding>
         </state>
       </provider>
