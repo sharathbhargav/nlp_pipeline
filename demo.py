@@ -3,7 +3,7 @@ from os import listdir
 from docsimilarity.tdmgenerator import TDMatrix
 from docsimilarity.tfidfcalculator import TFIDFVectorizer
 
-custom_data_set_path = "/home/ullas/PycharmProjects/nlp_pipeline/datasets/custom/"
+custom_data_set_path = "/home/ullas/project/nlp_pipeline/datasets/custom/"
 file_names = [file.split('.')[0] for file in listdir(custom_data_set_path + 'source1')]
 source1 = [custom_data_set_path + 'source1/' + file + '.txt' for file in file_names]
 source2 = [custom_data_set_path + 'source2/' + file + '.txt' for file in file_names]
@@ -28,7 +28,7 @@ for file in file_names:
 
 # Demo for Euclidean with LSA
 
-lsa = TDMatrix(directory=custom_data_set_path, load_from='custom')
+lsa = TDMatrix(directory=custom_data_set_path, store_to='custom')
 vector_set_1 = [lsa.get_doc_vector(doc_name=file) for file in source1]
 vector_set_2 = [lsa.get_doc_vector(doc_name=file) for file in source2]
 print("\nEuclidean Similarity with LSA")

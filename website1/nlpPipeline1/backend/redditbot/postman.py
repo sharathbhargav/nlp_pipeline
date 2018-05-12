@@ -58,7 +58,7 @@ def get_gilded_posts(num_posts=100):
 
 def get_new_posts(num_posts=100):
     reddit = get_reddit_instance()
-    directory = file_location + 'new/'
+    directory = file_location + 'files/'
     i = 0
     for post in reddit.front.new(limit=num_posts):
         if type(post).__name__ == 'Submission':

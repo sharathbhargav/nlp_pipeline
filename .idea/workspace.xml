@@ -2,22 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55e0dcca-08ee-4eea-8a97-e33d90a8d217" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/genres.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imdb.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movies.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website1/nlpPipeline1/backend/processing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website1/nlpPipeline1/backend/twodocsdemo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/css/twofilesplot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/jquery-3.3.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/twofilesplot.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/twofilesplot.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/titles.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website1/nlpPipeline1/backend/docsimilarity/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website1/nlpPipeline1/backend/docsimilarity/similarity.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website1/nlpPipeline1/backend/docsimilarity/tdmgenerator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website1/nlpPipeline1/backend/docsimilarity/tfidfcalculator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website1/nlpPipeline1/backend/docsimilarity/util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/css/tabulate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/tabulate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/tabulate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiki.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiking.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movies.py" beforeDir="false" afterPath="$PROJECT_DIR$/movies.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redditbot/postman.py" beforeDir="false" afterPath="$PROJECT_DIR$/redditbot/postman.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/doccer/redditbot/postman.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/doccer/redditbot/postman.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/doccer/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/doccer/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/backend/completePipelineExperiment.py" beforeDir="false" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/backend/completePipelineExperiment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/backend/individualModules.py" beforeDir="false" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/backend/individualModules.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/css/homepage.css" beforeDir="false" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/css/homepage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/backend/createPickleFilesForDocs.py" beforeDir="false" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/backend/createPickleFilesForDocs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/backend/plotdata.py" beforeDir="false" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/backend/plotdata.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/backend/redditbot/postman.py" beforeDir="false" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/backend/redditbot/postman.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/files/18-04-21_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/files/18-04-21_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/files/18-04-21_10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/files/18-04-21_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/files/18-04-21_3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/files/18-04-21_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/files/18-04-21_5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/files/18-04-21_6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/files/18-04-21_7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/files/18-04-21_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/files/18-04-21_9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/pickles/new/plotNamesOfDocs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/pickles/new/plotValuesOfDocs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/css/plotstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/css/plotstyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/plot.json" beforeDir="false" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/plot.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/plotter.js" beforeDir="false" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/plotter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/plot.html" beforeDir="false" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/plot.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/views.py" afterDir="false" />
     </list>
@@ -38,8 +60,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="89" column="39" selection-start-line="89" selection-start-column="39" selection-end-line="89" selection-end-column="39" />
+            <state relative-caret-position="405">
+              <caret line="198" column="4" selection-start-line="198" selection-start-column="4" selection-end-line="198" selection-end-column="4" />
               <folding>
                 <element signature="e#0#55#0" expanded="true" />
               </folding>
@@ -47,52 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="movies.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/movies.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="genres.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/genres.txt">
+      <file leaf-file-name="plot.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/plot.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="99" column="39" selection-start-line="99" selection-start-column="39" selection-end-line="99" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="imdb.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/imdb.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="492" column="12" selection-start-line="492" selection-start-column="12" selection-end-line="492" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="twofilesplot.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/twofilesplot.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="twofilesplot.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/css/twofilesplot.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="twofilesplot.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/twofilesplot.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="63" column="29" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
+            <state relative-caret-position="33">
+              <caret line="39" column="80" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="80" />
             </state>
           </provider>
         </entry>
@@ -100,29 +81,41 @@
       <file leaf-file-name="plotter.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/plotter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="60" column="44" lean-forward="true" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="44" />
+            <state relative-caret-position="288">
+              <caret line="76" column="55" selection-start-line="76" selection-start-column="55" selection-end-line="76" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="twodocsdemo.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/twodocsdemo.py">
+      <file leaf-file-name="completePipelineExperiment.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/completePipelineExperiment.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-324">
-              <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+            <state relative-caret-position="461">
+              <caret line="77" column="43" selection-start-line="77" selection-start-column="43" selection-end-line="77" selection-end-column="43" />
               <folding>
-                <element signature="e#0#37#0" expanded="true" />
+                <element signature="e#0#56#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/index.html">
+      <file leaf-file-name="twofilesplot.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/twofilesplot.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="110" column="40" selection-start-line="110" selection-start-column="40" selection-end-line="110" selection-end-column="40" />
+            <state relative-caret-position="126">
+              <caret line="39" column="46" lean-forward="true" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wiking.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wiking.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="337">
+              <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#16#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -139,6 +132,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>colors</find>
+      <find>getDocS</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -177,8 +171,6 @@
         <option value="$PROJECT_DIR$/docsimilarity/similarity.py" />
         <option value="$PROJECT_DIR$/docsimilarity/tfidfcalculator.py" />
         <option value="$PROJECT_DIR$/docprocessing/util.py" />
-        <option value="$PROJECT_DIR$/demo.py" />
-        <option value="$PROJECT_DIR$/docsimilarity/tdmgenerator.py" />
         <option value="$PROJECT_DIR$/reddit/trial.py" />
         <option value="$PROJECT_DIR$/reddit/reddit_auth.py" />
         <option value="$PROJECT_DIR$/reddit/postman.py" />
@@ -190,22 +182,33 @@
         <option value="$PROJECT_DIR$/individualModules.py" />
         <option value="$PROJECT_DIR$/dbScanTest1.py" />
         <option value="$PROJECT_DIR$/completePipelineExperiment1.py" />
-        <option value="$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/plot.html" />
-        <option value="$PROJECT_DIR$/website1/nlpPipeline1/backend/plotdata.py" />
-        <option value="$PROJECT_DIR$/website1/nlpPipeline1/backend/completePipelineExperiment.py" />
         <option value="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/css/homepage.css" />
-        <option value="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/plotter.js" />
         <option value="$PROJECT_DIR$/website1/nlpPipeline1/backend/individualModules.py" />
         <option value="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/css/twofilesplot.css" />
         <option value="$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/twofilesplot.html" />
         <option value="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/twofilesplot.js" />
         <option value="$PROJECT_DIR$/website1/nlpPipeline1/backend/twodocsdemo.py" />
-        <option value="$PROJECT_DIR$/website1/nlpPipeline1/urls.py" />
-        <option value="$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/index.html" />
-        <option value="$PROJECT_DIR$/website1/nlpPipeline1/views.py" />
-        <option value="$PROJECT_DIR$/movies.py" />
         <option value="$PROJECT_DIR$/genres.txt" />
         <option value="$PROJECT_DIR$/imdb.txt" />
+        <option value="$PROJECT_DIR$/titles.txt" />
+        <option value="$PROJECT_DIR$/wiki.txt" />
+        <option value="$PROJECT_DIR$/movies.py" />
+        <option value="$PROJECT_DIR$/docsimilarity/tdmgenerator.py" />
+        <option value="$PROJECT_DIR$/demo.py" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/backend/docsimilarity/tdmgenerator.py" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/css/tabulate.css" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/tabulate.js" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/tabulate.html" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/css/plotstyle.css" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/backend/plotdata.py" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/plot.html" />
+        <option value="$PROJECT_DIR$/wiking.py" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/backend/createPickleFilesForDocs.py" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/index.html" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/urls.py" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/views.py" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/plotter.js" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/backend/completePipelineExperiment.py" />
       </list>
     </option>
   </component>
@@ -220,6 +223,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="nlp_pipeline" type="cbb8eebc:String" user="nlp_pipeline" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -227,16 +241,86 @@
               <item name="nlp_pipeline" type="b2602c69:ProjectViewProjectNode" />
               <item name="nlp_pipeline" type="462c0819:PsiDirectoryNode" />
             </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
             <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="nlp_pipeline" type="cbb8eebc:String" user="nlp_pipeline" />
+              <item name="nlp_pipeline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nlp_pipeline" type="462c0819:PsiDirectoryNode" />
+              <item name="website1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nlp_pipeline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nlp_pipeline" type="462c0819:PsiDirectoryNode" />
+              <item name="website1" type="462c0819:PsiDirectoryNode" />
+              <item name="nlpPipeline1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nlp_pipeline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nlp_pipeline" type="462c0819:PsiDirectoryNode" />
+              <item name="website1" type="462c0819:PsiDirectoryNode" />
+              <item name="nlpPipeline1" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nlp_pipeline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nlp_pipeline" type="462c0819:PsiDirectoryNode" />
+              <item name="website1" type="462c0819:PsiDirectoryNode" />
+              <item name="nlpPipeline1" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nlp_pipeline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nlp_pipeline" type="462c0819:PsiDirectoryNode" />
+              <item name="website1" type="462c0819:PsiDirectoryNode" />
+              <item name="nlpPipeline1" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="offlinefiles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nlp_pipeline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nlp_pipeline" type="462c0819:PsiDirectoryNode" />
+              <item name="website1" type="462c0819:PsiDirectoryNode" />
+              <item name="nlpPipeline1" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nlp_pipeline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nlp_pipeline" type="462c0819:PsiDirectoryNode" />
+              <item name="website1" type="462c0819:PsiDirectoryNode" />
+              <item name="nlpPipeline1" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="nlpPipeline1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nlp_pipeline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nlp_pipeline" type="462c0819:PsiDirectoryNode" />
+              <item name="website1" type="462c0819:PsiDirectoryNode" />
+              <item name="nlpPipeline1" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="nlpPipeline1" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nlp_pipeline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nlp_pipeline" type="462c0819:PsiDirectoryNode" />
+              <item name="website1" type="462c0819:PsiDirectoryNode" />
+              <item name="nlpPipeline1" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="nlpPipeline1" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nlp_pipeline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nlp_pipeline" type="462c0819:PsiDirectoryNode" />
+              <item name="website1" type="462c0819:PsiDirectoryNode" />
+              <item name="nlpPipeline1" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nlp_pipeline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nlp_pipeline" type="462c0819:PsiDirectoryNode" />
+              <item name="website1" type="462c0819:PsiDirectoryNode" />
+              <item name="nlpPipeline1" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="nlpPipeline1" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -266,43 +350,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.completePipelineExperiment1">
-    <configuration name="completePipelineExperiment1" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="nlp_pipeline" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/completePipelineExperiment1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="createPickleFilesForDocs" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="nlp_pipeline" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/createPickleFilesForDocs.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.wiking">
     <configuration name="dbScanTest1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="nlp_pipeline" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -321,7 +369,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="postman" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="nlp_pipeline" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -329,11 +377,29 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/redditbot" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/redditbot/postman.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="movies" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="nlp_pipeline" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/movies.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -357,20 +423,38 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="wiking" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="nlp_pipeline" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/wiking.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list>
-      <item itemvalue="Python.createPickleFilesForDocs" />
-      <item itemvalue="Python.postman" />
-      <item itemvalue="Python.completePipelineExperiment1" />
       <item itemvalue="Python.temp1" />
       <item itemvalue="Python.dbScanTest1" />
+      <item itemvalue="Python.movies" />
+      <item itemvalue="Python.demo" />
+      <item itemvalue="Python.wiking" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.wiking" />
+        <item itemvalue="Python.demo" />
+        <item itemvalue="Python.movies" />
         <item itemvalue="Python.dbScanTest1" />
         <item itemvalue="Python.temp1" />
-        <item itemvalue="Python.completePipelineExperiment1" />
-        <item itemvalue="Python.postman" />
-        <item itemvalue="Python.createPickleFilesForDocs" />
       </list>
     </recent_temporary>
   </component>
@@ -448,19 +532,36 @@
       <option name="project" value="LOCAL" />
       <updated>1525791026262</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="done: two files fun">
+      <created>1525878384580</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1525878384580</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="69" y="27" width="1851" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14113785" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32937366" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5042598" side_tool="true" weight="0.32721382" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Python Console" order="8" weight="0.31788793" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49574015" weight="0.3278867" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32937366" />
+      <window_info anchor="bottom" id="Python Console" order="8" weight="0.3174946" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49574015" weight="0.32721382" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32937366" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -472,23 +573,22 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Key Promoter X" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3297414" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12832801" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978701" visible="true" weight="0.32897604" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5021299" side_tool="true" weight="0.329718" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Key Promoter X" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -518,7 +618,8 @@
     <MESSAGE value="Done: Reddit Data Scraper&#10;ToDo : lol" />
     <MESSAGE value="Merge remote-tracking branch 'github/ud' into ud&#10;&#10;# Conflicts:&#10;#&#9;.gitignore&#10;#&#9;redditbot/postman.py" />
     <MESSAGE value="+ssb added django" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ssb added django" />
+    <MESSAGE value="done: two files fun" />
+    <option name="LAST_COMMIT_MESSAGE" value="done: two files fun" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -536,35 +637,17 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/redditbot/commentator.py" />
-    <entry file="file://$PROJECT_DIR$/redditbot/postman.py" />
-    <entry file="file://$PROJECT_DIR$/word2vecExperiments.py">
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/twofilesplot.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        <state>
+          <caret selection-end-line="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataSetExperiments.py">
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/tabulate.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrapers/wikipedia.py" />
-    <entry file="file://$PROJECT_DIR$/scraperutil.py" />
-    <entry file="file://$PROJECT_DIR$/website/doccer/redditbot/postman.py" />
-    <entry file="file://$PROJECT_DIR$/website/doccer/static/doccer/js/plot.json" />
-    <entry file="file://$PROJECT_DIR$/dummyplotdata.py" />
-    <entry file="file://$PROJECT_DIR$/plotting/plotdata.py" />
-    <entry file="file://$PROJECT_DIR$/website/doccer/templates/doccer/index.html" />
-    <entry file="file://$PROJECT_DIR$/website/doccer/urls.py" />
-    <entry file="file://$PROJECT_DIR$/website/doccer/views.py" />
-    <entry file="file://$PROJECT_DIR$/compareResults.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="125" selection-start-line="12" selection-end-line="12" selection-end-column="125" />
+        <state relative-caret-position="54">
+          <caret line="3" column="76" selection-start-line="3" selection-start-column="76" selection-end-line="3" selection-end-column="76" />
         </state>
       </provider>
     </entry>
@@ -626,13 +709,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/algorithms/kMeans.py" />
-    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/plotdata.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="83" column="43" selection-start-line="83" selection-start-column="43" selection-end-line="83" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/css/homepage.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -647,68 +723,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/createPickleFilesForDocs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docprocessing/pdfextractor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docprocessing/util.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret lean-forward="true" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docprocessing/processing.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/data/demodocs/18-04-21_0">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/processing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-432" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/individualModules.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="69" column="31" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/plot.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="11" selection-start-line="11" selection-end-line="42" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/css/plotstyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="4" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/css/twofilesplot.css">
@@ -718,100 +742,222 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/twofilesplot.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/data/demodocs/18-04-21_3">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1404" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/data/demodocs/18-04-21_7">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/twofilesplot.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="63" column="29" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/completePipelineExperiment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1332">
-          <caret line="74" column="21" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/data/demodocs/18-04-21_3" />
     <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/twodocsdemo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-324">
           <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/urls.py">
+    <entry file="file://$PROJECT_DIR$/titles.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+        <state relative-caret-position="1800">
+          <caret line="100" selection-start-line="100" selection-end-line="100" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/plotter.js">
+    <entry file="file://$PROJECT_DIR$/wiki1.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="60" column="44" lean-forward="true" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="44" />
+        <state relative-caret-position="48">
+          <caret line="252" column="36" selection-start-line="252" selection-start-column="36" selection-end-line="252" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/index.html">
+    <entry file="file://$PROJECT_DIR$/wiki.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="110" column="40" selection-start-line="110" selection-start-column="40" selection-end-line="110" selection-end-column="40" />
+        <state relative-caret-position="144">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imdb.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="492" column="12" selection-start-line="492" selection-start-column="12" selection-end-line="492" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movies/imdb/2001:_a_space_odyssey_imdb" />
+    <entry file="file://$PROJECT_DIR$/genres.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1204">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movies.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-221" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/docprocessing/util.py" />
+    <entry file="file://$PROJECT_DIR$/docsimilarity/tdmgenerator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="51" lean-forward="true" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docsimilarity/tfidfcalculator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+        <state relative-caret-position="450">
+          <caret line="46" column="58" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/docsimilarity/tdmgenerator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="774">
+          <caret line="43" column="49" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/twofilesplot.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="83" lean-forward="true" selection-start-line="5" selection-start-column="83" selection-end-line="5" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/individualModules.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="162" column="21" lean-forward="true" selection-start-line="162" selection-start-column="21" selection-end-line="162" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/css/tabulate.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/tabulate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/tabulate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="37" column="87" selection-start-line="37" selection-start-column="87" selection-end-line="37" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/docsimilarity/tfidfcalculator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/plotdata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/css/plotstyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movies.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" selection-start-line="3" selection-end-line="9" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiking.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/createPickleFilesForDocs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="33" column="42" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/homepage.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="89" column="39" selection-start-line="89" selection-start-column="39" selection-end-line="89" selection-end-column="39" />
+        <state relative-caret-position="405">
+          <caret line="198" column="4" selection-start-line="198" selection-start-column="4" selection-end-line="198" selection-end-column="4" />
           <folding>
             <element signature="e#0#55#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/movies.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/genres.txt">
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="99" column="39" selection-start-line="99" selection-start-column="39" selection-end-line="99" selection-end-column="39" />
+        <state relative-caret-position="573">
+          <caret line="69" column="14" lean-forward="true" selection-start-line="69" selection-start-column="14" selection-end-line="69" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imdb.txt">
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/plot.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="492" column="12" selection-start-line="492" selection-start-column="12" selection-end-line="492" selection-end-column="12" />
+        <state relative-caret-position="33">
+          <caret line="39" column="80" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/plotly-latest.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/twofilesplot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="39" column="46" lean-forward="true" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/plotter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="76" column="55" selection-start-line="76" selection-start-column="55" selection-end-line="76" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/completePipelineExperiment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="77" column="43" selection-start-line="77" selection-start-column="43" selection-end-line="77" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

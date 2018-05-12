@@ -95,13 +95,6 @@ class PlottingData:
             json.dump(data, f, indent=4)
         return data
 
-
-
-
-
-
-
-
     def status(self):
         print("Number of Files : " + str(self.n_files))
         print("Files : " + str(self._filenames))
