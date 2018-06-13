@@ -1,0 +1,61 @@
+<head>
+    <title>Plot</title>
+    {% load static %}
+    <script type="text/javascript" src="{% static 'nlpPipeline1/js/jquery-3.3.1.js' %}"></script>
+    <script type="text/javascript" src="{% static 'nlpPipeline1/js/bootstrap.js' %}"></script>
+    <script type="text/javascript" src="{% static 'nlpPipeline1/js/tabulate.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'nlpPipeline1/css/tabulate.css' %}">
+    <link rel="stylesheet" href="{% static 'nlpPipeline1/css/bootstrap.css' %}">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-dark">
+        <a class="navbar-brand" id="navbar-text" href="#">P14B56</a>
+    </nav>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Home</a>
+        </div>
+    </div>
+
+    <table class="table table-striped" id="similarities_table">
+        <h3 align="center">Similarity between files containing information about same topic from different sources</h3>
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">File Name</th>
+                <th scope="col">Jaccard Similarity</th>
+                <th scope="col">Euclidean with TF-IDF</th>
+                <th scope="col">Euclidean with LSA</th>
+                <th scope="col">Cosine with Word2Vec</th>
+            </tr>
+        </thead>
+        <tbody id="similarities_table_body">
+
+        </tbody>
+    </table>
+
+    <hr />
+
+    <table class="table table-striped" id="dissimilarities_table">
+        <h3 align="center">Similarity between files containing information about different topics</h3>
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">File_1</th>
+                <th scope="col">File_2</th>
+                <th scope="col">Jaccard Similarity</th>
+                <th scope="col">Euclidean with TF-IDF</th>
+                <th scope="col">Euclidean with LSA</th>
+                <th scope="col">Cosine with Word2Vec</th>
+            </tr>
+        </thead>
+        <tbody id="dissimilarities_table_body">
+
+        </tbody>
+    </table>
+
+
+</body>
+<script type="text/javascript">
+        data_from_django = {{ data }};
+        load(data_from_django);
+</script>

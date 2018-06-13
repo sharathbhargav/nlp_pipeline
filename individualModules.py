@@ -1,8 +1,5 @@
-from nltk.corpus import gutenberg
 from nltk.tokenize import sent_tokenize, word_tokenize
-from gensim.models import Word2Vec
 from nltk.corpus import stopwords
-import pickle
 import numpy as np
 import math
 import matplotlib.pyplot as plt
@@ -14,16 +11,15 @@ from gensim.models.keyedvectors import KeyedVectors
 from sklearn.decomposition import PCA
 import os
 from sklearn.cluster import KMeans
-from sklearn.metrics import silhouette_samples, silhouette_score
-from sklearn.preprocessing import normalize
+from sklearn.metrics import silhouette_score
 from operator import itemgetter
-from algorithms import kMeans as kmeans
 from random import randint
 from enum import Enum
 from sklearn.cluster import Birch
 import spacy
-
+from . import kMeans
 from collections import Counter
+from django.conf import settings
 
 removableWords = set(stopwords.words('english'))
 
@@ -33,10 +29,10 @@ extraWords = ['.', ',', '/', '<', '>', '?', ';', '\'', ':', '"', '[', ']', '{', 
 removableWords.update(extraWords)
 vectorSize = 300
 
-temp = open("/home/sharathbhragav/PycharmProjects/nlp_pipeline/models/harryPotterFullWord2VecModelSize300", "rb")
-trainingModelGoogle = pickle.load(temp)
-modelUsed = trainingModelGoogle
+trainingModelGoogle = KeyedVectors.load_word2vec_format(os.path.join(settings.BASE_DIR, 'models/GoogleNews-vectors-negative300.bin'), binary=True, limit=10000)
 nlp = spacy.load('/home/sharathbhragav/anaconda3/lib/python3.6/site-packages/en_core_web_sm/en_core_web_sm-2.0.0')
+
+
 
 
 def printStopWords():
@@ -74,6 +70,9 @@ def getNormalizedVector(inputVector):
 
 
 def getWordVector(inputWord):
+    trainingModelGoogle = KeyedVectors.load_word2vec_format(
+        os.path.join(settings.BASE_DIR, 'models/GoogleNews-vectors-negative300.bin'), binary=True, limit=10000)
+    modelUsed = trainingModelGoogle
     wordVector1 = np.array(modelUsed[inputWord])  # trainingModelGoogle
     return wordVector1
 
@@ -108,13 +107,13 @@ def getSentancesListFromDoc(documentHandle, stopWordsRequired):
             docWords.append(words)
     return docWords
 
-#@Todo countof words=0
+
 def getDocVector(documentHandle, stopWordsRequired=False):
     totalDocVec = np.array([float(0.0) for x in range(vectorSize)])
-    countOfWords = 0
+    countOfWords = 1
     countOfIgnore = 0
     completeList = getSentancesListFromDoc(documentHandle, stopWordsRequired)
-    ignoredWords = open('documents/ignoredWords', 'w')
+    #ignoredWords = open('/home/sharathsbhragav/PycharmProjects/nlp_pipeline/documents/ignoredWords', 'w')
     # print(completeList)
     for sentances in completeList:
         # print(sentances)
@@ -122,18 +121,17 @@ def getDocVector(documentHandle, stopWordsRequired=False):
             try:
                 wordVec = getWordVector(word)
                 # print("wordvec>>>>>>>>>>>>>>>",wordVec)
-                countOfWords = countOfWords + 1
+                countOfWords += 1
                 # print("count>>>>>>>>>>>>>>>>>>>>>",countOfWords)
                 totalDocVec += wordVec
                 # print(word, ">>>>>>>>", totalDocVec)
             except:
                 countOfIgnore += 1
-
                 continue
     totalDocVec /= countOfWords
-    ignoredWords.write("Ignored count=" + str(countOfIgnore) + "\n")
-    ignoredWords.write("counted=" + str(countOfWords))
-    ignoredWords.close()
+    #ignoredWords.write("Ignored count=" + str(countOfIgnore) + "\n")
+    #ignoredWords.write("counted=" + str(countOfWords))
+    #ignoredWords.close()
     return totalDocVec
 
 
@@ -173,6 +171,8 @@ def getWordSimilarity(word1, word2):
 
 
 def getWord2VecWordSimilarity(word1, word2):
+
+    modelUsed = trainingModelGoogle
     similarity = modelUsed.similarity(word1, word2)
     return similarity
 
@@ -218,14 +218,19 @@ def getCommonWordsBetweenDocs(documentHandle1, documentHandle2):
 
 def getPlotValuesOfDocuments(documentHandles):
     vectors = []
+    print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+    print(documentHandles)
+    print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
     for handle in documentHandles:
         try:
             vec = getDocVector(handle)
             if (len(vec) > 0):
                 vectors.append(vec)
-        except:
-            print(handle, " failed to read")
-
+        except Exception as ex:
+            template = "An exception of type {0} occurred. Arguments:\n{1!r}"
+            message = template.format(type(ex).__name__, ex.args)
+            print(message)
+            #print(handle, " failed to read")
     docArray = np.asarray(vectors, dtype=np.float32)
     pca = PCA(n_components=2)
     pcaOut = pca.fit_transform(docArray)
@@ -292,7 +297,7 @@ def getOptimalClustersSilhoutte(data, algorithm=ClusteringAlgorithm.skLearnKMean
     if algorithm == ClusteringAlgorithm.customKMeans:
         for clusterKmeansNumber in range(2, 20):
             try:
-                clf = kmeans.K_Means(clusterKmeansNumber, tolerance=0.00001, max_iterations=800)
+                clf = kMeans.K_Means(clusterKmeansNumber, tolerance=0.00001, max_iterations=800)
                 rotation = randamozieSeed(data, clusterKmeansNumber)
                 clf.fit(data, spherical=True, rotationArray=rotation)
                 labels = clf.getLabels(data)
@@ -357,7 +362,7 @@ def randamozieSeed(data, k):
 def customKMeansComplete(data):
     (selectedClusterNumber, rotation) = getOptimalClustersSilhoutte(data, ClusteringAlgorithm.customKMeans)
 
-    clf = kmeans.K_Means(selectedClusterNumber, tolerance=0.00001, max_iterations=800)
+    clf = kMeans.K_Means(selectedClusterNumber, tolerance=0.00001, max_iterations=800)
 
     clf.fit(data, spherical=True, rotationArray=rotation)
     # classifications=clf.classifications
@@ -389,6 +394,7 @@ def getDocClustersNames(clusterCount, labels, fileNames):
 
 
 def getNamedEntties(path, fileDictionary, numberOfEntities=5, summaryLimitWords=25):
+
     organizations = {}
     persons = {}
     places = {}
@@ -403,7 +409,7 @@ def getNamedEntties(path, fileDictionary, numberOfEntities=5, summaryLimitWords=
         clusterNouns = []
         clusterSummery = []
         for docName in fileDictionary[i]:
-            docTemp = open(path + docName, "r")
+            docTemp = open(os.path.join(path, docName), "r")
             docTempRead = docTemp.read().replace("\n", ' ')
             doc = nlp(docTempRead)
             for eachNoun in doc.noun_chunks:
@@ -437,12 +443,14 @@ def getNamedEntties(path, fileDictionary, numberOfEntities=5, summaryLimitWords=
         locations[i] = clusterLocation
         nouns[i] = clusterNouns
         completeSummery[i] = clusterSummery
+
         organizations_freq = Counter(clusterOrganization)
         persons_freq = Counter(clusterPerson)
         places_freq = Counter(clusterPlace)
         locations_freq = Counter(clusterLocation)
         noun_freq = Counter(clusterNouns)
 
+        '''
         print("Cluster:", i)
         print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
         print("Organizations")
@@ -463,3 +471,12 @@ def getNamedEntties(path, fileDictionary, numberOfEntities=5, summaryLimitWords=
         print("Complete summery", " $ ".join(set(clusterSummery)))
 
         print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+        '''
+    entities = dict()
+    entities['org'] = organizations
+    entities['persons'] = persons
+    entities['places'] = places
+    entities['loc'] = locations
+    entities['nouns'] = nouns
+    entities['summary'] = completeSummery
+    return entities

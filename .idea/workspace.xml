@@ -1,0 +1,981 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="55e0dcca-08ee-4eea-8a97-e33d90a8d217" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/custom/source1/burjkhalifa_1.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/custom/source1/geforcegtx1080ti_1.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/custom/source1/hyderabadibiryani_1.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/custom/source1/iPhoneX_1.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/custom/source2/apple.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/custom/source2/burjkhalifa.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/custom/source2/carrot.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/custom/source2/chicken65.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/custom/source2/chil.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/custom/source2/diabetes.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/custom/source2/geforcegtx1080ti.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/custom/source2/kiwi.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/custom/source2/pekingduck.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/custom/source2/tajmahal.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/demodocs/00" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/demodocs/01" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_plots_with_review/guardians_of_the_galaxy" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_plots_with_review/harry_potter_and_the_order_of_the_phoenix" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_plots_with_review/rogerebert_captain_america:_the_winter_soldier" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_plots_with_review/rogerebert_harry_potter_and_the_chamber_of_secrets" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_plots_with_review/rogerebert_la_la_land" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_plots_with_review/rogerebert_point_break" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_plots_with_review/rogerebert_return_of_the_jedi" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_plots_with_review/rogerebert_star_trek_iii:_the_search_for_spock" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_plots_with_review/rogerebert_the_lion_king" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_plots_with_review/star_trek_ii:_the_wrath_of_khan" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_plots_with_review/the_lord_of_the_rings:_the_return_of_the_king" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_plots_with_review/the_lord_of_the_rings:_the_two_towers" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_plots_with_review/transformers:_the_last_knight" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_a_bug's_life" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_avengers:_age_of_ultron" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_black_panther" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_captain_america:_civil_war" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_captain_america:_the_first_avenger" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_catch_me_if_you_can" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_fantastic_beasts_and_where_to_find_them" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_godzilla" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_guardians_of_the_galaxy" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_harry_potter_and_the_goblet_of_fire" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_harry_potter_and_the_order_of_the_phoenix" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_harry_potter_and_the_prisoner_of_azkaban" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_interstellar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_jason_bourne" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_jobs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_king_kong" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_life" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_ocean's_eleven" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_ocean's_thirteen" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_ocean's_twelve" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_pacific_rim" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_red" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_red_2" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_star_trek:_first_contact" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_star_trek:_insurrection" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_star_trek:_the_motion_picture" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_star_trek_iv:_the_voyage_home" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_star_trek_nemesis" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_star_trek_v:_the_final_frontier" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_star_wars:_the_clone_wars" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_star_wars:_the_last_jedi" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_the_avengers" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_the_boss_baby" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_the_bourne_identity" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_the_bourne_legacy" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_the_bourne_supremacy" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_the_hobbit:_the_battle_of_the_five_armies" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_the_hobbit:_the_desolation_of_smaug" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_the_incredibles" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_the_martian" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_thor" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_thor:_ragnarok" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_toy_story" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_toy_story_2" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_toy_story_3" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_transformers:_dark_of_the_moon" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/movie_reviews/rogerebert_transformers:_the_last_knight" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/new/temp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/source2/apple.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/source2/apple_1.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/source2/burjkhalifa.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/source2/carrot.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/source2/chicken65.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/source2/chil.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/source2/diabetes.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/source2/geforcegtx1080ti.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/source2/kiwi.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/source2/pekingduck.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/source2/tajmahal.txt" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/createPickleFilesForDocs.py" afterPath="$PROJECT_DIR$/createPickleFilesForDocs.py" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/backend/algorithms/kMeans.py" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/backend/algorithms/kMeans.py" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/backend/completePipelineExperiment.py" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/backend/completePipelineExperiment.py" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/backend/docsimilarity/tdmgenerator.py" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/backend/docsimilarity/tdmgenerator.py" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/backend/docsimilarity/util.py" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/backend/docsimilarity/util.py" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/backend/individualModules.py" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/backend/individualModules.py" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/backend/plotdata.py" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/backend/plotdata.py" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/data/apiDocs/file1" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/apiDocs/file1" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/data/apiDocs/file2" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/apiDocs/file2" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/data/custom1/source1/haleem.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/data/custom1/source1/heartattack.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/data/custom1/source1/hyderabadibiryani.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/data/custom1/source1/iPhoneX.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/data/custom1/source1/mango.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/data/custom1/source1/niravmodi.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/data/custom1/source1/oneplus5t.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/data/custom1/source1/pavbhaji.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/data/custom1/source1/surfacepro.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/data/custom1/source1/watermelon.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/data/demodocs/haleem.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/data/demodocs/niravmodi.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/pickles/source2/plotNamesOfDocs" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/pickles/source2/plotNamesOfDocs" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/pickles/source2/plotValuesOfDocs" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles/pickles/source2/plotValuesOfDocs" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/css/plotstyle.css" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/css/plotstyle.css" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/plot.json" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/plot.json" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/plotter.js" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/plotter.js" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/plot.html" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/plot.html" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/tabulate.html" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/tabulate.html" />
+      <change beforePath="$PROJECT_DIR$/website1/nlpPipeline1/views.py" afterPath="$PROJECT_DIR$/website1/nlpPipeline1/views.py" />
+      <change beforePath="$PROJECT_DIR$/website1/website1/settings.py" afterPath="$PROJECT_DIR$/website1/website1/settings.py" />
+    </list>
+    <ignored path=".idea/" />
+    <ignored mask=".idea" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DarkyenusTimeTracker">
+    <option name="totalTimeSeconds" value="101623" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4245">
+              <caret line="304" column="0" lean-forward="false" selection-start-line="304" selection-start-column="0" selection-end-line="304" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#55#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="createPickleFilesForDocs.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/createPickleFilesForDocs.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="392">
+              <caret line="77" column="41" lean-forward="false" selection-start-line="77" selection-start-column="41" selection-end-line="77" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="completePipelineExperiment.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/completePipelineExperiment.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2580">
+              <caret line="182" column="0" lean-forward="false" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#56#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="createPickleFilesForDocs.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/createPickleFilesForDocs.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="25" column="33" lean-forward="false" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kMeans.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/algorithms/kMeans.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="990">
+              <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="individualModules.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/individualModules.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6285">
+              <caret line="424" column="52" lean-forward="false" selection-start-line="424" selection-start-column="52" selection-end-line="424" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>colors</find>
+      <find>print</find>
+      <find>randDict</find>
+      <find>normalize</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>_rand_dict</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="ud" />
+      </map>
+    </option>
+    <push-targets>
+      <push-target-info target-remote="github" target-branch="ssb" repo="$PROJECT_DIR$" source="ssb" />
+    </push-targets>
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/a.txt" />
+        <option value="$PROJECT_DIR$/word2vecExperiments.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/docprocessing/processing.py" />
+        <option value="$PROJECT_DIR$/scraperutil.py" />
+        <option value="$PROJECT_DIR$/scrapers/wikipedia.py" />
+        <option value="$PROJECT_DIR$/docprocessing/pdfextractor.py" />
+        <option value="$PROJECT_DIR$/docsimilarity/util.py" />
+        <option value="$PROJECT_DIR$/dataSetExperiments.py" />
+        <option value="$PROJECT_DIR$/docsimilarity/similarity.py" />
+        <option value="$PROJECT_DIR$/docsimilarity/tfidfcalculator.py" />
+        <option value="$PROJECT_DIR$/docprocessing/util.py" />
+        <option value="$PROJECT_DIR$/demo.py" />
+        <option value="$PROJECT_DIR$/docsimilarity/tdmgenerator.py" />
+        <option value="$PROJECT_DIR$/reddit/trial.py" />
+        <option value="$PROJECT_DIR$/reddit/reddit_auth.py" />
+        <option value="$PROJECT_DIR$/reddit/postman.py" />
+        <option value="$PROJECT_DIR$/redditbot/util.py" />
+        <option value="$PROJECT_DIR$/redditbot/postman.py" />
+        <option value="$PROJECT_DIR$/redditbot/commentator.py" />
+        <option value="$PROJECT_DIR$/algorithms/dbScan.py" />
+        <option value="$PROJECT_DIR$/individualModules.py" />
+        <option value="$PROJECT_DIR$/dbScanTest1.py" />
+        <option value="$PROJECT_DIR$/completePipelineExperiment1.py" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/index.html" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/backend/temp.py" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/backend/twodocsdemo.py" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/backend/docsimilarity/similarity.py" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/backend/docsimilarity/tfidfcalculator.py" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/clusters_cust.txt" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/urls.py" />
+        <option value="$PROJECT_DIR$/website1/website1/settings.py" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/backend/docsimilarity/util.py" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/plotter.js" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/backend/plotdata.py" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/plot.html" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/css/plotstyle.css" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/backend/docsimilarity/tdmgenerator.py" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/views.py" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/tabulate.html" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/backend/algorithms/kMeans.py" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/backend/individualModules.py" />
+        <option value="$PROJECT_DIR$/website1/nlpPipeline1/backend/completePipelineExperiment.py" />
+        <option value="$PROJECT_DIR$/createPickleFilesForDocs.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="398" />
+    <option name="y" value="123" />
+    <option name="width" value="1502" />
+    <option name="height" value="852" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="nlp_pipeline" type="cbb8eebc:String" user="nlp_pipeline" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="nlp_pipeline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nlp_pipeline" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/website1/nlpPipeline1/data/offlinefiles" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.createPickleFilesForDocs">
+    <configuration name="completePipelineExperiment1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nlp_pipeline" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/completePipelineExperiment1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="createPickleFilesForDocs" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nlp_pipeline" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/createPickleFilesForDocs.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="dbScanTest1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nlp_pipeline" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dbScanTest1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="postman" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/redditbot" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nlp_pipeline" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/redditbot/postman.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="temp1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nlp_pipeline" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/temp1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.createPickleFilesForDocs" />
+      <item index="1" class="java.lang.String" itemvalue="Python.postman" />
+      <item index="2" class="java.lang.String" itemvalue="Python.completePipelineExperiment1" />
+      <item index="3" class="java.lang.String" itemvalue="Python.temp1" />
+      <item index="4" class="java.lang.String" itemvalue="Python.dbScanTest1" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.createPickleFilesForDocs" />
+        <item index="1" class="java.lang.String" itemvalue="Python.dbScanTest1" />
+        <item index="2" class="java.lang.String" itemvalue="Python.temp1" />
+        <item index="3" class="java.lang.String" itemvalue="Python.completePipelineExperiment1" />
+        <item index="4" class="java.lang.String" itemvalue="Python.postman" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="55e0dcca-08ee-4eea-8a97-e33d90a8d217" name="Default" comment="" />
+      <created>1520352545464</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1520352545464</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Start">
+      <created>1520480853673</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1520480853673</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Done: tfidf, jaccard, lsa, doc processing&#10;ToDo : PDF document processing">
+      <created>1521254799373</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1521254799374</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Done: Rudimentary wiki scraper&#10;ToDo : Actual scraper">
+      <created>1521463491956</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1521463491956</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Done: LSA and Euclidean&#10;ToDo : lol">
+      <created>1521706718062</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1521706718062</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Done: LSA and Euclidean Plotting&#10;ToDo : lol">
+      <created>1521891147798</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1521891147798</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Done: Euclidean distance with tfidf&#10;ToDo : lol">
+      <created>1522394804134</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1522394804134</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Merge remote-tracking branch 'github/ud' into ud&#10;&#10;# Conflicts:&#10;#&#9;.gitignore&#10;#&#9;redditbot/postman.py">
+      <created>1524900147997</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1524900147997</updated>
+    </task>
+    <task id="LOCAL-00008" summary="+ssb added django">
+      <created>1525598352703</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1525598352703</updated>
+    </task>
+    <task id="LOCAL-00009" summary="+ssb added django">
+      <created>1525791026260</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1525791026262</updated>
+    </task>
+    <task id="LOCAL-00010" summary="+ssb added django">
+      <created>1525791065669</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1525791065669</updated>
+    </task>
+    <task id="LOCAL-00011" summary="+ssb 99.99% done">
+      <created>1526138501213</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1526138501213</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="-1" width="1920" height="1046" extended-state="6" />
+    <layout>
+      <window_info id="Key Promoter X" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15015975" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3278867" sideWeight="0.5042598" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3278867" sideWeight="0.49574015" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31699347" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297414" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3991323" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297414" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Key Promoter X" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5021299" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32897604" sideWeight="0.4978701" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12832801" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897604" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3991323" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Start" />
+    <MESSAGE value="Done: tfidf, jaccard, lsa, doc processing&#10;ToDo : PDF document processing" />
+    <MESSAGE value="Done: Rudimentary wiki scraper&#10;ToDo : Actual scraper" />
+    <MESSAGE value="Done: LSA and Euclidean&#10;ToDo : lol" />
+    <MESSAGE value="Done: LSA and Euclidean Plotting&#10;ToDo : lol" />
+    <MESSAGE value="Done: Euclidean distance with tfidf&#10;ToDo : lol" />
+    <MESSAGE value="Done: Reddit Data Scraper&#10;ToDo : lol" />
+    <MESSAGE value="Merge remote-tracking branch 'github/ud' into ud&#10;&#10;# Conflicts:&#10;#&#9;.gitignore&#10;#&#9;redditbot/postman.py" />
+    <MESSAGE value="+ssb added django" />
+    <MESSAGE value="+ssb 99.99% done" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ssb 99.99% done" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="8" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/dataSetExperiments.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapers/wikipedia.py" />
+    <entry file="file://$PROJECT_DIR$/scraperutil.py" />
+    <entry file="file://$PROJECT_DIR$/website/doccer/redditbot/postman.py" />
+    <entry file="file://$PROJECT_DIR$/website/doccer/static/doccer/js/plot.json" />
+    <entry file="file://$PROJECT_DIR$/dummyplotdata.py" />
+    <entry file="file://$PROJECT_DIR$/plotting/plotdata.py" />
+    <entry file="file://$PROJECT_DIR$/website/doccer/templates/doccer/index.html" />
+    <entry file="file://$PROJECT_DIR$/website/doccer/urls.py" />
+    <entry file="file://$PROJECT_DIR$/website/doccer/views.py" />
+    <entry file="file://$PROJECT_DIR$/compareResults.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="12" column="125" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithms/dbScan.py" />
+    <entry file="file://$PROJECT_DIR$/spacyExperiments1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="63" column="37" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="63" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/individualModules.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbScanTest1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="47" column="16" lean-forward="false" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="41" column="1" lean-forward="false" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithms/kMeans.py" />
+    <entry file="file://$PROJECT_DIR$/clusteringExperiments1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-868">
+          <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clusteringExperiments2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/completePipelineExperiment1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/data/imdb/movies.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/processing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docprocessing/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/clusters_cust.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/docsimilarity/tfidfcalculator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="45" lean-forward="false" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/website1/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="37" lean-forward="false" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/plot.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/twofilesplot.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/tabulate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/js/plotter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="568">
+          <caret line="131" column="63" lean-forward="false" selection-start-line="131" selection-start-column="63" selection-end-line="131" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/plot.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="42" column="29" lean-forward="false" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/static/nlpPipeline1/css/plotstyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/plotdata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/docsimilarity/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/docsimilarity/tdmgenerator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="60" column="8" lean-forward="false" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/docsimilarity/similarity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="39" lean-forward="false" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/tabulate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="36" column="10" lean-forward="false" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/templates/nlpPipeline1/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="73" column="7" lean-forward="false" selection-start-line="73" selection-start-column="7" selection-end-line="73" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/data/custom/source1/haleem.txt" />
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/temp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/twodocsdemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="13" column="46" lean-forward="false" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/createPickleFilesForDocs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="25" column="33" lean-forward="false" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/algorithms/kMeans.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/individualModules.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6285">
+          <caret line="424" column="52" lean-forward="false" selection-start-line="424" selection-start-column="52" selection-end-line="424" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/backend/completePipelineExperiment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2580">
+          <caret line="182" column="0" lean-forward="false" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website1/nlpPipeline1/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4245">
+          <caret line="304" column="0" lean-forward="false" selection-start-line="304" selection-start-column="0" selection-end-line="304" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/createPickleFilesForDocs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="77" column="41" lean-forward="false" selection-start-line="77" selection-start-column="41" selection-end-line="77" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

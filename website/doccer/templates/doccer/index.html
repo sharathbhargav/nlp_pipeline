@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <title>Home</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'doccer/css/homepage.css' %}">
+    <link rel="stylesheet" href="{% static 'doccer/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'doccer/css/bootstrap-grid.css' %}">
+    <link rel="stylesheet" href="{% static 'doccer/css/bootstrap-reboot.css' %}">
+    <script type="text/javascript" src="{% static 'doccer/js/homepage.js' %}"></script>
+</head>
+<body>
+    <a href="http://127.0.0.1:8000/doccer">
+        <img src="{% static 'doccer/images/reddit_logo.png' %}" alt="Reddit Logo" width="600" height="200" id="r_logo">
+    </a>
+    <form class="form" action="http://127.0.0.1:8000/doccer/fetch" id="r_form" onsubmit="pleasewait()" method="GET">
+        <div class="row" id="r_form_row_1">
+            <div class="col" align="center">
+                <input class="form-control form-control-lg col-md-6" type="number" name="n_docs" placeholder="Number of Docs (Optional)">
+            </div>
+        </div>
+        <div class="form-row" id="r_form_row_2">
+            <div class="col" align="center">
+                <input class="btn col-md-12 btn-danger btn-lg" type="submit" name="reddit" value="Hot">
+            </div>
+            <div class="col" align="center">
+                <input class="btn col-md-12 btn-success btn-lg" type="submit" name="reddit" value="New">
+            </div>
+            <div class="col" align="center">
+                <input class="btn col-md-12 btn-primary btn-lg" type="submit" name="reddit" value="Rising">
+            </div>
+            <div class="col" align="center">
+                <input class="btn col-md-12 btn-warning btn-lg" type="submit" name="reddit" value="Controversial">
+            </div>
+            <div class="col" align="center">
+                <input class="btn col-md-12 btn-info btn-lg" type="submit" name="reddit" value="Top">
+            </div>
+            <div class="col" align="center">
+                <input class="btn col-md-12 btn-dark btn-lg" type="submit" name="reddit" value="Gilded">
+            </div>
+        </div>
+    </form>
+    
+    <form class="form" id="offline_form">
+        <div class="row">
+            <div class="col" align="center">
+                <input class="form-control col-md-3" id="files_list" type="file" webkitdirectory directory multiple oninput="filelist(event)">
+                <button type="button" class="btn btn-primary" onclick="submitoffline()" id="offline_submit">Submit</button>
+            </div>
+        </div>
+    </form>
+
+    <ul id="listing"></ul>
+
+    <div id="wait_modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Please Wait!!</h2>
+            </div>
+            <div class="modal-body">
+                <p>Fetching and Processing the documents...</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="wait_offline_modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Please Wait!!</h2>
+            </div>
+            <div class="modal-body">
+                <p>Processing the documents...</p>
+            </div>
+        </div>
+    </div>
+</body>

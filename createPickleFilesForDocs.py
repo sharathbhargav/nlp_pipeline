@@ -1,13 +1,12 @@
 import pickle
 import os
-import individualModules as im
-from gensim.models import Word2Vec
+
 import numpy as np
 from gensim.models.keyedvectors import KeyedVectors
 
 
-trainingModelGoogle = KeyedVectors.load_word2vec_format("models/GoogleNews-vectors-negative300.bin",binary=True,limit=100000)
-im.setModel(trainingModelGoogle)
+#trainingModelGoogle = KeyedVectors.load_word2vec_format("models/GoogleNews-vectors-negative300.bin",binary=True,limit=100000)
+#im.setModel(trainingModelGoogle)
 
 """
 pathSuffix=["b","e","p","s","t"]
@@ -32,11 +31,13 @@ for i in range(len(pathSuffix)):
     pickle.dump(total,pickleFile)
     pickle.dump(fileNames,pickleFile2)
 """
+
 """
 fileHandles1=[]
 pathSuffix=["Kathua","Sci","Sports","Tech"]
-path1 = "datasets/custom2/Kathua"
+
 pathPrefix="datasets/custom2/"
+finalPath="datasets/custom2/all"
 fileNames=[]
 fileCount=0
 
@@ -61,6 +62,23 @@ custom2Names=open("datasets/custom2/plotNamesOfDocs","wb")
 pickle.dump(fileNames,custom2Names)
 
 """
+pathSuffix=["Business","Kathua","Sci","Sports","Tech","Wallmart"]
+
+pathPrefix="datasets/custom2/"
+finalPath="datasets/custom2/all"
+fileNames=[]
+fileCount=0
+
+for i in range(6):
+    path2=pathPrefix+pathSuffix[i]
+
+    for fname in os.listdir(path2):
+
+        file = open(os.path.join(path2, fname),"r")
+        fileFinal = open(os.path.join(finalPath,pathSuffix[i]+"_"+fname),"w+")
+        fileFinal.write(file.read())
+
+
 """
 fileNames=[]
 fileCount=0

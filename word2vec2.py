@@ -1,12 +1,5 @@
 import pickle
-import numpy as np
-import math
-from gensim.models import Word2Vec
-import re
-import individualModules as im
-
-import nltk
-from gensim.models.keyedvectors import KeyedVectors
+from website.doccer.pipeline import individualModules as im
 
 temp = open("googleTrainedData", "rb")
 trainingModelGoogle = pickle.load(temp)
