@@ -16,6 +16,7 @@ class PlottingData:
         self._named_entities = None
         self._clusters = None
         self._cluster_points = None
+        self._rand_dict = {'rand': 0.0, 'precision': 0.0, 'recall': 0.0, 'f1': 0.0}
         self.__color_ref = 10*['#E82C0C', '#3AFF00', '#0092FF', '#FFE800', '#FF8000', '#0DE7FF', '#E83C4B']
 
     def set_filenames(self, fnames):
@@ -26,6 +27,9 @@ class PlottingData:
         self._points = dict()
         for i, file in enumerate(self._filenames):
             self._points[file] = points_array[i]
+
+    def set_rand(self,rand):
+        self._rand_dict = rand
 
     def set_colors(self, labels):
         self._colors = dict()
@@ -43,6 +47,10 @@ class PlottingData:
     def prepare_to_plot(self):
         data = dict()
         data['fnames'] = self._filenames
+        data['rand_index'] = self._rand_dict['rand']
+        data['precision'] = self._rand_dict['precision']
+        data['recall'] = self._rand_dict['recall']
+        data['f1'] = self._rand_dict['f1']
         for file in self._filenames:
             filedata = dict()
             filedata['xy'] = self._points[file].tolist()

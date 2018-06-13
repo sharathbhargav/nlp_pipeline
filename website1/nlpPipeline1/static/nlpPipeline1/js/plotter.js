@@ -123,7 +123,27 @@ function load(data) {
     var card_cluster_stats = document.getElementById('num_clusters');
     var stats = "<h4>Number of Clusters : " + n_clusters.toString() + "</h4>";
     stats = stats + "<h4>Number of Files : " + filenames.length.toString() + "</h4>";
+    stats = stats + "<h3>Precision : <code>" + data['precision'].toString() + "</code></h3>";
+    stats = stats + "<h3>Recall : <code>" + data['recall'].toString() + "</code></h3>";
+    stats = stats + "<h3>F1 Score : <code>" + data['f1'].toString() + "</code></h3>";
+    stats = stats + "<h3>Rand Score : <code>" + data['rand_index'].toString() + "</code></h3>";
     card_cluster_stats.innerHTML = stats;
 
+    var card_cluster_list = document.getElementById('cluster_details_list');
+    var cluster_data = [];
+    for (var i=0 ; i<n_clusters ; i++) {
+        cluster_data[i] = 0;
+    };
+
+    for (var i=0 ; i<filenames.length ; i++) {
+        cluster_data[data[filenames[i]]['cluster']]++;
+    };
+
+    for (var i=0 ; i<n_clusters ; i++) {
+        var li = document.createElement('li');
+        li.className = "list-group-item";
+        li.innerHTML = 'Cluster ' + i.toString() + ' : ' + cluster_data[i].toString() + ' files';
+        card_cluster_list.appendChild(li);
+    }
     var cluster_detail_stats = document.getElementById('cluster_details_list');
 }

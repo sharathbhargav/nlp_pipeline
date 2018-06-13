@@ -1,5 +1,7 @@
 from pickle import dump, load
 import datetime
+from os import listdir
+from os.path import isdir
 
 
 def gf(word, blob):

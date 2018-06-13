@@ -21,3 +21,12 @@
 }
 
 .jumbotron {  background-size: cover; }
+
+#stats_parent{
+    height: 70%;
+
+}
+#statBody{
+    height: 50%;
+    overflow: scroll;
+}

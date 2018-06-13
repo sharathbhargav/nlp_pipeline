@@ -74,9 +74,13 @@ def tokanizeSingleSentance(inputSentance):
 
 def getNormalizedVector(inputVector):
     sqSum = 0
+
     for k in inputVector:
         sqSum = sqSum + (k * k)
+
     normalizedVector = inputVector / math.sqrt(sqSum)
+
+
     return normalizedVector
 
 
@@ -298,41 +302,43 @@ class ClusteringAlgorithm(Enum):
     skLearnKMeans = 1
     customKMeans = 2
     skLearnBirch = 3
+    hybrid = 4
 
 
 def getOptimalClustersSilhoutte(data, algorithm=ClusteringAlgorithm.skLearnKMeans):
     silhoutteScores = {}
     rotationStored = {}
     thresholdValues = {}
-    kmeansClusterNumberRange= range(2,len(data))
+    hybridValues={}
+    kmeansClusterNumberRange= range(2,len(data)//2)
     if algorithm == ClusteringAlgorithm.customKMeans:
         for clusterKmeansNumber in kmeansClusterNumberRange:
             try:
                 #pdb.set_trace()
 
                 try:
-                    clf = kMeans.K_Means(clusterKmeansNumber, tolerance=0.00001, max_iterations=800)
+                    clf = kMeans.K_Means(clusterKmeansNumber, tolerance=0.0001, max_iterations=800)
                 except:
                     print("k class failed")
 
-                rotation = randamozieSeed(data, clusterKmeansNumber)
+
                 try:
+                    rotation = randamozieSeed(data, clusterKmeansNumber)
+                    rotationStored[clusterKmeansNumber] = rotation
                     clf.fit(data, spherical=True, rotationArray=rotation)
-                except:
-                    print("fit failed")
-                try:
                     labels = clf.getLabels(data)
-                except:
-                    print("labels failed")
-                try:
                     silhouette_avg = silhouette_score(data, labels)
+                    silhoutteScores[clusterKmeansNumber] = silhouette_avg
+
+
                 except:
+                    print("fit failed, label failed,k==",clusterKmeansNumber)
+
                     print("sil score failed")
                     print("labels",len(labels))
                     print("data",len(data))
 
-                silhoutteScores[clusterKmeansNumber] = silhouette_avg
-                rotationStored[clusterKmeansNumber] = rotation
+
                 # print(clusterKmeansNumber,">>>>>>>",rotation)
             except:
                 print(clusterKmeansNumber, " chucked custom kmeans")
@@ -359,15 +365,84 @@ def getOptimalClustersSilhoutte(data, algorithm=ClusteringAlgorithm.skLearnKMean
 
             except:
                 continue
+    elif algorithm == ClusteringAlgorithm.hybrid:
 
+        for clusterKmeansNumber in kmeansClusterNumberRange:
+            try:
+                #pdb.set_trace()
+
+                try:
+                    clf = kMeans.K_Means(clusterKmeansNumber, tolerance=0.0001, max_iterations=800)
+                except:
+                    print("k class failed")
+
+
+                try:
+                    rotation = randamozieSeed(data, clusterKmeansNumber)
+                    rotationStored[clusterKmeansNumber] = rotation
+                    clf.fit(data, spherical=True, rotationArray=rotation)
+                    labels = clf.getLabels(data)
+                    silhouette_avg = silhouette_score(data, labels)
+                    silhoutteScores[clusterKmeansNumber] = silhouette_avg
+                    hybridValues[clusterKmeansNumber]='c'
+
+
+                except:
+                    print("fit failed, label failed,k==",clusterKmeansNumber)
+
+                    print("sil score failed")
+                    print("labels",len(labels))
+                    print("data",len(data))
+
+
+                # print(clusterKmeansNumber,">>>>>>>",rotation)
+            except:
+                print(clusterKmeansNumber, " chucked custom kmeans")
+                continue
+
+
+        for clusterKmeansNumber in kmeansClusterNumberRange:
+            clf = KMeans(n_clusters=clusterKmeansNumber)
+            labels = clf.fit_predict(data)
+            silhouette_avg = silhouette_score(data, labels)
+            silhoutteScores[clusterKmeansNumber] = silhouette_avg
+            hybridValues[clusterKmeansNumber]='s'
+
+
+
+
+
+
+
+
+    #print("Rotation array>>>>>>>>",rotationStored)
+    #print("Sill arr",silhoutteScores)
     sortedSil = sorted(silhoutteScores.items(), key=itemgetter(1))
+    #print("In sorted sil>>>>>>>>>>>>>>>>>>>>>>>>>",sortedSil)
     selectedClusterNumber = sortedSil[-1][0]
+
+    if algorithm ==ClusteringAlgorithm.hybrid:
+        if hybridValues[selectedClusterNumber]=='c':
+            clf = kMeans.K_Means(selectedClusterNumber, tolerance=0.0001, max_iterations=800)
+            clf.fit(data, spherical=True, rotationArray=rotationStored[selectedClusterNumber])
+            labels = clf.getLabels(data)
+            silhouette_avg = silhouette_score(data, labels)
+            return (ClusteringAlgorithm.customKMeans, selectedClusterNumber, rotationStored[selectedClusterNumber])
+        else:
+            clf = KMeans(n_clusters=selectedClusterNumber)
+            labels = clf.fit_predict(data)
+            silhouette_avg = silhouette_score(data, labels)
+            return (ClusteringAlgorithm.skLearnKMeans, selectedClusterNumber)
+
+
+
+    print("Clustered selected", selectedClusterNumber)
     print("selected number of clusters=", selectedClusterNumber)
     if algorithm == ClusteringAlgorithm.customKMeans:
         return (selectedClusterNumber, rotationStored[selectedClusterNumber])
     elif algorithm == ClusteringAlgorithm.skLearnKMeans:
         return selectedClusterNumber
-    else:
+    else :
         return thresholdValues[selectedClusterNumber]
 
 
@@ -392,13 +467,32 @@ def randamozieSeed(data, k):
 def customKMeansComplete(data):
     (selectedClusterNumber, rotation) = getOptimalClustersSilhoutte(data, ClusteringAlgorithm.customKMeans)
 
-    clf = kMeans.K_Means(selectedClusterNumber, tolerance=0.00001, max_iterations=800)
+    clf = kMeans.K_Means(selectedClusterNumber, tolerance=0.0001, max_iterations=800)
 
     clf.fit(data, spherical=True, rotationArray=rotation)
     # classifications=clf.classifications
     # centroids=clf.centroids
 
     return (selectedClusterNumber, clf)
+
+
+def hybridKmeans(data):
+    outTuple = getOptimalClustersSilhoutte(data, ClusteringAlgorithm.hybrid)
+    if len(outTuple)>2:
+        clf = kMeans.K_Means(outTuple[1], tolerance=0.0001, max_iterations=800)
+
+        clf.fit(data, spherical=True, rotationArray=outTuple[2])
+        # classifications=clf.classifications
+        # centroids=clf.centroids
+        print("Custom k means >>>",outTuple[1])
+        return (0,outTuple[1], clf)
+    else:
+        clf = KMeans(n_clusters=outTuple[1])
+        clf.fit(data)
+        # centroidsKmeans=clf.cluster_centers_
+        # labelsKmeans=clf.labels_
+        print("sk learn k means",outTuple[1])
+        return (1,outTuple[1], clf)
 
 
 def skLearnBirch(data):

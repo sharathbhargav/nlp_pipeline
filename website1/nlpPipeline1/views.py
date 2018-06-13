@@ -18,6 +18,8 @@ from .backend.docsimilarity.tfidfcalculator import TFIDFVectorizer
 from .backend.docsimilarity.tdmgenerator import TDMatrix
 import pprint
 from sklearn.utils import shuffle
+from .backend.docsimilarity.util import get_files
+from .backend.docsimilarity.similarity import euclidean_similarity
 
 
 def index1(request):
@@ -118,9 +120,10 @@ def compare(request):
 
         table_data['fnames'] = filenames
         tfidfv = TFIDFVectorizer(custom_path)
-        # lsa = TDMatrix(custom_path, store_to='custom')
-        # vector_set_1 = [lsa.get_doc_vector(doc_name=os.path.join(s1_dir, file)) for file in filenames]
-        # vector_set_2 = [lsa.get_doc_vector(doc_name=os.path.join(s2_dir, file)) for file in filenames]
+        lsa = TDMatrix(ldocs=get_files(custom_path))
+        vector_set_1 = [lsa.get_doc_vector(doc_name=os.path.join(s1_dir, file)) for file in filenames]
+        vector_set_2 = [lsa.get_doc_vector(doc_name=os.path.join(s2_dir, file)) for file in filenames]
+        vector_set_3 = [lsa.get_doc_vector(doc_name=os.path.join(s2_dir, file)) for file in rand_files]
 
         # Jaccard Similarity
         for i, file in enumerate(filenames):
@@ -155,8 +158,8 @@ def compare(request):
             table_data[dis_index].append(1 / (1 + tfidfv.distance(os.path.join(s1_dir, file), os.path.join(s2_dir, rand_files[i]))))
 
             # Euclidean with LSA
-            table_data[file].append(4.20)
-            table_data[dis_index].append(420)
+            table_data[file].append(1 / (1 + euclidean_similarity(vector_set_1[i], vector_set_2[i])))
+            table_data[dis_index].append(1 / (1 + euclidean_similarity(vector_set_1[i], vector_set_3[i])))
 
             # Word2Vec with Cosine
             fh1 = open(os.path.join(s1_dir, file), 'r')
@@ -193,9 +196,11 @@ def fetch_offline_documents(request, file_dir):
     pickle_path = 'nlpPipeline1/data/offlinefiles/pickles/' + file_dir
     doc_dir = os.path.join(settings.BASE_DIR, rel_dir)
     pickle_dir = os.path.join(settings.BASE_DIR, pickle_path)
+    if not os.path.exists(pickle_dir):
+        os.mkdir(pickle_dir)
     if len(os.listdir(pickle_dir)) == 0:
         createPickles.generate_pickle_files(doc_dir, pickle_dir)
-    complete.run(doc_dir, pickle_dir)
+    complete.run(doc_dir, pickle_dir,file_dir)
     json_data = json.load(open(os.path.join(settings.BASE_DIR, 'nlpPipeline1/static/nlpPipeline1/js/plot.json')))
     return render_to_response('nlpPipeline1/plot.html', {'data': mark_safe(json_data)})
 
@@ -248,8 +253,10 @@ class DemoAPI(APIView):
     """
     Return a hardcoded response.
     """
-
-    filedir='source2'
+    queryData = request.data
+    filedir= queryData['file']
+    if filedir is None or filedir is "":
+        filedir = 'source2'
     rel_dir = 'nlpPipeline1/data/offlinefiles/' + filedir + '/'
     pickle_dir = 'nlpPipeline1/data/offlinefiles/pickles/' + filedir + '/'
     doc_dir = os.path.join(settings.BASE_DIR, rel_dir)
@@ -257,7 +264,8 @@ class DemoAPI(APIView):
     if len(os.listdir(os.path.join(settings.BASE_DIR, pickle_dir))) == 0:
         print(">>>>>>>> pickles not present")
         createPickles.generate_pickle_files(doc_dir, pickle_dir)
-    fileDict=complete.runForAPI(doc_dir, pickle_dir)
+    print("filedir",filedir)
+    fileDict=complete.runForAPI(doc_dir, pickle_dir,filedir)
 
 
 

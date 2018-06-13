@@ -42,7 +42,7 @@ class K_Means:
         self.tolerance = tolerance
         self.max_iter = max_iterations
 
-    def getDistance(self, vec1, vec2, spherical=False):
+    def getDistance(self, vec1, vec2, spherical=True):
         if spherical:
             return 1 - im.getDocSimilarity(vec1, vec2)
         else:
@@ -69,14 +69,18 @@ class K_Means:
 
             for j in range(self.k):
                 self.classifications[j] = []
-            # print("i>>>>>>>>>>>>>>>", i)
-            # print("Centroids",self.centroids)
+
             for featureset in data:
+                #featureset = featureset.tolist()
                 #print(featureset)
                 distances = []
-                for centroid in self.centroids:
-                    # print(">>>>>>>>>>>individual",centroid,featureset)
-                    distance = self.getDistance(featureset, self.centroids[centroid], spherical)
+
+                #print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>",self.centroids,">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+                for key,centroid in self.centroids.items():
+
+                    if type(centroid) is list:
+                        centroid = centroid[0]
+                    distance = self.getDistance(featureset, centroid, spherical)
                     distances.append(distance)
                 # distances = [np.linalg.norm(featureset-self.centroids[centroid]) for centroid in self.centroids]
                 # print(distances)

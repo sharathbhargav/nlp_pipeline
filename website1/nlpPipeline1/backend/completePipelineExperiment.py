@@ -1,5 +1,6 @@
 from nlpPipeline1.backend import individualModules as im
 import numpy as np
+from scipy.misc import comb
 import pickle
 from sklearn.preprocessing import normalize
 from nlpPipeline1.backend.plotdata import PlottingData
@@ -26,6 +27,7 @@ class pipeLine:
         self.entities=None
         self.fileNames=None
         self.absoluteFileNames=None
+        self.randScore={'rand': 0.0, 'precision': 0.0, 'recall': 0.0, 'f1': 0.0}
 
 
     def readData(self,filePath,picklePath):
@@ -46,29 +48,45 @@ class pipeLine:
         (self.clusterCount, clf) = im.customKMeansComplete(self.normalizedData)
 
         print("Clustering done with", self.clusterCount)
-        self.labels=clf.getLabels(self.normalizedData)
+        self.customKMeansProcessing(clf)
+
+    def customKMeansProcessing(self,clf):
+        self.labels = clf.getLabels(self.normalizedData)
         centroidsCustom = clf.centroids
         for each in range(len(centroidsCustom)):
             centroid = centroidsCustom[each]
             self.centroids.append(list(centroid))
-        self.centroids=np.asarray(self.centroids)
-        self.fileDictionary=im.getDocClustersNames(self.clusterCount,self.labels,self.fileNames)
+        self.centroids = np.asarray(self.centroids)
+        self.fileDictionary = im.getDocClustersNames(self.clusterCount, self.labels, self.fileNames)
         print("File dict generated")
         for key, val in self.fileDictionary.items():
             self.fileDictionary[key] = [os.path.join(self.filePath, file) for file in self.fileDictionary[key]]
-        self.absoluteFileNames=[os.path.join(self.filePath, file) for file in self.fileNames]
+        self.absoluteFileNames = [os.path.join(self.filePath, file) for file in self.fileNames]
 
     def skLearnKmeans(self):
         (self.clusterCount, clf) = im.skLearnKMeansComplete(self.normalizedData)
-        self.labels=clf.labels_
+        self.skLearnProcessing(clf)
 
-        self.centroids=(clf.cluster_centers_)
+
+    def skLearnProcessing(self,clf):
+        self.labels = clf.labels_
+
+        self.centroids = (clf.cluster_centers_)
 
         self.fileDictionary = im.getDocClustersNames(self.clusterCount, self.labels, self.fileNames)
         print("File dict generated")
         for key, val in self.fileDictionary.items():
             self.fileDictionary[key] = [os.path.join(self.filePath, file) for file in self.fileDictionary[key]]
         self.absoluteFileNames = [os.path.join(self.filePath, file) for file in self.fileNames]
+
+
+    def hybridKMeans(self):
+        (typeOfAlg,self.clusterCount,clf)=im.hybridKmeans(self.normalizedData)
+        if typeOfAlg == 0:
+            self.customKMeansProcessing(clf)
+        else:
+            self.skLearnProcessing(clf)
+
 
     def birchExecute(self):
         (self.clusterCount,brc)=im.skLearnBirch(self.normalizedData)
@@ -87,6 +105,9 @@ class pipeLine:
         self.entities = im.getNamedEntitiesForAPI(self.filePath, self.fileDictionary)
         #print(self.entities)
 
+    def setRandScore(self,randDict):
+        self.randScore=randDict
+
 
     def sendToPlotData(self):
         pd = PlottingData()
@@ -95,17 +116,58 @@ class pipeLine:
         pd.set_colors(self.labels)
         pd.set_clusters(self.clusterCount, self.fileDictionary, self.centroids)
         pd.set_named_entities(self.entities)
+        pd.set_rand(self.randScore)
         pd.prepare_to_plot()
 
     def calculateF1Score(self,trueLabels):
 
-        f1Score1=metrics.f1_score(trueLabels,self.labels,average='weighted')
+
         rand=metrics.adjusted_rand_score(trueLabels,self.labels)
-        print("F score",f1Score1)
+
         print("Rand score",rand)
 
+    def rand_index_score(self,clusters, classes):
 
-def run(fpath, pdir):
+        tp_plus_fp = comb(np.bincount(clusters), 2).sum()
+        tp_plus_fn = comb(np.bincount(classes), 2).sum()
+        A = np.c_[(clusters, classes)]
+        tp = sum(comb(np.bincount(A[A[:, 0] == i, 1]), 2).sum()
+                 for i in set(clusters))
+        fp = tp_plus_fp - tp
+        fn = tp_plus_fn - tp
+        tn = comb(len(A), 2) - tp - fp - fn
+        precision = float(tp) / (tp + fp)
+        recall = float(tp) / (tp + fn)
+        f1=((2.0 * precision * recall) / (precision + recall))
+        rand=(tp + tn) / (tp + fp + fn + tn)
+        rand = round(rand, 5)
+        precision = round(precision, 5)
+        f1 = round(f1, 5)
+
+        return {'rand': rand, 'precision': precision, 'recall': recall, 'f1': f1}
+
+
+temp={0:[3, 7, 17, 18, 20, 28, 36, 41, 42, 39, 60, 62, 71, 72, 73, 74, 75, 77, 80, 81, 82, 83, 87, 90, 91, 92],
+          1:[1, 8, 13, 14, 15, 16, 24, 31 , 33, 34, 44, 53, 65, 68, 84],
+          2:[4, 5, 6, 10, 12, 19, 23, 25, 29, 32, 37, 38, 46, 48, 49, 50, 51, 52, 55, 64, 67, 70, 93],
+          3:[0, 2, 9, 22, 35, 45, 66, 88, 89, 94, 40, 47, 56, 57, 58, 59, 69, 78, 86, 95, 21],
+          4:[26, 54, 61, 79, 85,27, 43],
+          5:[11, 30, 63, 76]}
+
+movie_plotTrueLabels=[]
+
+missing=[]
+for key,value in temp.items():
+    print(len(value))
+    for i in value:
+        missing.append(i)
+        movie_plotTrueLabels.insert(i,key)
+
+
+customTrueLabels = [0,1,2,0,0,1,1,0,1,1,3,2,3,4,2,5,0,6,1,2,2]
+
+
+def run(fpath, pdir,dataSet):
 
     pipe=pipeLine()
     pipe.readData(fpath,pdir)
@@ -117,33 +179,18 @@ def run(fpath, pdir):
     print(pipe.labels," len",len(pipe.labels))
     print("True labels>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
 
-    temp={0:[3, 7, 17, 18, 20, 28, 36, 41, 42, 39, 60, 62, 71, 72, 73, 74, 75, 77, 80, 81, 82, 83, 87, 90, 91, 92],
-          1:[1, 8, 13, 14, 15, 16, 24, 31 , 33, 34, 44, 53, 65, 68, 84],
-          2:[4, 5, 6, 10, 12, 19, 23, 25, 29, 32, 37, 38, 46, 48, 49, 50, 51, 52, 55, 64, 67, 70, 93],
-          3:[0, 2, 9, 22, 35, 45, 66, 88, 89, 94, 40, 47, 56, 57, 58, 59, 69, 78, 86, 95, 21],
-          4:[26, 54, 61, 79, 85,27, 43],
-          5:[11, 30, 63, 76]}
-
-    movie_plotTrueLabels=[]
-
-    missing=[]
-    for key,value in temp.items():
-        print(len(value))
-        for i in value:
-            missing.append(i)
-            movie_plotTrueLabels.insert(i,key)
 
 
-    customTrueLabels = [0,1,2,2,0,1,3,4,2,1]
-
-
-
-
-
-    print(movie_plotTrueLabels,"labels",len(movie_plotTrueLabels))
-    print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
     print("Cluster count",pipe.clusterCount)
-    #pipe.calculateF1Score(customTrueLabels)
+
+    if dataSet == "source2":
+        pass
+        pipe.randScore= pipe.rand_index_score(pipe.labels, customTrueLabels)
+    elif dataSet == "movie_plots":
+        pipe.randScore = pipe.rand_index_score(pipe.labels, movie_plotTrueLabels)
+    else:
+        pipe.randScore={'rand': 0.0, 'precision': 0.0, 'recall': 0.0, 'f1': 0.0}
+    #print("rand score",score)
 
     pipe.getNamedEntities()
     pipe.sendToPlotData()
@@ -151,12 +198,22 @@ def run(fpath, pdir):
 
 
 
-def runForAPI(fpath,pdir):
+def runForAPI(fpath,pdir,dataSet):
     pipe = pipeLine()
     pipe.readData(fpath, pdir)
     pipe.skLearnKmeans()
     pipe.getNamedEntitiesAPI()
+    if dataSet == "source2":
+        score = pipe.rand_index_score(pipe.labels, customTrueLabels)
+    elif dataSet == "movie_plots":
+        score = pipe.rand_index_score(pipe.labels, movie_plotTrueLabels)
+    else:
+        score={'rand': 0.0, 'precision': 0.0, 'recall': 0.0, 'f1': 0.0}
     #print(pipe.entities)
+    rand=score['rand']
+    precision=score['precision']
+    recall=score['recall']
+    f1=score['f1']
     finalData=list()
     for each in pipe.fileDictionary:
         temp=dict()
@@ -164,5 +221,11 @@ def runForAPI(fpath,pdir):
         temp['summary']=pipe.entities['summary'][each]
         finalData.append(temp)
 
-
-    return {"dict":finalData}
+    stats=dict()
+    stats['clusterCount']=pipe.clusterCount
+    stats['fileCount']=len(pipe.fileNames)
+    stats['randIndex']=rand
+    stats['precision']=precision
+    stats['recall']=recall
+    stats['f1']=f1
+    return {"dict":finalData,"stats":stats}
