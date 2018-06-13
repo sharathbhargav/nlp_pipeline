@@ -1,0 +1,275 @@
+iPhone X review
+Find out whether the iPhone X is the phone you always wanted, notch and all, in our full review of Apple's latest handset.
+iPhone X review
+It's ten years since the iPhone was first unveiled and Apple has marked the occasion with a new iPhone that doesn't just jump one generation, it jumps several. Apple has leapt straight from iPhone 7 (via the iPhone 8, reviewed here) all the way to iPhone 10 (yes, that's how you are supposed to say it).
+
+Read on to find out how the new flagship iPhone X shapes up. Is it going to revolutionise the mobile phone again like the original iPhone did, or is Apple now just playing catch-up with the rest of the industry?
+
+iPhone X review: Design & build quality
+Price and availability
+You can order the iPhone X now from Apple, and it seems well stocked following initial shortages. 
+
+The iPhone X costs $999 / £999 for the 64GB model. For the 256GB model you will be looking at paying $1,149 / £1,149.
+
+That's only if you want to buy the handset outright though. In the more likely event that you want to pick it up on a contract, Carphone Warehouse offers a selection for the UK, with typical prices around £50-60 per month with roughly £200 upfront.
+
+The lowest upfront cost is £59.99 at the time of writing - but you'll then be paying a whopping £80 a month for the next two years. You can see more options in the widget at the top of this page.
+
+That's a lot of money for a smartphone so the big question is whether it's worth splashing out or not.
+
+You can find out where to buy the iPhone X for the best price here.
+
+Design and build quality
+The iPhone X is a step up in build quality from every iPhone that precedes it. Even the glass-backed iPhone 8 isn’t as nice to hold as it lacks the premium stainless steel rim of the X. Cool to the touch, it has a grippy texture and a smooth shape that harks back to the iPhone 3G (the successor to the original iPhone), while the glass surround is reminiscent of the iPhone 4. But that definitely doesn’t mean the iPhone X is stuck in the past.
+
+This phone marks a new beginning for Apple; it’s the iPhone for the future.
+
+The iPhone X comes in two colours, an attractive Silver version (shown below), with a shiny rim and white back, and an equally stylish Space Grey version with a black back. Unlike the iPhone 8 series, there is no gold version here.
+
+
+Picture shows: iPhone 8, iPhone X and iPhone 8 Plus
+
+In the past we would have advised anyone who watches movies and TV shows on their iPhone to opt for a model with a black front as it would detract less from what was on the screen, but with the iPhone X the lack of bezel means that there is just a slim black rim. Instead the front of the iPhone is given over to the screen, or whatever is on the screen.
+
+And this screen is the biggest attraction here. When you hold it next to another phone - even the iPhone 8 - there is a world of difference. Even when we had the brightness set to 120cdm (with TrueTone turned off) on both the iPhone X and the 8 Plus, the iPhone X screen looked cooler and brighter and the colours crisper.
+
+
+The iPhone X has a glass front and back. There are many benefits to this - not least the fact that you get a larger screen on an iPhone that feels more comfortable to hold than the iPhone Plus series, but also the fact that the glass back allows wireless charging using the Qi standard.
+
+This doesn't mean that the iPhone X will magically charge over the air, you will need to buy a Qi-compatible charging pad to lay it on. Wireless charging is also a feature on the iPhone 8 series.
+
+For all the benefits of the glass front and back, the extensive use of glass is a concern for many. Apple assures that it is the most durable glass available right now, and the same glass is used on the iPhone 8 series.
+
+Unfortunately this durability doesn’t mean that it will withstand clumsy behaviour, and there have already been depressing cases of smashed iPhone X handsets. Our advice if you are buying an iPhone X: make sure you have a good iPhone X case, or take out Apple Care, if you don’t want to be crying over a broken iPhone.
+
+The bad news in terms of what you would do if you break the glass on the back of your iPhone X is that according to iFixit, it isn’t easy to remove. Luckily a cracked display is easier to replace and can be done so without removing the Face ID hardware. Two batteries and a dual-layer logic board means a repairability score of just 6/10.
+
+If that sounds like you the good news is that the iPhone X feels comfortable to hold even if you are used to a smaller handset - not quite the case for the iPhone 8 Plus. It's still hard to reach the top of the screen though so you might want to use the Reachability feature (which you can turn on in Settings).
+
+
+One thing about having an all-glass front is that it changes the elements of iPhone design that we are all used to. If you were to sketch an iPhone it would be easily recognisable from the circular home button at the bottom. The iPhone X changes that.
+
+Now if someone sees you with an iPhone X they will know it’s an iPhone when they see the interface - but predominantly it will become recognisable from the notch, the name that everyone has assigned to the area at the top of the front of the iPhone that houses the Face ID technology and associated camera. There's an infrared camera, flood illuminator, and dot projector as seen below.
+
+It’s amusing that the notch, which many decried when the iPhone X was announced, has become its most distinct feature. The thing that everyone will recognise and that will say this is an iPhone. The alternative is a 7mm bezel at the top but instead, Apple is able to utilise the 'ears' either side which we think is a much more elegant way to do things.
+
+Fast forward a few months on from the iPhone X and plenty of Android manufacturers have copied the design, including the Asus Zenfone 5 which makes a big deal about it being smaller than Apple's. Many are rumoured to mimic including the LG G7, Huawei P20 and OnePlus 6. The Galaxy S9 is a notable exception here.
+
+The notch isn't there just to annoy us, though, its presence is due to all the technology that goes into Face ID. A closer look will reveal an infrared camera, flood illuminator, and dot projector, as seen here:
+
+iPhone X review: Design
+With no home button, the screen is able to extend all the way from the top to the bottom of the iPhone, eliminating any real bezel. It means the display is the largest ever on an iPhone in a handset physically smaller than the Plus sized iPhones, despite the iPhone being only a shade larger than the iPhone 8. Despite this huge change, the X is still IP67 waterproof rated.
+
+Otherwise the familiar in-hand feel and curved corners remain with silence switch and volume buttons on the left-hand side, and a larger power/lock button (now referred to as the Side button by Apple) on the right above the SIM tray. This Side button replaces a lot of the functionality of the Home button.
+
+Turning the iPhone X over, the rear cameras are aligned vertically instead of horizontally, which apparently is better for AR because those apps tend to be held in landscape - another thing we will discuss below. They stick out a fraction further than the camera on the back of the iPhone 8 Plus, which may be due to the addition of optical image stabilisation on the wide lens camera, more on the camera below too.
+
+
+Read about how the iPhone X compares to the iPhone 8 here.
+
+Specifications
+In terms of processor, RAM, storage and battery the iPhone X offers the following:
+
+A11 Bionic chip
+3GB RAM
+Six-core CPU
+An Apple-designed GPU (which has three cores and is capable of powering AR at 60fps, as well as enabling new machine learning and 3D games.)
+Storage of 64GB or 256GB
+Battery life that’s two hours more than the iPhone 7, according to Apple.
+The iPhone X represents a new direction for Apple. Many of the new features you are seeing for the first time the iPhone X will probably soon appear on all iPhones and iPads. Here we have Face ID and a collection of components that can be used for Augmented Reality in ways that we probably can’t even imagine right now. We also have Apple’s first OLED and HDR screen - the first time Apple has felt that OLED can meet its exacting requirements.
+
+The iPhone X doesn't get all the new features though. There are plenty of features that the iPhone X shares with the iPhone 8 and 8 Plus - including the A11 Bionic Chip. Below we will look in more detail at screen, gestures, Face ID, core internals, cameras and battery life.
+
+Screen
+The key benefit to having a screen that covers the entire face of the phone is that Apple has been able to fit a 5.8in display into an iPhone that is actually smaller than the iPhone 8 Plus, which has a 5.5in screen.
+
+But there’s more to it than that. This is the first time an iPhone has been available with an OLED screen. It’s actually the first time an OLED has been available that met Apple’s standards and the screen does indeed look stunning.
+
+OLEDs have a lot of excellent features including absolute blacks for a superior contrast ratio and a wider viewing angle, but they can suffer from screen-burn - a ‘ghost’ image that remains on the screen (something plaguing the Google Pixel 2), colour shifting can also be a problem. Apple says that it has taken steps to guard against screen-burn and burn-in mitigation appears to be built into iOS 11. Read about how to avoid screen burn on the iPhone X here.
+
+The iPhone X's OLED enhances the look and feel of iOS 11 without saturating the colour palette quite as much as on the Samsung Galaxy S8. (Here's our comparison with the S9, by the way.) Colours are bold and bright and the whites more true to life, but perhaps a shade more yellowy than on the iPhone 8 Plus. Viewing angles are excellent, with a decent range of brightness settings, including Apple’s True-Tone feature that adjusts the display based on the ambient lighting conditions.
+
+
+In comparison to the iPhone 8 Plus, dark areas are certainly brighter and clearer. There's more clarity in the darker scenes in movies, for example. This is thanks to the other feature of the screen - HDR (high dynamic range) - which expands the range of both contrast and colour.
+
+Apple has called the display Super Retina. Marketing terms aside that means it offers 1125x2436 resolution at 458ppi. That compares to the Retina HD display on the iPhone 8 Plus that offers 1080x1920resolution at 401ppi.
+
+That's not the highest pixel density smartphone you can get though. We're not wanting to steal Apple's thunder here, but the Samsung Galaxy Note 8 offers a 522ppi screen and the Sony Xperia XZ Premium is a somewhat ridiculous 807ppi.
+
+Gestures
+So, there's no Home button, but you knew that by now. It is replaced by a combination of on-screen gestures, and the occasional use of the side button. The more time we spend with the phone the more we are getting used to the new gestures, but it is a huge change after years of familiarity.
+
+We have this in-depth article about the iPhone X gestures here. But the key ones you will want to know are:
+
+Returning to the Home Screen - swipe up from the bottom of the iPhone X
+Switching apps - swipe up and hold, then cycle through open apps, or drag from the bottom left of an app until you see other open apps jump into view
+Control Panel - drag down from top right corner
+Notification panel - drag down from top left corner
+It's very unintuitive at first, simply because it's such a doddle with a Home button. So it'll take you a while to master as it did us, but if you take the plunge it'll only be a matter of days until you're accustomed.
+
+iPhone X review: Gestures
+Face ID
+The lack of Home button the iPhone X introduces Face ID rather than moving the sensor to the back. There is no Touch ID on this phone whatsoever.
+
+Face ID creates a precise depth map of your face, which means that it's recognising a 3D image of you. This is far more secure than the face recognition of Samsung and LG that can be fooled with a printed picture of a person.
+
+The question is how well does Face ID work. It didn’t help that when Apple's Craig Federighi tried to perform his live demo on stage but had to switch to a backup when Face ID failed to recognise him.
+
+Setting up Face ID is a simple case of moving your face around within a circle, resemblant of the way you taught your older iPhone your fingerprint, although it actually takes less time. Once set up, a glance at the phone should be enough to unlock it - then swipe up to go to the home screen.
+
+iPhone X review: Face IDPicture Shows: Face ID in demo mode
+
+Apple Pay also works via the same validation method. You trigger it with a double tap of the side button and wait for Face ID to confirm it's you before the phone is ready to pay. Many will find these extra steps annoying and potentially embarrassing.
+
+Initially we were disappointed with Face ID as for the first couple of days, we had to keep entering our Passcode because Face ID didn’t recognise us. Ironically this seemed to happen every time we were showing someone how Face ID worked.
+
+However, what we found was that over time Face ID got better. Each time, learning something new like wearing glasses and in different conditions like bad lighting or outdoors. After a few days Face ID worked so well that we hardly noticed the iPhone was ever locked.
+
+To illustrate how Face ID learns we asked identical twins to test the feature. The second twin was only able to unlock the other's phone after entering the correct passcode, at which point the iPhone learned to recognise them too as the technology assumed it was the correct person afterall. Face ID continued to grant both twins access thereafter.
+
+Apple advises that children under 13 shouldn’t use Face ID is as their faces are still developing, and those who choose to cover their face for religious reasons such as a burkas or niqab will not be able to use Face ID either. This is because Face ID needs to be able to see your eyes, nose and mouth in order to work, so if you turn to a balaclava when the weather gets colder, you won't be able to use it.
+
+Luckily there is no need to worry if you have a beard, hat or glasses as Face ID should still work under those conditions. Although we suspect that if you shaved off your beard and then tried to use Face ID it might not recognise you first time.
+
+In terms of security, Apple says that Face ID is actually more secure than a fingerprint with a 1 in 1,000,000 chance that someone would be able to open your phone using it (compared to 1 in 50,000 chance of having the same fingerprint as you.) As we discuss in our here, Face ID isn’t really any more secure than Touch ID because both are overridden by a passcode.
+
+A mugger could theoretically hold an iPhone X up to your face to unlock it. There a gesture you can use to stop Face ID (or Touch ID) working temporarily: squeeze the power and volume buttons on either side of the iPhone before passing it to the mugger (or, if you are the criminal, the law enforcer). We have more to say about iPhone X Face ID security here.
+
+As for privacy, that is answered by the presence of this gesture to stop Face ID or Touch ID from working. It is also addressed by the fact that you actually need to look at the iPhone for Face ID to unlock. If you are holding your iPhone in your hand, but not looking at it, or if your iPhone is laying on the desk beside you, there is no risk of it unlocking and showing all your notifications to the person walking past.
+
+The privacy implications long term though are whether Face ID data could be used to determine your mood and therefore be used to target advertising to you. For example, if your iPhone recognised that you were crying then you might see an ad for tissues. An unlikely scenario that probably serves to illustrate just how unlikely such targeting is, but implications here is that if Face ID was available third parties then it might be utilised in this way as Face ID data isn’t available to third parties.
+
+Sentiment tracking when displaying ads is enough of a concern that Apple actually tells developers they’re not allowed to use the Face ID information they receive for that purpose.
+
+Processor
+The A11 Bionic Chip has the first GPU to have been engineered by Apple (since the split with Imagination Technology) and it marks a big leap from the A10 in the iPhone 7 generation. It has six cores (two are high-performance and the remaining four are efficiency) rather than four. Every core can be active at once, where the iPhone 7 was limited to two cores at a time.
+
+In terms of benchmarks we naturally expected that the iPhone X would match the iPhone 8 Plus, after all they are the same processors. That's certainly the case and you're going to get matching performance across the range.
+
+The 2017 iPhones are leagues ahead of Android rivals in the numbers, but remember these are synthetic benchmarks and the huge difference in results isn't something that is tangible to the user.
+
+
+
+
+Cameras & Photography
+As with the iPhone Plus models, there are two lenses on the back of the iPhone X that allow for Portrait Mode photography, where the background is blurred but subject in the foreground is in focus. These dual sensors are 12Mp, just as they were on the iPhone 7 Plus generation. However, there are some improvements.
+
+For example, the telephoto lens on both the iPhone X and 8 Plus has a larger aperture. Now a f/2.4 aperture joins the wide-angle f/1.8 aperture, rather than the f/2.8 aperture of the previous generation.
+
+There is also new technology in the A11 Bionic chip that allows Apple to go a step further with portrait photography in the iPhone X and 8 Plus. The 'Neural Engine' in the image signal processor is able to process information in your photograph in such a way that you can change the lighting conditions after taking the photograph.
+
+Portrait photography is one of the key distinctions between the front-facing cameras in the iPhone X and the iPhone 8 Plus. On the X you’ll find a 7Mp TrueDepth camera that offers its own Portrait Mode along with the Portrait Lighting feature. So you will be able to take spectacular selfies, as long as you are looking spectacular.
+
+
+These Portrait Lighting options include Natural Light, Studio Light, Contour Light, Stage Light, and Stage Light Mono. Essentially the foreground and background of the photo are separated, so that if you choose one of the Stage Light effects the background will be blacked out (although as you can see from our example, it doesn't always work very well, but the feature is still in beta).
+
+There's another element that the iPhone X gets that the iPhone 8 Plus doesn’t get. The rear-facing lenses both have optical image stabilisation (OIS), which should equal better low light and macro-style photography. The 8 Plus only has OIS on the wide angle lens. The iPhone X offers the best iPhone camera set up currently available.
+
+When we tried out macro photography we were puzzled by how different the result was when we took the same photo on the iPhone 8 Plus and the X. On the X the strawberry got the majority of the focus, as intended, and the colours of the fruit were true to life. When we took the same photo on the iPhone 8 Plus more of the fruit was in focus, and the colours weren’t as bright. We also thought the whites looked a bit more blue.
+
+iPhone X
+
+iPhone 8 Plus
+
+We also ran our usual test where we photograph St Pancras Hotel and then zoom in 100%.
+
+
+Colour reproduction in this photo of the St Pancras hotel is excellent, and you can see enough detail when zoomed in 100% to make out the writing on the Midland Road sign.
+
+
+For our low light photograph we went to our dedicated low-light area (aka a cupboard) and took the following photo. The photo was just as good as the ones we took on the iPhone 8 and 8 Plus, with clearly defined edges, even around Batman’s cape, and clarity for the type on the water bottle.
+
+
+But it's the improved video stablisation we welcome most, with the iPhone X and iPhone 8 cameras all offering 4K up to 60fps (rather than last generation's 30fps). And there's 1080p slo-mo up to 240fps.
+
+Animoji
+There are a few software features that are only available on the iPhone X. These include the new Animoji. These are 12 emoji that can mimic your own expressions. They are possible on the iPhone X because the TrueDepth camera on the front of the device used for Face ID. It can analyse more than 50 different muscle movements to mirror your expressions.
+
+You access the Animoji from within the Messages app. Just tap on the App icon beside the text bar and then tap on the Animoji icon (a monkey). Now just look at your iPhone and the Animoji will mimic your facial expressions. You can then record a short clip of your Animoji which will be captured with your voice so that you can send that to your friend.
+
+While you are recording the clip you may see some lag, but once the recording is made and you play it back everything will appear in sync. If you want to save the Animoji to your Photos folder you can do so, but only after you have sent it (just tap on the recording and click on the share icon). The Animoji is sent and shared as a .mov file, so anyone should be able to view it regardless of the hardware they are using.
+
+If you'd like to find out how to send these fun animations that mimic your facial expressions read our complete guide to using Animoji on the iPhone X here.
+
+Battery life
+The battery in the iPhone X is 2716mAh, according to iFixIt’s teardown, where the iPhone 8 Plus battery is 2691mAh. The real surprise is that the layout of the internals of the iPhone X allows for a dual battery placement in the iPhone X in order to utilise the space better.
+
+Apple claims the battery life of the iPhone X is two hours longer than the iPhone 7, and it claims that the iPhone 8 Plus has a similar battery life to the iPhone 7 Plus. This is a confusing comparison because the iPhone 8 Plus appears to be superior to the iPhone X.
+
+The 8 Plus offers 21 hours talk time, 13 hours of internet, 14 hours of video playback, and 60 hours of audio playback. That internet and video playback score is an hour less in the X, where Apple claims up to 21 hours talk time, 12 hours of internet, 13 hours of video playback, 60 hours of audio playback.
+
+The iPhone X holds out remarkably well under heavy use. Not once have we run out of juice before the end of the day, and that;s with scores of notifications, streaming music, a bit of gaming, texting and emailing too. It's remarkable that Apple has calibrated it this well, and it trounces the iPhone 7.
+
+Wireless Charging & Fast Charging
+Another feature we touched on earlier is wireless charging. This one isn't unique to the iPhone X, though - the iPhone 8 models get it too.
+
+Apple's planning to release its own AirPower mat for charging the iPhones and your AirPods - but that won't arrive until 2018. Luckily you don’t have to wait for the AirPower to launch though. If you want to wirelessly charge your iPhone you can actually do so now using a Qi-compatible mat.
+
+Currently the iPhone X will wirelessly charge via a 5W charger - it can also charge using a 7.5W charger but for now it’s not able to utilise the full 7.5W so it won’t be any faster. Apple says this functionality is now live in iOS 11.2.
+
+Wireless charging can be handy but it's not the be and end all. After all, you can still use your phone while charging via a cable as it doesn't have to be sat on the charging pad.
+
+The iPhone X is also capable of fast charging via cable, but not with any of the in-box accessories - a shame considering the price tag. You'll need to invest in a charger and cable from Apple, such as a MacBook charger or the 29W USB-C Power Adaptor (£49) but you’ll need a USB-C to Lightning Cable as well, which is another £25.
+
+Games & AR
+A few words on some of the apps and games that are able to take advantage of the new technologies in the iPhone X
+
+Some games are already utilising AR and other features of the iPhone X, such as The Machines, Warhammer 40,000: Freeblade, Zombie Gunship Revenant and Monster Park.
+
+We were slightly confused when it came to installing a new game - but it turned out that we needed to double press the Side button in order to purchase the app. Having recognised us using Face ID there still needed to be a trigger before payment.
+
+Benchmarks show the iPhone X is more than capable of great performance with it hitting or getting close to the upper limits of GFX Bench.
+
+
+
+Software
+As discussed apps need to be adjusted to the screen size of the iPhone X. In the case of the iOS 11 interface, and some of its own apps, Apple appears to have made some adjustments already.
+
+For example, when you tap to bring up the keyboard on the iPhone X you’ll find the keyboard is positioned higher than it would have been on any other iPhone, with about a centimetre between the spacebar and the bottom of the screen.
+
+Actually the effect of this is to introduce a bezel below the keyboard, which is actually necessary if you are to type comfortably. Without it you would have to bend your thumb backwards in order to type. Our only issue here is a tendency to hit the mic rather than return.
+
+
+That’s not the only change necessary to make the iPhone interface fit the taller screen. Because the iPhone X screen has a 19.5:9 aspect ratio, and most films and TV shows are filmed in 16:9, to view them on the iPhone X you will either see them in a letterbox, or if you zoom the picture out to fill the screen you will lose some of the detail around the edge - and obviously a large chunk will be lost to the notch.
+
+We found that watching in the letterbox mode was preferable, although this wasn’t the default.
+
+
+Picture shows: Letterbox and full-screen mode. We've made the notch white for illustration purposes, it's black and therefore not as noticeable
+
+In other Apple apps you will simply see more of the page, but the page doesn’t stretch all the way to the bottom of the screen. About 2mm is given over to a line that indicates the area where gestures take place. Note that this bar doesn’t necessarily cause the interface to be moved up above it, when browsing the web in Safari pages stretched below this line which was superimposed above them.
+
+
+Speaking of Safari, here are the results of our Jetstream benchmarking test, here the iPhone X did perform better than the iPhone 8 Plus. 
+
+iPhone
+
+JetStream
+
+iPhone X
+
+224
+
+iPhone 8 Plus
+
+211
+
+The narrow screen is an issue for us when typing in landscape in Pages as it meant that we could only view about a paragraph above the keyboard.
+
+Third party apps that haven’t yet been updated for the iPhone X will appear with black bars above and below them. A lot of the apps we use have already been updated though.
+
+One thing that can’t be remedied by an app update is the appearance of photos. Because you have less width to utilise, photos are actually shown smaller on the screen than when you view them on the iPhone 8 Plus.
+
+Similarly, if you are viewing a web page you won’t necessarily see any more of it because of the longer screen because the text will wrap to such an extent that there is only likely to be a few words difference.
+
+Despite all of that, iOS 11 on the iPhone X looks awesome thanks to the bright OLED panel when compared to the iPhone 8's LCD. And the full-screen effect, afforded by the X is startling, it makes you feel like you are touching the software in a way that no other iPhone has been able to do.
+
+OUR VERDICT
+Whether this is the iPhone of your dreams depends on a lot of things. If you wanted a big screen but you were put off by the size of the iPhone Plus then this is going to be the answer to your prayers at long last.
+
+If you want a new iPhone that breaks the mould then you will love how the iPhone has lost its bezels to become as close to full screen as is possible. We love this new look, even if we remain cautious about Face ID as a replacement to Touch ID. The all-screen design means the new user experience takes some getting used to but people who had become bored of with the iPhone 6-era design are finally faced with something truly different.
+
+If you want to take exceptional selfies then the new front facing camera on the iPhone X gives you the ultimate in lighting and background blur to impress your Instagram followers with (and no doubt indulge in a fair few days of talking poo Animoji).
+
+Our only real criticism of the iPhone X is the dimensions of the screen. We think it is too narrow and the length isn't utilised properly. It may be that the dimensions are dictated by the way the phone fits in your hand, but they negatively affect things like viewing photos and movies.
+
